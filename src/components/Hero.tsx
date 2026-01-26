@@ -101,10 +101,10 @@ export default function Hero() {
               </Link>
 
               <Link
-                href="/contact"
+                href="/services"
                 className="rounded-md font-serif border border-white/60 px-8 py-4 text-sm font-semibold text-white hover:bg-white hover:text-black transition"
               >
-                Request Quote
+                Our Services
               </Link>
             </div>
 
