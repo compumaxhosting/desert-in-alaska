@@ -1,17 +1,15 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function RequestQuoteForm() {
   const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState(false);
-  const [error, setError] = useState("");
+  const router = useRouter();
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
-    setError("");
-    setSuccess(false);
 
     const formData = new FormData(e.currentTarget);
 
@@ -23,20 +21,22 @@ export default function RequestQuoteForm() {
       message: formData.get("message"),
     };
 
-    const res = await fetch("/api/request-quote", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    });
+    try {
+      const res = await fetch("/api/request-quote", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
 
-    const data = await res.json();
-    setLoading(false);
-
-    if (!res.ok) {
-      setError(data.error || "Something went wrong");
-    } else {
-      setSuccess(true);
-      e.currentTarget.reset();
+      if (res.ok) {
+        router.push("/message-sent");
+      } else {
+        router.push("/message-failed");
+      }
+    } catch {
+      router.push("/message-failed");
+    } finally {
+      setLoading(false);
     }
   }
 
@@ -130,14 +130,6 @@ export default function RequestQuoteForm() {
           >
             {loading ? "Sending..." : "Send Message →"}
           </button>
-
-          {success && (
-            <p className="text-sm text-green-600">
-              ✅ Request sent successfully!
-            </p>
-          )}
-
-          {error && <p className="text-sm text-red-600">❌ {error}</p>}
         </form>
       </div>
     </div>
