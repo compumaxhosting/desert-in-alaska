@@ -15,18 +15,89 @@ export async function POST(req: Request) {
     }
 
     await resend.emails.send({
-      from: "Website Quote <onboarding@resend.dev>",
-      to: ["desertinalaska9@gmail.com"], // 🔴 CHANGE THIS
+      from: "Desert in Alaska <onboarding@resend.dev>",
+      to: ["desertinalaska9@gmail.com"],
       replyTo: email,
-      subject: "New Quote Request",
+      subject: "New Quote Request – Desert in Alaska",
       html: `
-        <h2>New Quote Request</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Service:</strong> ${service || "Not specified"}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message}</p>
+<!DOCTYPE html>
+<html>
+  <body style="margin:0;padding:0;background-color:#f4f1ee;font-family:Arial,Helvetica,sans-serif;">
+    <table width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center" style="padding:30px 15px;">
+          
+          <table width="600" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:8px;overflow:hidden;">
+            
+            <!-- HEADER -->
+            <tr>
+              <td style="background:#432719;padding:20px;text-align:center;">
+                <h1 style="margin:0;color:#ffffff;font-size:22px;letter-spacing:1px;">
+                  Desert in Alaska
+                </h1>
+                <p style="margin:5px 0 0;color:#d7c2b2;font-size:13px;">
+                  Fire Suppression & Commercial Mechanical Specialists
+                </p>
+              </td>
+            </tr>
+
+            <!-- BODY -->
+            <tr>
+              <td style="padding:25px;">
+                <h2 style="margin:0 0 15px;color:#432719;font-size:18px;">
+                  New Quote Request
+                </h2>
+
+                <table width="100%" cellpadding="0" cellspacing="0" style="font-size:14px;color:#333;">
+                  <tr>
+                    <td style="padding:8px 0;"><strong>Name:</strong></td>
+                    <td style="padding:8px 0;">${name}</td>
+                  </tr>
+                  <tr>
+                    <td style="padding:8px 0;"><strong>Phone:</strong></td>
+                    <td style="padding:8px 0;">${phone}</td>
+                  </tr>
+                  <tr>
+                    <td style="padding:8px 0;"><strong>Email:</strong></td>
+                    <td style="padding:8px 0;">${email}</td>
+                  </tr>
+                  <tr>
+                    <td style="padding:8px 0;"><strong>Service:</strong></td>
+                    <td style="padding:8px 0;">${service || "Not specified"}</td>
+                  </tr>
+                </table>
+
+                <div style="margin-top:20px;">
+                  <p style="margin:0 0 8px;font-weight:bold;color:#432719;">
+                    Message
+                  </p>
+                  <div style="background:#faf8f5;border-left:4px solid #86522d;padding:12px;font-size:14px;color:#333;">
+                    ${message.replace(/\n/g, "<br />")}
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <!-- FOOTER -->
+            <tr>
+              <td style="background:#f1ece7;padding:15px;text-align:center;font-size:12px;color:#6b5a4d;">
+                <p style="margin:0;">
+                  📞 313-931-3070 &nbsp; | &nbsp;
+                  ✉️ desertinalaska@outlook.com
+                </p>
+                <p style="margin:5px 0 0;">
+                  Mon – Sat, 8:00 AM – 6:00 PM
+                </p>
+              </td>
+            </tr>
+
+          </table>
+
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
       `,
     });
 
