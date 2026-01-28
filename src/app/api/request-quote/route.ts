@@ -18,8 +18,8 @@ export async function POST(req: Request) {
       // ✅ MUST be from VERIFIED domain
       from: "Desert in Alaska <info@desertinalaska.com>",
 
-      // ✅ Can be ANY inbox (Gmail, Outlook, etc.)
-      to: ["jose@compumaxllc.com"],
+      // ✅ Send to BOTH inboxes
+      to: ["desertinalaska@outlook.com", "jose@compumaxllc.com"],
 
       // ✅ Replies go to the customer
       replyTo: email,
