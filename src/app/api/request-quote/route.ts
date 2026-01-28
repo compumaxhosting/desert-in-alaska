@@ -15,13 +15,13 @@ export async function POST(req: Request) {
     }
 
     await resend.emails.send({
-      // ✅ REAL email that exists (no bounce risk)
-      from: "Desert in Alaska <jose@compumaxllc.com>",
+      // ✅ MUST be from VERIFIED domain
+      from: "Desert in Alaska <info@desertinalaska.com>",
 
-      // ✅ Where you receive the form submissions
+      // ✅ Can be ANY inbox (Gmail, Outlook, etc.)
       to: ["jose@compumaxllc.com"],
 
-      // ✅ Reply goes directly to the customer
+      // ✅ Replies go to the customer
       replyTo: email,
 
       subject: "New Quote Request – Desert in Alaska",
@@ -39,7 +39,7 @@ export async function POST(req: Request) {
             <!-- HEADER -->
             <tr>
               <td style="background:#432719;padding:20px;text-align:center;">
-                <h1 style="margin:0;color:#ffffff;font-size:22px;letter-spacing:1px;">
+                <h1 style="margin:0;color:#ffffff;font-size:22px;">
                   Desert in Alaska
                 </h1>
                 <p style="margin:5px 0 0;color:#d7c2b2;font-size:13px;">
