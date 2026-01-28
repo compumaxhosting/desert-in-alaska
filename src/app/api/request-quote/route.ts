@@ -15,10 +15,17 @@ export async function POST(req: Request) {
     }
 
     await resend.emails.send({
-      from: "Desert in Alaska <onboarding@resend.dev>",
-      to: ["desertinalaska9@gmail.com"],
+      // ✅ REAL email that exists (no bounce risk)
+      from: "Desert in Alaska <jose@compumaxllc.com>",
+
+      // ✅ Where you receive the form submissions
+      to: ["jose@compumaxllc.com"],
+
+      // ✅ Reply goes directly to the customer
       replyTo: email,
+
       subject: "New Quote Request – Desert in Alaska",
+
       html: `
 <!DOCTYPE html>
 <html>
