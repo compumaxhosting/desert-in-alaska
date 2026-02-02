@@ -70,7 +70,7 @@ export default function Contact() {
                   href="tel:13139313070"
                   className="flex items-start gap-4 group"
                 >
-                  <div className="rounded-lg bg-[#86492D]/10 p-3 text-[#86492D] transition group-hover:bg-[#86492D] group-hover:text-white">
+                  <div className="rounded-lg bg-[#86492D]/10 p-3 text-[#4195bd] transition group-hover:bg-[#86492D] group-hover:text-white">
                     <Phone size={20} />
                   </div>
                   <div>
@@ -88,7 +88,7 @@ export default function Contact() {
                   href="mailto:desertinalaska@outlook.com"
                   className="flex items-start gap-4 group"
                 >
-                  <div className="rounded-lg bg-[#86492D]/10 p-3 text-[#86492D] transition group-hover:bg-[#86492D] group-hover:text-white">
+                  <div className="rounded-lg bg-[#86492D]/10 p-3 text-[#4195bd] transition group-hover:bg-[#86492D] group-hover:text-white">
                     <Mail size={20} />
                   </div>
                   <div>
@@ -102,7 +102,7 @@ export default function Contact() {
 
               {/* ADDRESS (OPTIONAL MAP CTA) */}
               <li className="flex items-start gap-4">
-                <div className="rounded-lg bg-[#86492D]/10 p-3 text-[#86492D]">
+                <div className="rounded-lg bg-[#86492D]/10 p-3 text-[#4195bd]">
                   <MapPin size={20} />
                 </div>
                 <div>
@@ -115,7 +115,7 @@ export default function Contact() {
 
               {/* HOURS (NO CTA) */}
               <li className="flex items-start gap-4">
-                <div className="rounded-lg bg-[#86492D]/10 p-3 text-[#86492D]">
+                <div className="rounded-lg bg-[#86492D]/10 p-3 text-[#4195bd]">
                   <Clock size={20} />
                 </div>
                 <div>

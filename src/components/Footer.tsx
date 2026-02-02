@@ -33,7 +33,7 @@ export default function Footer() {
             1997. Licensed, certified, and committed to safety excellence.
           </p>
 
-          <div className="flex gap-6 pt-4 text-xs text-[#c98b55]">
+          <div className="flex gap-6 pt-4 text-xs text-[#4195bd]">
             <div className="flex items-center gap-2">
               <ShieldCheck size={18} />
               <span>Licensed & Insured</span>
@@ -95,7 +95,7 @@ export default function Footer() {
 
           <ul className="space-y-4 text-sm text-[#e7d6c8] font-serif">
             <li className="flex items-start gap-3">
-              <MapPin size={18} className="mt-1 text-[#c98b55]" />
+              <MapPin size={18} className="mt-1 text-[#4195bd]" />
               <span>
                 11402 Schaefer Hwy
                 <br />
@@ -108,7 +108,7 @@ export default function Footer() {
                 href="tel:13139313070"
                 className="flex items-center gap-3 hover:text-white transition"
               >
-                <Phone size={18} className="text-[#c98b55]" />
+                <Phone size={18} className="text-[#4195bd]" />
                 <span>313-931-3070</span>
               </a>
             </li>
@@ -118,13 +118,13 @@ export default function Footer() {
                 href="mailto:desertinalaska@outlook.com"
                 className="flex items-center gap-3 hover:text-white transition"
               >
-                <Mail size={18} className="text-[#c98b55]" />
+                <Mail size={18} className="text-[#4195bd]" />
                 <span>desertinalaska@outlook.com</span>
               </a>
             </li>
 
             <li className="flex items-center gap-3">
-              <Clock size={18} className="text-[#c98b55]" />
+              <Clock size={18} className="text-[#4195bd]" />
               <span>Mon – Sat, 8:00 AM – 6:00 PM</span>
             </li>
           </ul>
@@ -134,7 +134,7 @@ export default function Footer() {
             <a
               href="https://www.facebook.com/people/Desert-in-Alaska/100070081153037/#"
               aria-label="Facebook"
-              className="rounded-md bg-white/10 p-2 text-[#c98b55] transition hover:bg-white/20 hover:text-white"
+              className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
             >
               <Facebook size={18} />
             </a>
@@ -142,7 +142,7 @@ export default function Footer() {
             <a
               href="#"
               aria-label="Instagram"
-              className="rounded-md bg-white/10 p-2 text-[#c98b55] transition hover:bg-white/20 hover:text-white"
+              className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
             >
               <Instagram size={18} />
             </a>
@@ -150,7 +150,7 @@ export default function Footer() {
             <a
               href="https://x.com/desertinalaska1"
               aria-label="X (Twitter)"
-              className="rounded-md bg-white/10 p-2 text-[#c98b55] transition hover:bg-white/20 hover:text-white"
+              className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
             >
               <X size={18} />
             </a>

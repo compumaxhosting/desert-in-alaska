@@ -41,11 +41,11 @@ export default function Header() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`px-4 py-2 text-sm font-medium rounded-md transition-colors
+                className={`px-4 py-2 text-sm font-extrabold rounded-md transition-colors
                   ${
                     isActive(link.href)
-                      ? "bg-[#86492D]/10 text-accent"
-                      : "text-accent hover:bg-[#86492D]/10"
+                      ? "bg-[#86492D]/10 text-[#4195bd]"
+                      : "text-[#4195bd] hover:bg-[#86492D]/10"
                   }
                 `}
               >
