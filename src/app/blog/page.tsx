@@ -8,7 +8,7 @@ export default function BlogPage() {
   return (
     <>
     <Header />
-      <section className="bg-[#eeebe8] min-h-screen py-24">
+      <section className="bg-[#eeebe8] min-h-screen py-14">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl text-[#3b2a1f] font-medium">

@@ -19,7 +19,7 @@ export default async function SingleBlog({ params }: Props) {
   return (
     <>
     <Header />
-      <section className="bg-white min-h-screen py-24">
+      <section className="bg-white min-h-screen py-12">
         <div className="max-w-4xl mx-auto px-6">
           <Link href="/blog" className="text-sm text-[#8b5428]">
             ← Back to blog
