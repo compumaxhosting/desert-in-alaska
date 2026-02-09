@@ -1,6 +1,6 @@
 
 
-import { Phone, Mail, Facebook, Instagram, X } from "lucide-react";
+import { Phone, Mail, Facebook, Instagram, X, Linkedin } from "lucide-react";
 
 export default function TopBar() {
   return (
@@ -48,6 +48,13 @@ export default function TopBar() {
           className="rounded-md bg-white/10 p-2  text-white transition hover:bg-white/20 hover:text-[#c98b55]"
         >
           <X size={16} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/desertinalaska/"
+          aria-label="LinkedIn"
+          className="rounded-md bg-white/10 p-2 text-white transition hover:bg-white/20 hover:text-white"
+        >
+          <Linkedin size={16} />
         </a>
       </div>
 

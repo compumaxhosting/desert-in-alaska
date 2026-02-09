@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import BackToTop from "@/components/BackToTop";
 import {
   MapPin,
   Phone,
@@ -9,165 +10,183 @@ import {
   BadgeCheck,
   Facebook,
   Instagram,
+  Linkedin,
 } from "lucide-react";
 import { X } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#432719] text-[#f5efe9]">
-      {/* TOP */}
-      <div className="mx-auto max-w-7xl px-4 py-20 grid gap-16 lg:grid-cols-4">
-        {/* BRAND */}
-        <div className="space-y-6">
-          {/* LOGO */}
-          <Image
-            src="/logo.png"
-            alt="Desert In Alaska"
-            width={200}
-            height={140}
-            className="w-56 md:w-64 lg:w-62 h-auto"
-          />
+    <>
+      <footer className="bg-[#432719] text-[#f5efe9]">
+        {/* TOP */}
+        <div className="mx-auto max-w-7xl px-4 py-20 grid gap-16 lg:grid-cols-4">
+          {/* BRAND */}
+          <div className="space-y-6">
+            {/* LOGO */}
+            <Image
+              src="/logo.png"
+              alt="Desert In Alaska"
+              width={200}
+              height={140}
+              className="w-56 md:w-64 lg:w-62 h-auto"
+            />
 
-          <p className="text-sm leading-relaxed text-[#e7d6c8] max-w-sm font-serif">
-            Trusted commercial fire suppression and mechanical services since
-            1997. Licensed, certified, and committed to safety excellence.
-          </p>
+            <p className="text-sm leading-relaxed text-[#e7d6c8] max-w-sm font-serif">
+              Trusted commercial fire suppression and mechanical services since
+              1997. Licensed, certified, and committed to safety excellence.
+            </p>
 
-          <div className="flex gap-6 pt-4 text-xs text-[#4195bd]">
-            <div className="flex items-center gap-2">
-              <ShieldCheck size={18} />
-              <span>Licensed & Insured</span>
+            <div className="flex gap-6 pt-4 text-xs text-[#4195bd]">
+              <div className="flex items-center gap-2">
+                <ShieldCheck size={18} />
+                <span>Licensed & Insured</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <BadgeCheck size={18} />
+                <span>Certified Experts</span>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <BadgeCheck size={18} />
-              <span>Certified Experts</span>
+          </div>
+
+          {/* QUICK LINKS */}
+          <div>
+            <h4 className="mb-6 text-lg font-medium font-sans">Quick Links</h4>
+            <ul className="space-y-3 text-sm text-[#e7d6c8] font-serif">
+              <li>
+                <Link href="/" className="hover:text-white">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/about-us" className="hover:text-white">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="hover:text-white">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link href="/projects" className="hover:text-white">
+                  Our Projects
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-white">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* SERVICES */}
+          <div>
+            <h4 className="mb-6 text-lg font-medium font-sans">Our Services</h4>
+            <ul className="space-y-3 text-sm text-[#e7d6c8] font-serif">
+              <li>Fire Suppression Systems</li>
+              <li>Commercial HVAC</li>
+              <li>Kitchen Exhaust Systems</li>
+              <li>Gas Piping</li>
+              <li>Fire Extinguisher Sales</li>
+            </ul>
+          </div>
+
+          {/* CONTACT */}
+          <div>
+            <h4 className="mb-6 text-lg font-medium font-sans">Contact Us</h4>
+
+            <ul className="space-y-4 text-sm text-[#e7d6c8] font-serif">
+              <li className="flex items-start gap-3">
+                <MapPin size={18} className="mt-1 text-[#4195bd]" />
+                <a
+                  href="https://maps.google.com/maps?q=11402+Schaefer+Hwy+Detroit+MI+48227"
+                  className="hover:text-white transition"
+                >
+                  <span>
+                    11402 Schaefer Hwy
+                    <br />
+                    Detroit, MI 48227
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="tel:13139313070"
+                  className="flex items-center gap-3 hover:text-white transition"
+                >
+                  <Phone size={18} className="text-[#4195bd]" />
+                  <span>313-931-3070</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="mailto:desertinalaska@outlook.com"
+                  className="flex items-center gap-3 hover:text-white transition"
+                >
+                  <Mail size={18} className="text-[#4195bd]" />
+                  <span>desertinalaska@outlook.com</span>
+                </a>
+              </li>
+
+              <li className="flex items-center gap-3">
+                <Clock size={18} className="text-[#4195bd]" />
+                <span>Mon – Sat, 8:00 AM – 6:00 PM</span>
+              </li>
+            </ul>
+
+            {/* SOCIAL ICONS */}
+            <div className="mt-6 flex items-center gap-4">
+              <a
+                href="https://www.facebook.com/people/Desert-in-Alaska/100070081153037/#"
+                aria-label="Facebook"
+                className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
+              >
+                <Facebook size={18} />
+              </a>
+
+              <a
+                href="#"
+                aria-label="Instagram"
+                className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
+              >
+                <Instagram size={18} />
+              </a>
+
+              <a
+                href="https://x.com/desertinalaska1"
+                aria-label="X (Twitter)"
+                className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
+              >
+                <X size={18} />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/desertinalaska/"
+                aria-label="LinkedIn"
+                className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
+              >
+                <Linkedin size={18} />
+              </a>
             </div>
           </div>
         </div>
 
-        {/* QUICK LINKS */}
-        <div>
-          <h4 className="mb-6 text-lg font-medium font-sans">Quick Links</h4>
-          <ul className="space-y-3 text-sm text-[#e7d6c8] font-serif">
-            <li>
-              <Link href="/" className="hover:text-white">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/about-us" className="hover:text-white">
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link href="/services" className="hover:text-white">
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link href="/projects" className="hover:text-white">
-                Our Projects
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="hover:text-white">
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
+        {/* BOTTOM BAR */}
+        <div className="border-t border-white/10 font-serif">
+          <div className="mx-auto max-w-7xl px-6 py-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between text-sm text-[#d8c2b1]">
+            <p>© 2026 Desert In Alaska Corp. All rights reserved.</p>
 
-        {/* SERVICES */}
-        <div>
-          <h4 className="mb-6 text-lg font-medium font-sans">Our Services</h4>
-          <ul className="space-y-3 text-sm text-[#e7d6c8] font-serif">
-            <li>Fire Suppression Systems</li>
-            <li>Commercial HVAC</li>
-            <li>Kitchen Exhaust Systems</li>
-            <li>Gas Piping</li>
-            <li>Fire Extinguisher Sales</li>
-          </ul>
-        </div>
-
-        {/* CONTACT */}
-        <div>
-          <h4 className="mb-6 text-lg font-medium font-sans">Contact Us</h4>
-
-          <ul className="space-y-4 text-sm text-[#e7d6c8] font-serif">
-            <li className="flex items-start gap-3">
-              <MapPin size={18} className="mt-1 text-[#4195bd]" />
-              <span>
-                11402 Schaefer Hwy
-                <br />
-                Detroit, MI 48227
-              </span>
-            </li>
-
-            <li>
-              <a
-                href="tel:13139313070"
-                className="flex items-center gap-3 hover:text-white transition"
-              >
-                <Phone size={18} className="text-[#4195bd]" />
-                <span>313-931-3070</span>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="mailto:desertinalaska@outlook.com"
-                className="flex items-center gap-3 hover:text-white transition"
-              >
-                <Mail size={18} className="text-[#4195bd]" />
-                <span>desertinalaska@outlook.com</span>
-              </a>
-            </li>
-
-            <li className="flex items-center gap-3">
-              <Clock size={18} className="text-[#4195bd]" />
-              <span>Mon – Sat, 8:00 AM – 6:00 PM</span>
-            </li>
-          </ul>
-
-          {/* SOCIAL ICONS */}
-          <div className="mt-6 flex items-center gap-4">
-            <a
-              href="https://www.facebook.com/people/Desert-in-Alaska/100070081153037/#"
-              aria-label="Facebook"
-              className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
-            >
-              <Facebook size={18} />
-            </a>
-
-            <a
-              href="#"
-              aria-label="Instagram"
-              className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
-            >
-              <Instagram size={18} />
-            </a>
-
-            <a
-              href="https://x.com/desertinalaska1"
-              aria-label="X (Twitter)"
-              className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
-            >
-              <X size={18} />
-            </a>
+            <Link href="/" className="hover:text-white transition">
+              www.desertinalaska.com
+            </Link>
           </div>
         </div>
-      </div>
+      </footer>
 
-      {/* BOTTOM BAR */}
-      <div className="border-t border-white/10 font-serif">
-        <div className="mx-auto max-w-7xl px-6 py-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between text-sm text-[#d8c2b1]">
-          <p>© 2026 Desert In Alaska Corp. All rights reserved.</p>
-
-          <Link href="/" className="hover:text-white transition">
-            www.desertinalaska.com
-          </Link>
-        </div>
-      </div>
-    </footer>
+      <BackToTop />
+    </>
   );
 }

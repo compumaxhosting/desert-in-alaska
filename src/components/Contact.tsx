@@ -101,16 +101,21 @@ export default function Contact() {
               </li>
 
               {/* ADDRESS (OPTIONAL MAP CTA) */}
-              <li className="flex items-start gap-4">
-                <div className="rounded-lg bg-[#86492D]/10 p-3 text-[#4195bd]">
-                  <MapPin size={20} />
-                </div>
-                <div>
-                  <p className="text-sm text-[#8b7a6c]">Address</p>
-                  <p className="font-medium">
-                    11402 Schaefer Hwy, Detroit, MI 48227
-                  </p>
-                </div>
+              <li>
+                <a
+                  href="https://maps.google.com/maps?q=11402+Schaefer+Hwy+Detroit+MI+48227"
+                  className="flex items-start gap-4 group"
+                >
+                  <div className="rounded-lg bg-[#86492D]/10 p-3 text-[#4195bd] transition group-hover:bg-[#86492D] group-hover:text-white">
+                    <MapPin size={20} />
+                  </div>
+                  <div>
+                    <p className="text-sm text-[#8b7a6c]">Address</p>
+                    <p className="font-medium group-hover:underline">
+                      11402 Schaefer Hwy, Detroit, MI 48227
+                    </p>
+                  </div>
+                </a>
               </li>
 
               {/* HOURS (NO CTA) */}

@@ -18,3 +18,6 @@
 .text-accent{
   color:#86492D;
 }
+html, body {
+  overflow-x: hidden;
+}
