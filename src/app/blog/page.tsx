@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { blogs } from "@/data/blogs";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { blogs } from "@/data/BlogData";
 
 export default function BlogPage() {
   return (
     <>
-    <Header />
+      <Header />
       <section className="bg-[#eeebe8] min-h-screen py-14">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center">
@@ -21,9 +21,13 @@ export default function BlogPage() {
 
           <div className="mt-16 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
             {blogs.map((blog) => (
-              <Link key={blog.slug} href={`/blog/${blog.slug}`}>
-                <div className="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition">
-                  <div className="relative h-60">
+              <Link
+                key={blog.slug}
+                href={`/blog/${blog.slug}`}
+                className="h-full"
+              >
+                <div className="bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition flex flex-col h-full">
+                  <div className="relative h-60 w-full">
                     <Image
                       src={blog.image}
                       alt={blog.title}
@@ -32,12 +36,12 @@ export default function BlogPage() {
                     />
                   </div>
 
-                  <div className="p-6">
-                    <h3 className="text-xl text-[#3b2a1f] font-medium">
+                  <div className="p-6 flex flex-col grow">
+                    <h3 className="text-xl text-[#3b2a1f] font-medium line-clamp-2">
                       {blog.title}
                     </h3>
 
-                    <p className="mt-3 text-sm text-[#876C61]">
+                    <p className="mt-3 text-sm text-[#876C61] line-clamp-3 grow">
                       {blog.description}
                     </p>
 

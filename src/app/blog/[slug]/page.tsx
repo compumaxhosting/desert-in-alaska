@@ -1,4 +1,4 @@
-import { blogs } from "@/data/blogs";
+import { blogs } from "@/data/BlogData";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,7 +10,7 @@ interface Props {
 }
 
 export default async function SingleBlog({ params }: Props) {
-  const { slug } = await params;
+  const { slug } = await params; // ✅ REQUIRED IN NEXT 16
 
   const blog = blogs.find((b) => b.slug === slug);
 
@@ -18,8 +18,9 @@ export default async function SingleBlog({ params }: Props) {
 
   return (
     <>
-    <Header />
-      <section className="bg-white min-h-screen py-12">
+      <Header />
+
+      <section className="bg-white min-h-screen py-8">
         <div className="max-w-4xl mx-auto px-6">
           <Link href="/blog" className="text-sm text-[#8b5428]">
             ← Back to blog
@@ -46,14 +47,16 @@ export default async function SingleBlog({ params }: Props) {
                 <h2 className="text-2xl text-[#3b2a1f] font-medium">
                   {section.title}
                 </h2>
-                <p className="mt-3 text-[#444] leading-relaxed">
+
+                <div className="mt-3 text-[#444] leading-relaxed">
                   {section.paragraph}
-                </p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
+
       <Footer />
     </>
   );
