@@ -140,7 +140,7 @@ export default function Footer() {
             {/* SOCIAL ICONS */}
             <div className="mt-6 flex items-center gap-4">
               <a
-                href="https://www.facebook.com/people/Desert-in-Alaska/100070081153037/#"
+                href="https://www.facebook.com/profile.php?id=100011518158716&ref=PROFILE_EDIT_ig_profile_ac"
                 aria-label="Facebook"
                 className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
               >
