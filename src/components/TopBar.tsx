@@ -1,6 +1,7 @@
 
 
 import { Phone, Mail, Facebook, Instagram, X, Linkedin } from "lucide-react";
+import { FaGoogle } from "react-icons/fa";
 
 export default function TopBar() {
   return (
@@ -26,6 +27,7 @@ export default function TopBar() {
 
       {/* Middle (Social Icons) */}
       <div className="flex items-center gap-3 justify-center flex-1">
+        {/* FACEBOOK */}
         <a
           href="https://www.facebook.com/profile.php?id=100011518158716&ref=PROFILE_EDIT_ig_profile_ac"
           aria-label="Facebook"
@@ -34,27 +36,41 @@ export default function TopBar() {
           <Facebook size={16} />
         </a>
 
+        {/* INSTAGRAM */}
         <a
           href="https://www.instagram.com/desertinalaska/"
           aria-label="Instagram"
-          className="rounded-md bg-white/10 p-2  text-white transition hover:bg-white/20 hover:text-[#c98b55]"
+          className="rounded-md bg-white/10 p-2 text-white transition hover:bg-white/20 hover:text-[#c98b55]"
         >
           <Instagram size={16} />
         </a>
 
+        {/* X */}
         <a
           href="https://x.com/desertinalaska1"
-          aria-label="X (Twitter)"
-          className="rounded-md bg-white/10 p-2  text-white transition hover:bg-white/20 hover:text-[#c98b55]"
+          aria-label="X"
+          className="rounded-md bg-white/10 p-2 text-white transition hover:bg-white/20 hover:text-[#c98b55]"
         >
           <X size={16} />
         </a>
+
+        {/* LINKEDIN */}
         <a
           href="https://www.linkedin.com/in/desertinalaska/"
           aria-label="LinkedIn"
           className="rounded-md bg-white/10 p-2 text-white transition hover:bg-white/20 hover:text-white"
         >
           <Linkedin size={16} />
+        </a>
+
+        {/* GOOGLE (NEW) */}
+        <a
+          href="https://share.google/JPBW3nf2o7HYJbXcY"
+          target="_blank"
+          aria-label="Google Reviews"
+          className="rounded-md bg-white/10 p-2 text-white transition hover:bg-white/20 hover:text-[#c98b55]"
+        >
+          <FaGoogle size={16} />
         </a>
       </div>
 

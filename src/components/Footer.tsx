@@ -13,6 +13,7 @@ import {
   Linkedin,
 } from "lucide-react";
 import { X } from "lucide-react";
+import { FaGoogle } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -157,7 +158,7 @@ export default function Footer() {
 
               <a
                 href="https://x.com/desertinalaska1"
-                aria-label="X (Twitter)"
+                aria-label="X"
                 className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
               >
                 <X size={18} />
@@ -169,6 +170,16 @@ export default function Footer() {
                 className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
               >
                 <Linkedin size={18} />
+              </a>
+
+              {/* GOOGLE */}
+              <a
+                href="https://share.google/JPBW3nf2o7HYJbXcY"
+                target="_blank"
+                aria-label="Google Reviews"
+                className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
+              >
+                <FaGoogle size={18} />
               </a>
             </div>
           </div>

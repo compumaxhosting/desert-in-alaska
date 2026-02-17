@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Reviews from "@/components/Reviews";
 import Services from "@/components/Services";
 import TopBar from "@/components/TopBar";
 
@@ -18,6 +19,7 @@ export default function Page() {
       <Services />
       <AboutUs />
       <Gallery />
+      <Reviews />
       <Contact />
       <Footer />
     </>

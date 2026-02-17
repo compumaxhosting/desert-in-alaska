@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X, Facebook, Instagram, Linkedin } from "lucide-react";
+import { FaGoogle } from "react-icons/fa";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -168,19 +169,15 @@ export default function Header() {
                 >
                   <Linkedin size={16} />
                 </a>
+
+                {/* GOOGLE REVIEWS ICON */}
                 <a
-                  href="https://g.page/r/YOUR_GOOGLE_REVIEW_LINK/review"
+                  href="https://share.google/JPBW3nf2o7HYJbXcY"
                   target="_blank"
                   onClick={() => setOpen(false)}
-                  className="bg-[#9b5d2e] p-2 rounded-md flex items-center justify-center"
+                  className="bg-[#9b5d2e] p-2 rounded-md text-white flex items-center justify-center"
                 >
-                  <Image
-                    src="/review.png"
-                    alt="Google Reviews"
-                    width={18}
-                    height={18}
-                    className="object-contain"
-                  />
+                  <FaGoogle size={16} />
                 </a>
               </div>
             </div>
