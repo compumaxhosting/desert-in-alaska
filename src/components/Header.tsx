@@ -168,6 +168,20 @@ export default function Header() {
                 >
                   <Linkedin size={16} />
                 </a>
+                <a
+                  href="https://g.page/r/YOUR_GOOGLE_REVIEW_LINK/review"
+                  target="_blank"
+                  onClick={() => setOpen(false)}
+                  className="bg-[#9b5d2e] p-2 rounded-md flex items-center justify-center"
+                >
+                  <Image
+                    src="/review.png"
+                    alt="Google Reviews"
+                    width={18}
+                    height={18}
+                    className="object-contain"
+                  />
+                </a>
               </div>
             </div>
           </div>
