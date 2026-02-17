@@ -15,13 +15,15 @@ export type BlogPost = {
   description: string;
   image: string;
   sections: BlogSection[];
+
+  lastUpdated?: string; // ← ADD THIS LINE
 };
 
 export const blogs: BlogPost[] = [
   {
     slug: "kitchen-exhaust-hood-ventilation-system",
     title: "Kitchen Exhaust Hood & Ventilation System for Restaurants",
-
+    lastUpdated: "Jan 17, 2026", // optional for SEO
     metaTitle:
       "Kitchen Exhaust Hood Installation & Ventilation System for Restaurants",
 
@@ -157,7 +159,7 @@ export const blogs: BlogPost[] = [
     slug: "fire-suppression-service-installation",
 
     title: "Fire Suppression Service & Installation for Commercial Facilities",
-
+    lastUpdated: "Feb 12, 2026",
     metaTitle: "Commercial Fire Suppression Systems Installation & Service",
 
     metaDescription:
@@ -211,7 +213,11 @@ export const blogs: BlogPost[] = [
           <>
             Commercial kitchens present higher fire risks due to grease, open
             flames, and high-temperature cooking equipment. A dedicated{" "}
-            <Link href="/services" className="text-blue-500 underline" target="blank">
+            <Link
+              href="/services"
+              className="text-blue-500 underline"
+              target="blank"
+            >
               kitchen fire suppression system
             </Link>{" "}
             protects exhaust hoods, ducts, and appliances by automatically

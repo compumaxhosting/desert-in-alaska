@@ -41,6 +41,13 @@ export default function BlogPage() {
                       {blog.title}
                     </h3>
 
+                    {/* LAST UPDATED DATE */}
+                    {blog.lastUpdated && (
+                      <p className="mt-1 text-xs text-[#8b5428] font-medium">
+                        Last updated: {blog.lastUpdated}
+                      </p>
+                    )}
+
                     <p className="mt-3 text-sm text-[#876C61] line-clamp-3 grow">
                       {blog.description}
                     </p>
