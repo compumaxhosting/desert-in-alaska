@@ -148,7 +148,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://www.instagram.com/nemermark/"
+                href="https://www.instagram.com/desertinalaska/"
                 aria-label="Instagram"
                 className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
               >
