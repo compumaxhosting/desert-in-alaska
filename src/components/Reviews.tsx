@@ -54,13 +54,33 @@ export default function Reviews() {
         {/* CAROUSEL WRAPPER */}
         <div className="mt-14 relative">
           {/* LEFT ARROW */}
-          <button className="review-prev absolute -left-7.5 top-1/2 -translate-y-1/2 z-20 bg-[#86522d] text-white p-3 rounded-full shadow-md hover:bg-[#6f4324]">
-            <ChevronLeft size={18} />
+          <button
+            className="
+    review-prev
+    absolute top-1/2 -translate-y-1/2 z-20
+    left-2 sm:left-3 md:-left-6 lg:-left-10
+    text-[#86522d]
+    p-2
+    hover:scale-110
+    transition
+  "
+          >
+            <ChevronLeft className="w-6 h-6 md:w-7 md:h-7" />
           </button>
 
           {/* RIGHT ARROW */}
-          <button className="review-next absolute -right-7.5 top-1/2 -translate-y-1/2 z-20 bg-[#86522d] text-white p-3 rounded-full shadow-md hover:bg-[#6f4324]">
-            <ChevronRight size={18} />
+          <button
+            className="
+    review-next
+    absolute top-1/2 -translate-y-1/2 z-20
+    right-2 sm:right-3 md:-right-6 lg:-right-10
+    text-[#86522d]
+    p-2
+    hover:scale-110
+    transition
+  "
+          >
+            <ChevronRight className="w-6 h-6 md:w-7 md:h-7" />
           </button>
 
           {/* SWIPER */}
