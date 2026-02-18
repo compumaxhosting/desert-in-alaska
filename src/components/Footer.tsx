@@ -12,8 +12,8 @@ import {
   Instagram,
   Linkedin,
 } from "lucide-react";
-import { X } from "lucide-react";
 import { FaGoogle } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -161,7 +161,7 @@ export default function Footer() {
                 aria-label="X"
                 className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
               >
-                <X size={18} />
+                <FaXTwitter size={18} />
               </a>
 
               <a

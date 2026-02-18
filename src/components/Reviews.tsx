@@ -1,7 +1,7 @@
 "use client";
 
 import { useInView } from "@/hooks/useInView";
-import { FaStar, FaGoogle } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,6 +9,7 @@ import { Autoplay, Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import { FcGoogle } from "react-icons/fc";
 
 export default function Reviews() {
   const { ref, isVisible } = useInView(0.2);
@@ -47,7 +48,7 @@ export default function Reviews() {
           </p>
 
           <h2 className="mt-4 text-4xl md:text-5xl text-[#432719]">
-            TRUSTED BY <span className="text-[#86522d]">METRO DETROIT</span>
+            CUSTOMER <span className="text-[#86522d]">REVIEWS</span>
           </h2>
         </div>
 
@@ -107,8 +108,8 @@ export default function Reviews() {
               <SwiperSlide key={i}>
                 <div className="rounded-2xl border border-[#e7dfd7] bg-[#faf8f5] p-6 shadow-sm h-full">
                   {/* GOOGLE + STARS */}
-                  <div className="flex items-center gap-2 text-[#86522d] mb-4">
-                    <FaGoogle size={16} />
+                  <div className="flex items-center gap-2 text-[#FBBC05] mb-4">
+                    <FcGoogle size={16} />
                     <div className="flex gap-1">
                       {Array.from({ length: 5 }).map((_, s) => (
                         <FaStar key={s} size={14} />

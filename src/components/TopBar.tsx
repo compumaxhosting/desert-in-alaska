@@ -1,7 +1,8 @@
 
 
-import { Phone, Mail, Facebook, Instagram, X, Linkedin } from "lucide-react";
+import { Phone, Mail, Facebook, Instagram,  Linkedin } from "lucide-react";
 import { FaGoogle } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function TopBar() {
   return (
@@ -51,7 +52,7 @@ export default function TopBar() {
           aria-label="X"
           className="rounded-md bg-white/10 p-2 text-white transition hover:bg-white/20 hover:text-[#c98b55]"
         >
-          <X size={16} />
+          <FaXTwitter size={16} />
         </a>
 
         {/* LINKEDIN */}

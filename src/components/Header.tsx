@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X, Facebook, Instagram, Linkedin } from "lucide-react";
 import { FaGoogle } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -159,7 +160,7 @@ export default function Header() {
                   target="_blank"
                   className="bg-[#9b5d2e] p-2 rounded-md text-white"
                 >
-                  <X size={16} />
+                  <FaXTwitter size={16} />
                 </a>
 
                 <a
