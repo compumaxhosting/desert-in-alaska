@@ -3,24 +3,23 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: "Desert in Alaska | Commercial HVAC & Fire Suppression Services",
-    template: "%s | Desert in Alaska",
+    default:
+      "Detroit Commercial Fire Suppression, HVAC & Mechanical Contractors | Desert In Alaska",
+    template: "%s | Desert In Alaska",
   },
   description:
-    "Desert in Alaska provides commercial HVAC, kitchen exhaust hood systems, fire suppression, gas piping, boiler systems, refrigeration, and custom duct fabrication for restaurants and industrial facilities.",
+    "Fire suppression, commercial HVAC, kitchen exhaust, and gas piping services in Detroit, MI. Licensed & insured experts serving Metro Detroit since 1997. Call 313-931-3070.",
   keywords: [
-    "commercial HVAC services",
-    "kitchen exhaust hood installation",
-    "fire suppression system installation",
-    "restaurant ventilation systems",
-    "gas piping services",
-    "boiler system steam hot water",
-    "commercial refrigeration services",
-    "cold storage refrigeration",
-    "custom ductwork fabrication",
-    "commercial appliance repair",
-    "industrial HVAC contractor",
+    "industrial dry chemical fire suppression Detroit MI",
+    "commercial fire suppression Detroit MI",
+    "commercial HVAC Detroit MI",
+    "gas piping contractors Detroit",
+    "fire suppression contractors in Detroit",
+    "dry chemical fire suppression systems Detroit",
+    "paint booth fire suppression Detroit",
+    "fire suppression company in Metro Detroit",
   ],
+
   authors: [{ name: "Desert in Alaska" }],
   creator: "Desert in Alaska",
   publisher: "Desert in Alaska",
