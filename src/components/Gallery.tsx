@@ -7,32 +7,32 @@ import { useInView } from "@/hooks/useInView";
 const galleryItems = [
   {
     src: "/gallery1.jpg",
-    title: "Commercial Kitchen Fire Suppression",
+    title: "Fire Suppression & Life Safety",
     tag: "Fire Suppression",
   },
   {
     src: "/gallery2.jpg",
-    title: "Commercial Kitchen Fire Suppression",
-    tag: "Fire Suppression",
+    title: "Commercial Kitchen Exhaust Systems",
+    tag: "Exhaust Systems",
   },
   {
-    src: "/gallery3.jpg",
-    title: "Commercial Kitchen Fire Suppression",
-    tag: "Fire Suppression",
+    src: "/service-four.jpg",
+    title: "Gas Piping & Mechanical Services",
+    tag: "Mechanical Services",
   },
   {
     src: "/gallery4.jpg",
-    title: "Commercial Kitchen Fire Suppression",
-    tag: "Fire Suppression",
+    title: "Heating & Cooling (HVAC)",
+    tag: "HVAC",
   },
   {
     src: "/gallery3.jpg",
-    title: "Commercial Kitchen Fire Suppression",
-    tag: "Fire Suppression",
+    title: "Industrial Dry Chemical Systems",
+    tag: "Dry Chemical",
   },
   {
     src: "/gallery5.jpg",
-    title: "Commercial Kitchen Fire Suppression",
+    title: "Fire Sprinkler Modification",
     tag: "Fire Suppression",
   },
 ];
