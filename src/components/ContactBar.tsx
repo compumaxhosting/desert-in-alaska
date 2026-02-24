@@ -11,7 +11,8 @@ export default function ContactBar() {
       >
         {/* Left Text */}
         <p className="font-light font-serif text-center md:text-left">
-          Need emergency service? We&apos;re here to help.
+          Trusted commercial fire suppression, HVAC, and mechanical contractors
+          serving Detroit and Metro Detroit businesses.
         </p>
 
         {/* Right Phone */}

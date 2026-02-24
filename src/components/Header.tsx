@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X, Facebook, Instagram, Linkedin } from "lucide-react";
-import { FaGoogle } from "react-icons/fa";
+import { FaGoogle, FaQuora } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const navLinks = [
@@ -179,6 +179,14 @@ export default function Header() {
                   className="bg-[#9b5d2e] p-2 rounded-md text-white flex items-center justify-center"
                 >
                   <FaGoogle size={16} />
+                </a>
+                <a
+                  href="https://www.quora.com/profile/Desertin-Alaska"
+                  target="_blank"
+                  onClick={() => setOpen(false)}
+                  className="bg-[#9b5d2e] p-2 rounded-md text-white flex items-center justify-center"
+                >
+                  <FaQuora size={16} />
                 </a>
               </div>
             </div>

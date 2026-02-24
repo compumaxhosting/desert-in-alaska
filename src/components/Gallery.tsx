@@ -7,33 +7,39 @@ import { useInView } from "@/hooks/useInView";
 const galleryItems = [
   {
     src: "/gallery1.jpg",
-    title: "Fire Suppression & Life Safety",
+    title: "Commercial Fire Suppression & Life Safety System Installation",
     tag: "Fire Suppression",
+    alt: "Commercial fire suppression system installation in Detroit restaurant",
   },
   {
     src: "/gallery2.jpg",
-    title: "Commercial Kitchen Exhaust Systems",
+    title: "Commercial Kitchen Exhaust Hood Installation",
     tag: "Exhaust Systems",
+    alt: "Commercial kitchen exhaust hood system installed in Metro Detroit",
   },
   {
     src: "/service-four.jpg",
-    title: "Gas Piping & Mechanical Services",
+    title: "Commercial Gas Piping & Mechanical Services",
     tag: "Mechanical Services",
+    alt: "Commercial gas piping installation in Detroit industrial facility",
   },
   {
     src: "/gallery4.jpg",
-    title: "Heating & Cooling (HVAC)",
+    title: "Commercial HVAC Installation & Upgrades",
     tag: "HVAC",
+    alt: "Commercial HVAC system installation in Detroit warehouse",
   },
   {
     src: "/gallery3.jpg",
-    title: "Industrial Dry Chemical Systems",
+    title: "Industrial Dry Chemical Fire Suppression System",
     tag: "Dry Chemical",
+    alt: "Industrial dry chemical fire suppression system in Detroit manufacturing plant",
   },
   {
     src: "/gallery5.jpg",
-    title: "Fire Sprinkler Modification",
+    title: "Fire Sprinkler System Modification & Upgrades",
     tag: "Fire Suppression",
+    alt: "Commercial fire sprinkler modification project in Metro Detroit",
   },
 ];
 
@@ -46,14 +52,19 @@ export default function Gallery() {
         {/* SECTION HEADER */}
         <div className="mb-20 text-center">
           <p className="text-xs uppercase tracking-widest text-[#8b5428] font-serif">
-            Our Works
+            Our Work in Detroit
           </p>
+
+          {/* ✅ SEO-Optimized H2 */}
           <h2 className="mt-4 text-4xl md:text-5xl leading-[1.01] text-[#3b2a1f]">
-            FEATURED PROJECTS
+            Commercial Fire Suppression & HVAC Projects in Metro Detroit
           </h2>
-          <p className="pt-4 text-sm text-[#8b5428] font-serif">
-            Explore our recent commercial and industrial installations across
-            Metro Detroit.
+
+          <p className="pt-4 text-sm text-[#8b5428] font-serif max-w-2xl mx-auto">
+            Explore our recent commercial and industrial fire suppression, HVAC,
+            mechanical, and gas piping installations completed for restaurants,
+            warehouses, and manufacturing facilities throughout Detroit and
+            surrounding areas.
           </p>
         </div>
 
@@ -75,7 +86,7 @@ export default function Gallery() {
               {/* IMAGE */}
               <Image
                 src={item.src}
-                alt={item.title}
+                alt={item.alt}
                 fill
                 sizes="(max-width: 1024px) 100vw, 33vw"
                 className="object-cover transition-transform duration-2000 ease-out group-hover:scale-105"
@@ -102,10 +113,7 @@ export default function Gallery() {
             href="/projects"
             className="group inline-flex items-center gap-3 rounded-xl border-2 border-[#3b2a1f] px-10 py-4 font-serif font-semibold text-[#3b2a1f] transition-all duration-300 hover:bg-[#3b2a1f] hover:text-white"
           >
-            View All Projects
-            <span className="transition-transform duration-300 group-hover:translate-x-1">
-              →
-            </span>
+            View All Commercial Projects →
           </Link>
         </div>
       </div>

@@ -7,23 +7,17 @@ import { PiMedalThin } from "react-icons/pi";
 import { useEffect, useRef, useState } from "react";
 
 export default function Hero() {
-  // Hero load animation
   const [isVisible, setIsVisible] = useState(false);
-
-  // Trust section scroll animation
   const trustRef = useRef<HTMLDivElement | null>(null);
   const [trustVisible, setTrustVisible] = useState(false);
 
-  // Page-load animation (hero)
   useEffect(() => {
     const id = requestAnimationFrame(() => {
       setIsVisible(true);
     });
-
     return () => cancelAnimationFrame(id);
   }, []);
 
-  // Scroll animation (trust indicators)
   useEffect(() => {
     const el = trustRef.current;
     if (!el) return;
@@ -32,14 +26,13 @@ export default function Hero() {
       ([entry]) => {
         if (entry.isIntersecting) {
           setTrustVisible(true);
-          observer.unobserve(el); // animate once
+          observer.unobserve(el);
         }
       },
       { threshold: 0.2 },
     );
 
     observer.observe(el);
-
     return () => observer.disconnect();
   }, []);
 
@@ -48,26 +41,26 @@ export default function Hero() {
       {/* Background image */}
       <Image
         src="/hero.jpg"
-        alt="Fire suppression and mechanical systems"
+        alt="Detroit commercial fire suppression and HVAC systems installation"
         fill
         priority
         className="object-cover"
       />
 
-      {/* Dark gradient overlay */}
+      {/* Overlay */}
       <div className="absolute inset-0 bg-linear-to-br from-[hsl(20_45%_12%)]/95 via-[hsl(20_35%_22%)]/90 to-[hsl(210_25%_30%)]/70" />
 
       {/* Content */}
       <div className="relative z-10 w-full flex justify-content-around">
         <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24">
           <div className="max-w-3xl text-white">
-            {/* Top label */}
+            {/* Top Label */}
             <div className="mb-6 flex flex-wrap items-center gap-3 text-[10px] sm:text-xs uppercase tracking-wider sm:tracking-widest text-[#c88a4a] font-serif">
               <span className="h-px w-12 bg-[#c88a4a]" />
               Metro Detroit’s Trusted Experts
             </div>
 
-            {/* Headline (ON LOAD) */}
+            {/* ✅ SEO H1 */}
             <h1
               className={`text-4xl font-medium font-sans-400 leading-[1.05] sm:text-3xl md:text-5xl lg:text-6xl
                 transition-all duration-900 ease-out
@@ -78,17 +71,24 @@ export default function Hero() {
                 }
               `}
             >
-              FIRE SUPPRESSION & <br />
-              <span className="text-[#c88a4a]">COMMERCIAL MECHANICAL</span>
+              Detroit Commercial <br />
+              <span className="text-[#c88a4a]">Fire Suppression & HVAC</span>
               <br />
-              SPECIALISTS
+              Contractors
             </h1>
+
+            {/* ✅ Supporting H2 */}
+            <h2 className="mt-6 text-xl sm:text-2xl font-serif text-white/90">
+              Industrial Dry Chemical Systems, Kitchen Exhaust & Mechanical
+              Services Across Metro Detroit
+            </h2>
 
             {/* Description */}
             <p className="mt-6 max-w-2xl text-base text-white/85 sm:text-lg font-serif">
               Licensed, certified, and trusted since 1997. We provide
-              comprehensive fire safety solutions, commercial HVAC, and
-              mechanical services for businesses throughout Metro Detroit.
+              comprehensive fire suppression systems, commercial HVAC, kitchen
+              exhaust installation, and gas piping services for businesses
+              throughout Metro Detroit.
             </p>
 
             {/* Buttons */}
@@ -108,7 +108,7 @@ export default function Hero() {
               </Link>
             </div>
 
-            {/* Trust indicators (ON SCROLL) */}
+            {/* Trust Indicators */}
             <div
               ref={trustRef}
               className={`mt-14 flex flex-wrap gap-8 border-t border-white/20 pt-8 text-sm text-white/80 font-serif
@@ -132,7 +132,7 @@ export default function Hero() {
 
               <div className="flex items-center gap-2">
                 <IoTimeOutline className="text-lg" />
-                <span>Since 1997</span>
+                <span>Serving Detroit Since 1997</span>
               </div>
             </div>
           </div>

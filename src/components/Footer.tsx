@@ -12,7 +12,7 @@ import {
   Instagram,
   Linkedin,
 } from "lucide-react";
-import { FaGoogle } from "react-icons/fa";
+import { FaGoogle, FaQuora } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
@@ -23,28 +23,29 @@ export default function Footer() {
         <div className="mx-auto max-w-7xl px-4 py-20 grid gap-16 lg:grid-cols-4">
           {/* BRAND */}
           <div className="space-y-6">
-            {/* LOGO */}
             <Image
               src="/logo.png"
-              alt="Desert In Alaska"
+              alt="Desert In Alaska Corp - Commercial Fire Suppression & HVAC Contractors Detroit"
               width={200}
               height={140}
               className="w-56 md:w-64 lg:w-62 h-auto"
             />
 
             <p className="text-sm leading-relaxed text-[#e7d6c8] max-w-sm font-serif">
-              Trusted commercial fire suppression and mechanical services since
-              1997. Licensed, certified, and committed to safety excellence.
+              Desert In Alaska Corp is a trusted Detroit-based contractor
+              specializing in commercial fire suppression systems, HVAC, gas
+              piping, and mechanical services. Serving Metro Detroit businesses
+              since 1997 with licensed and certified expertise.
             </p>
 
             <div className="flex gap-6 pt-4 text-xs text-[#4195bd]">
               <div className="flex items-center gap-2">
                 <ShieldCheck size={18} />
-                <span>Licensed & Insured</span>
+                <span>Licensed & Fully Insured</span>
               </div>
               <div className="flex items-center gap-2">
                 <BadgeCheck size={18} />
-                <span>Certified Experts</span>
+                <span>Certified Commercial Experts</span>
               </div>
             </div>
           </div>
@@ -55,27 +56,27 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-[#e7d6c8] font-serif">
               <li>
                 <Link href="/" className="hover:text-white">
-                  Home
+                  Commercial Fire Suppression Detroit
                 </Link>
               </li>
               <li>
                 <Link href="/about-us" className="hover:text-white">
-                  About Us
+                  About Our Detroit Team
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="hover:text-white">
-                  Services
+                  Commercial HVAC & Mechanical Services
                 </Link>
               </li>
               <li>
                 <Link href="/projects" className="hover:text-white">
-                  Our Projects
+                  Fire Suppression Projects
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="hover:text-white">
-                  Contact
+                  Contact Our Detroit Office
                 </Link>
               </li>
             </ul>
@@ -83,19 +84,23 @@ export default function Footer() {
 
           {/* SERVICES */}
           <div>
-            <h4 className="mb-6 text-lg font-medium font-sans">Our Services</h4>
+            <h4 className="mb-6 text-lg font-medium font-sans">
+              Commercial Services
+            </h4>
             <ul className="space-y-3 text-sm text-[#e7d6c8] font-serif">
-              <li>Fire Suppression Systems</li>
-              <li>Commercial HVAC</li>
-              <li>Kitchen Exhaust Systems</li>
-              <li>Gas Piping</li>
-              <li>Fire Extinguisher Sales</li>
+              <li>Commercial Fire Suppression Systems</li>
+              <li>Commercial HVAC Installation & Repair</li>
+              <li>Kitchen Exhaust Hood Systems</li>
+              <li>Commercial Gas Piping Installation</li>
+              <li>Fire Sprinkler System Modifications</li>
             </ul>
           </div>
 
           {/* CONTACT */}
           <div>
-            <h4 className="mb-6 text-lg font-medium font-sans">Contact Us</h4>
+            <h4 className="mb-6 text-lg font-medium font-sans">
+              Detroit Office
+            </h4>
 
             <ul className="space-y-4 text-sm text-[#e7d6c8] font-serif">
               <li className="flex items-start gap-3">
@@ -134,7 +139,7 @@ export default function Footer() {
 
               <li className="flex items-center gap-3">
                 <Clock size={18} className="text-[#4195bd]" />
-                <span>Mon – Sat, 8:00 AM – 6:00 PM</span>
+                <span>Monday – Saturday | 8:00 AM – 6:00 PM</span>
               </li>
             </ul>
 
@@ -172,7 +177,6 @@ export default function Footer() {
                 <Linkedin size={18} />
               </a>
 
-              {/* GOOGLE */}
               <a
                 href="https://share.google/JPBW3nf2o7HYJbXcY"
                 target="_blank"
@@ -181,6 +185,14 @@ export default function Footer() {
               >
                 <FaGoogle size={18} />
               </a>
+              <a
+                href="https://www.quora.com/profile/Desertin-Alaska"
+                target="_blank"
+                aria-label="Quora"
+                className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
+              >
+                <FaQuora size={18} />
+              </a>
             </div>
           </div>
         </div>
@@ -188,7 +200,10 @@ export default function Footer() {
         {/* BOTTOM BAR */}
         <div className="border-t border-white/10 font-serif">
           <div className="mx-auto max-w-7xl px-6 py-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between text-sm text-[#d8c2b1]">
-            <p>© 2026 Desert In Alaska Corp. All rights reserved.</p>
+            <p>
+              © 2026 Desert In Alaska Corp – Commercial Fire Suppression & HVAC
+              Contractors in Detroit, MI. All rights reserved.
+            </p>
 
             <Link href="/" className="hover:text-white transition">
               www.desertinalaska.com

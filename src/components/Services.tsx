@@ -8,27 +8,27 @@ import { useInView } from "@/hooks/useInView";
 const services = [
   {
     icon: <Wind />,
-    title: "Heating & Cooling (HVAC)",
+    title: "Commercial HVAC Services",
     image: "/hvac.jpg",
-    text: "Residential and light commercial HVAC services including installation, repair, replacement, and maintenance.",
+    text: "Commercial HVAC installation, repair, replacement, and preventative maintenance for Detroit restaurants, warehouses, and industrial facilities.",
   },
   {
     icon: <Utensils />,
-    title: "Commercial Kitchen Exhaust",
+    title: "Commercial Kitchen Exhaust Systems",
     image: "/kitchen.jpg",
-    text: "Kitchen exhaust hood installation and servicing. Complete system support for commercial kitchens.",
+    text: "Kitchen exhaust hood installation, ductwork, and ventilation system servicing for Detroit restaurants and commercial kitchens.",
   },
   {
     icon: <Fuel />,
-    title: "Gas Piping & Mechanical",
+    title: "Gas Piping & Mechanical Services",
     image: "/gas.jpg",
-    text: "Commercial gas piping, tenant improvements, and system modifications for commercial facilities.",
+    text: "Commercial gas piping installation, tenant improvements, and mechanical system modifications for Detroit commercial properties.",
   },
   {
     icon: <Factory />,
     title: "Industrial Dry Chemical Systems",
     image: "/industrial.jpg",
-    text: "Dry chemical fire suppression systems for collision shops and industrial paint booths.",
+    text: "Industrial dry chemical fire suppression systems for Detroit paint booths, collision centers, and manufacturing facilities.",
   },
 ];
 
@@ -50,7 +50,7 @@ function ServiceCard({ item }: { item: (typeof services)[number] }) {
       <div className="relative h-48">
         <Image
           src={item.image}
-          alt={item.title}
+          alt={`${item.title} in Detroit`}
           fill
           className="object-cover"
         />
@@ -90,12 +90,16 @@ export default function Services() {
           <p className="text-xs uppercase tracking-widest text-[#8b5428] font-serif">
             What We Do
           </p>
+
+          {/* ✅ SEO H2 */}
           <h2 className="mt-3 text-4xl md:text-5xl font-medium text-[#3b2a1f] font-sans-400">
-            OUR SERVICES
+            Commercial Fire Suppression & HVAC Services in Detroit
           </h2>
+
           <p className="mx-auto mt-6 max-w-2xl text-[#6b5a4d] font-serif">
-            Comprehensive fire safety, HVAC, and mechanical services for
-            commercial and industrial clients.
+            Comprehensive commercial fire suppression, HVAC, kitchen exhaust,
+            and mechanical services for restaurants, industrial facilities, and
+            businesses throughout Metro Detroit.
           </p>
         </div>
 
@@ -111,7 +115,7 @@ export default function Services() {
         >
           <Image
             src="/fire.jpg"
-            alt="Fire Suppression"
+            alt="Commercial fire suppression system installation in Detroit"
             width={1400}
             height={600}
             className="h-105 w-full object-cover"
@@ -127,14 +131,16 @@ export default function Services() {
                 Primary Focus
               </div>
 
+              {/* ✅ SEO H3 */}
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-medium font-sans-400">
-                Fire Suppression & Life Safety
+                Commercial Fire Suppression Systems in Detroit
               </h3>
 
               <p className="mt-4 text-white/85 font-serif">
-                Commercial kitchen fire suppression systems, fire sprinkler
-                modifications, fire extinguisher sales and certification,
-                emergency lighting systems.
+                Installation and servicing of commercial kitchen fire
+                suppression systems, industrial dry chemical systems, fire
+                extinguisher certification, and complete life safety solutions
+                for Detroit businesses.
               </p>
 
               <Link
@@ -147,7 +153,7 @@ export default function Services() {
           </div>
         </div>
 
-        {/* Services Grid (INDIVIDUAL CARD ANIMATION) */}
+        {/* Services Grid */}
         <div className="mt-20 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((item, i) => (
             <ServiceCard key={i} item={item} />
@@ -168,7 +174,7 @@ export default function Services() {
             href="/services"
             className="inline-flex items-center gap-2 rounded-md border-2 border-[#3b2a1f] px-8 py-4 text-sm font-semibold text-[#3b2a1f] hover:bg-[#3b2a1f] hover:text-white transition"
           >
-            View All Services →
+            View All Commercial Services →
           </Link>
         </div>
       </div>
