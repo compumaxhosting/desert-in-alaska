@@ -7,8 +7,10 @@ export const metadata: Metadata = {
       "Detroit Commercial Fire Suppression, HVAC & Mechanical Contractors | Desert In Alaska",
     template: "%s | Desert In Alaska",
   },
+
   description:
-    "Fire suppression, commercial HVAC, kitchen exhaust, and gas piping services in Detroit, MI. Licensed & insured experts serving Metro Detroit since 1997. Call 313-931-3070.",
+    "Fire suppression, commercial HVAC, kitchen exhaust, and gas piping services in Detroit, MI. Licensed & insured contractors serving Metro Detroit since 1997. Call 313-931-3070.",
+
   keywords: [
     "industrial dry chemical fire suppression Detroit MI",
     "commercial fire suppression Detroit MI",
@@ -20,28 +22,40 @@ export const metadata: Metadata = {
     "fire suppression company in Metro Detroit",
   ],
 
-  authors: [{ name: "Desert in Alaska" }],
-  creator: "Desert in Alaska",
-  publisher: "Desert in Alaska",
+  authors: [{ name: "Desert In Alaska" }],
+  creator: "Desert In Alaska",
+  publisher: "Desert In Alaska",
+
   metadataBase: new URL("https://www.desertinalaska.com"),
+
+  alternates: {
+    canonical: "/",
+  },
+
   openGraph: {
-    title: "Desert in Alaska | Commercial HVAC & Fire Suppression Experts",
+    title:
+      "Detroit Commercial Fire Suppression & HVAC Contractors | Desert In Alaska",
     description:
-      "Experts in commercial HVAC, fire suppression, kitchen exhaust systems, refrigeration, boilers, and custom ductwork for restaurants and industrial facilities.",
+      "Licensed commercial fire suppression and HVAC contractors in Detroit, MI. Serving Metro Detroit restaurants and industrial facilities since 1997.",
     url: "https://www.desertinalaska.com",
-    siteName: "Desert in Alaska",
+    siteName: "Desert In Alaska",
     locale: "en_US",
     type: "website",
   },
+
   robots: {
     index: true,
     follow: true,
     googleBot: {
       index: true,
       follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
 };
+
 
 export default function RootLayout({
   children,
