@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import Script from "next/script"; // ✅ ADDED
 
 export const metadata: Metadata = {
   title: {
@@ -32,6 +33,11 @@ export const metadata: Metadata = {
     canonical: "/",
   },
 
+  verification: {
+    // ✅ ADDED
+    google: "kn0v7q94F8ksUNmi6yPiubba8QGWVfmUL9prGS6iHL0",
+  },
+
   openGraph: {
     title:
       "Detroit Commercial Fire Suppression & HVAC Contractors | Desert In Alaska",
@@ -56,7 +62,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: {
@@ -78,6 +83,20 @@ export default function RootLayout({
       </head>
       <body>
         {children}
+
+        {/* ✅ Google Analytics Added */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-EJE8X4GC1P"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-EJE8X4GC1P');
+          `}
+        </Script>
       </body>
     </html>
   );
