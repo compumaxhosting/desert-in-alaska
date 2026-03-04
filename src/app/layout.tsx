@@ -34,8 +34,11 @@ export const metadata: Metadata = {
   },
 
   verification: {
-    // ✅ ADDED
     google: "kn0v7q94F8ksUNmi6yPiubba8QGWVfmUL9prGS6iHL0",
+  },
+
+  other: {
+    "p:domain_verify": "a9c6bedffe173035f52b87867ba65432",
   },
 
   openGraph: {
@@ -61,6 +64,7 @@ export const metadata: Metadata = {
     },
   },
 };
+
 
 export default function RootLayout({
   children,
