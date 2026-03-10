@@ -140,7 +140,7 @@ export default function Header() {
               {/* SOCIAL */}
               <div className="mt-4 flex justify-center gap-3">
                 <a
-                  href="https://www.facebook.com/profile.php?id=100011518158716"
+                  href="https://www.facebook.com/profile.php?id=61582170474611"
                   target="_blank"
                   className="bg-[#9b5d2e] p-2 rounded-md text-white"
                 >

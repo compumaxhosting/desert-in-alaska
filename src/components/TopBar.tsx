@@ -30,7 +30,7 @@ export default function TopBar() {
       <div className="flex items-center gap-3 justify-center flex-1">
         {/* FACEBOOK */}
         <a
-          href="https://www.facebook.com/profile.php?id=100011518158716&ref=PROFILE_EDIT_ig_profile_ac"
+          href="https://www.facebook.com/profile.php?id=61582170474611"
           aria-label="Facebook"
           className="rounded-md bg-white/10 p-2 text-white transition hover:bg-white/20 hover:text-[#c98b55]"
         >
