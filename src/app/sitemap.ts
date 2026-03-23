@@ -6,9 +6,11 @@ interface BlogPost {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://desertinalaska.com";
+  const baseUrl = "https://www.desertinalaska.com";
 
-  // Static pages
+  const now = new Date();
+
+  /* STATIC PAGES */
   const staticPages = [
     "",
     "/about-us",
@@ -18,14 +20,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: route === "" ? 1 : 0.8,
   }));
 
-  // Dynamic blog pages
+  /* SERVICE PAGES (VERY IMPORTANT) */
+  const servicePages = [
+    "/services/commercial-fire-suppression-detroit",
+    "/services/commercial-hvac-detroit",
+    "/services/kitchen-exhaust-systems-detroit",
+    "/services/gas-piping-detroit",
+    "/services/industrial-dry-chemical-fire-suppression-detroit",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.9,
+  }));
+
+  /* BLOG PAGES */
   const blogPages = (Object.values(BlogData)[0] as BlogPost[]).map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: new Date(),
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
   }));
 
-  return [...staticPages, ...blogPages];
+  return [...staticPages, ...servicePages, ...blogPages];
 }

@@ -87,12 +87,52 @@ export default function Footer() {
             <h4 className="mb-6 text-lg font-medium font-sans">
               Commercial Services
             </h4>
+
             <ul className="space-y-3 text-sm text-[#e7d6c8] font-serif">
-              <li>Commercial Fire Suppression Systems</li>
-              <li>Commercial HVAC Installation & Repair</li>
-              <li>Kitchen Exhaust Hood Systems</li>
-              <li>Commercial Gas Piping Installation</li>
-              <li>Fire Sprinkler System Modifications</li>
+              <li>
+                <a
+                  href="/services/commercial-fire-suppression-detroit"
+                  className="hover:underline"
+                >
+                  Commercial Fire Suppression Systems
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/services/commercial-hvac-detroit"
+                  className="hover:underline"
+                >
+                  Commercial HVAC Installation & Repair
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/services/kitchen-exhaust-systems-detroit"
+                  className="hover:underline"
+                >
+                  Kitchen Exhaust Hood Systems
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/services/gas-piping-detroit"
+                  className="hover:underline"
+                >
+                  Commercial Gas Piping Installation
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/services/industrial-dry-chemical-fire-suppression-detroit"
+                  className="hover:underline"
+                >
+                  Industrial Dry Chemical Systems
+                </a>
+              </li>
             </ul>
           </div>
 

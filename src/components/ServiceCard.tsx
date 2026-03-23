@@ -16,41 +16,43 @@ const services = [
     badge: "Primary Focus",
     icon: Flame,
     title: "Fire Suppression & Life Safety",
+    link: "/services/commercial-fire-suppression-detroit",
     description:
       "Comprehensive fire safety solutions for commercial and industrial facilities.",
     image: "/service-one.jpg",
     points: [
       "Commercial kitchen fire suppression systems (full installation and service)",
-      "Fire sprinkler systems (tenant improvements: modifications, relocations, head replacements)",
-      "Fire extinguisher sales and certification",
-      "Emergency exit signs and emergency lighting systems",
+      "Fire sprinkler system modifications and upgrades",
+      "Fire extinguisher certification and servicing",
+      "Emergency lighting and exit sign systems",
     ],
   },
   {
     badge: "Core Service",
     icon: Snowflake,
     title: "Heating & Cooling (HVAC)",
+    link: "/services/commercial-hvac-detroit",
     description:
-      "Complete HVAC services for homes and light commercial buildings.",
+      "Complete HVAC services for commercial buildings, restaurants, and industrial facilities.",
     image: "/service-two.jpg",
     points: [
-      "Residential HVAC installation",
-      "Light commercial HVAC systems",
-      "Repair and replacement services",
-      "Preventive maintenance programs",
+      "Commercial HVAC installation",
+      "Heating and cooling system repair",
+      "Rooftop units and system replacement",
+      "Preventative maintenance programs",
     ],
   },
   {
     badge: "Commercial",
     icon: Utensils,
     title: "Commercial Kitchen Exhaust Systems",
-    description:
-      "Professional kitchen exhaust hood solutions for restaurants and commercial kitchens.",
+    link: "/services/kitchen-exhaust-systems-detroit",
+    description: "Professional kitchen exhaust hood and ventilation solutions.",
     image: "/service-three.jpg",
     points: [
       "Kitchen exhaust hood installation",
-      "Exhaust system servicing",
-      "System support and maintenance",
+      "Ductwork and ventilation systems",
+      "System servicing and upgrades",
       "Code-compliant installations",
     ],
   },
@@ -58,8 +60,9 @@ const services = [
     badge: "Mechanical",
     icon: FlameKindling,
     title: "Gas Piping & Mechanical Services",
+    link: "/services/gas-piping-detroit",
     description:
-      "Expert gas piping and mechanical modifications for commercial facilities.",
+      "Expert gas piping and mechanical system services for commercial properties.",
     image: "/service-four.jpg",
     points: [
       "Commercial gas piping installation",
@@ -72,7 +75,9 @@ const services = [
     badge: "Industrial",
     icon: Factory,
     title: "Industrial Dry Chemical Systems",
-    description: "Specialized fire suppression for industrial environments.",
+    link: "/services/industrial-dry-chemical-fire-suppression-detroit",
+    description:
+      "Specialized fire suppression systems for industrial environments.",
     image: "/service-five.jpg",
     points: [
       "Collision shop fire suppression",
@@ -96,20 +101,20 @@ export default function ServiceCard() {
               key={index}
               className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16"
             >
-              {/* IMAGE */}
-              <div
+              {/* IMAGE (CLICKABLE) */}
+              <Link
+                href={service.link}
                 className={`relative w-full overflow-hidden rounded-2xl
-                h-64 sm:h-80 md:h-105
+                h-64 sm:h-80 md:h-105 block
                 order-1 ${isImageLeft ? "lg:order-1" : "lg:order-2"}`}
               >
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover hover:scale-105 transition duration-500"
                 />
-              </div>
+              </Link>
 
               {/* CONTENT */}
               <div
@@ -119,14 +124,17 @@ export default function ServiceCard() {
                 {/* BADGE */}
                 <div className="inline-flex items-center gap-3 font-serif text-sm sm:text-base font-medium text-[#7b4a2d]">
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-[#efe7de]">
-                    <Icon className="h-6 w-6 shrink-0 text-[#7b4a2d]" />
+                    <Icon className="h-6 w-6 text-[#7b4a2d]" />
                   </span>
                   {service.badge}
                 </div>
 
-                <h2 className="mt-4 text-2xl sm:text-3xl font-sans text-[#2b1a12]">
-                  {service.title}
-                </h2>
+                {/* CLICKABLE TITLE */}
+                <Link href={service.link}>
+                  <h2 className="mt-4 text-2xl sm:text-3xl font-sans text-[#2b1a12] hover:underline">
+                    {service.title}
+                  </h2>
+                </Link>
 
                 <p className="mt-4 text-sm sm:text-base font-serif leading-relaxed text-[#5a4a42]">
                   {service.description}
@@ -136,22 +144,28 @@ export default function ServiceCard() {
                 <ul className="mt-6 space-y-3 sm:space-y-4 font-serif">
                   {service.points.map((point, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center">
-                        <IoMdCheckmarkCircleOutline className="h-5 w-5 shrink-0 text-[#86522d]" />
-                      </span>
-                      <span className="text-sm leading-relaxed text-[#3f3029]">
-                        {point}
-                      </span>
+                      <IoMdCheckmarkCircleOutline className="h-5 w-5 text-[#86522d] mt-1" />
+                      <span className="text-sm text-[#3f3029]">{point}</span>
                     </li>
                   ))}
                 </ul>
 
-                <Link
-                  href="/contact"
-                  className="mt-7 inline-flex items-center gap-3 rounded-md bg-[#3b2416] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#2a180f]"
-                >
-                  Request Service <span className="text-lg">→</span>
-                </Link>
+                {/* BUTTONS */}
+                <div className="flex gap-4 mt-7">
+                  <Link
+                    href={service.link}
+                    className="inline-flex items-center gap-2 rounded-md border border-[#3b2416] px-5 py-3 text-sm font-semibold text-[#3b2416] hover:bg-[#3b2416] hover:text-white transition"
+                  >
+                    Learn More →
+                  </Link>
+
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center gap-2 rounded-md bg-[#3b2416] px-5 py-3 text-sm font-semibold text-white hover:bg-[#2a180f]"
+                  >
+                    Request Service
+                  </Link>
+                </div>
               </div>
             </div>
           );
