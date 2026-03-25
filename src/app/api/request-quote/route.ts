@@ -14,16 +14,33 @@ export async function POST(req: Request) {
       );
     }
 
+    // ✅ Normalize email
+    const normalizedEmail = email.toLowerCase().trim();
+
+    // 🚫 Block specific emails
+    const blockedEmails = ["ashleybro@cachehelper.com"];
+
+    if (blockedEmails.includes(normalizedEmail)) {
+      return NextResponse.json({ error: "Email is blocked" }, { status: 403 });
+    }
+
+    // 🚫 Block domains (stronger protection)
+    const blockedDomains = ["cachehelper.com"];
+
+    const emailDomain = normalizedEmail.split("@")[1];
+
+    if (blockedDomains.includes(emailDomain)) {
+      return NextResponse.json(
+        { error: "Email domain is blocked" },
+        { status: 403 },
+      );
+    }
+
+    // ✅ Send email (only if passed all checks)
     await resend.emails.send({
-      // ✅ MUST be from VERIFIED domain
       from: "Desert in Alaska <info@desertinalaska.com>",
-
-      // ✅ Send to BOTH inboxes
       to: ["desertinalaska@outlook.com", "jose@compumaxllc.com"],
-
-      // ✅ Replies go to the customer
-      replyTo: email,
-
+      replyTo: normalizedEmail,
       subject: "New Quote Request – Desert in Alaska",
 
       html: `
@@ -66,7 +83,7 @@ export async function POST(req: Request) {
                   </tr>
                   <tr>
                     <td style="padding:8px 0;"><strong>Email:</strong></td>
-                    <td style="padding:8px 0;">${email}</td>
+                    <td style="padding:8px 0;">${normalizedEmail}</td>
                   </tr>
                   <tr>
                     <td style="padding:8px 0;"><strong>Service:</strong></td>
