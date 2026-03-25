@@ -18,14 +18,20 @@ export async function POST(req: Request) {
     const normalizedEmail = email.toLowerCase().trim();
 
     // 🚫 Block specific emails
-    const blockedEmails = ["ashleybro@cachehelper.com"];
+    const blockedEmails = [
+      "ashleybro@cachehelper.com",
+      "ashleybro@commandorbit.com", // ✅ added
+    ];
 
     if (blockedEmails.includes(normalizedEmail)) {
       return NextResponse.json({ error: "Email is blocked" }, { status: 403 });
     }
 
     // 🚫 Block domains (stronger protection)
-    const blockedDomains = ["cachehelper.com"];
+    const blockedDomains = [
+      "cachehelper.com",
+      "commandorbit.com", 
+    ]; // ✅ added
 
     const emailDomain = normalizedEmail.split("@")[1];
 

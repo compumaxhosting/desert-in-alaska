@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import Script from "next/script"; // ✅ ADDED
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: {
@@ -28,10 +28,6 @@ export const metadata: Metadata = {
   publisher: "Desert In Alaska",
 
   metadataBase: new URL("https://www.desertinalaska.com"),
-
-  alternates: {
-    canonical: "/",
-  },
 
   verification: {
     google: "kn0v7q94F8ksUNmi6yPiubba8QGWVfmUL9prGS6iHL0",
@@ -65,7 +61,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: {
@@ -74,6 +69,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -84,11 +80,60 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap"
           rel="stylesheet"
         />
+
+        {/* ✅ Local Business Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "HVACBusiness",
+              name: "Desert In Alaska",
+              image: "https://www.desertinalaska.com/og-image.jpg",
+              "@id": "https://www.desertinalaska.com",
+              url: "https://www.desertinalaska.com",
+              telephone: "+1-313-931-3070",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Detroit",
+                addressLocality: "Detroit",
+                addressRegion: "MI",
+                postalCode: "48201",
+                addressCountry: "US",
+              },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: 42.3314,
+                longitude: -83.0458,
+              },
+              openingHoursSpecification: {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                ],
+                opens: "08:00",
+                closes: "18:00",
+              },
+              sameAs: [
+                "https://www.facebook.com/people/Desert-in-Alaska/61582170474611/",
+                "https://www.facebook.com/people/Desert-in-Alaska/61582170474611/",
+              ],
+              description:
+                "Commercial fire suppression, HVAC, kitchen exhaust, and gas piping services in Detroit, MI.",
+            }),
+          }}
+        />
       </head>
+
       <body>
         {children}
 
-        {/* ✅ Google Analytics Added */}
+        {/* ✅ Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-EJE8X4GC1P"
           strategy="afterInteractive"
