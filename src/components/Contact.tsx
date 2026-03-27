@@ -103,7 +103,7 @@ export default function Contact() {
               {/* ADDRESS (OPTIONAL MAP CTA) */}
               <li>
                 <a
-                  href="https://maps.google.com/maps?q=11402+Schaefer+Hwy+Detroit+MI+48227"
+                  href="https://maps.app.goo.gl/u8wJqF5pcWsRHHmv6"
                   className="flex items-start gap-4 group"
                 >
                   <div className="rounded-lg bg-[#86492D]/10 p-3 text-[#4195bd] transition group-hover:bg-[#86492D] group-hover:text-white">

@@ -1,7 +1,7 @@
 
 
 import { Phone, Mail, Facebook, Instagram,  Linkedin } from "lucide-react";
-import { FaGoogle, FaQuora } from "react-icons/fa";
+import { FaGoogle } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export default function TopBar() {
@@ -73,14 +73,7 @@ export default function TopBar() {
         >
           <FaGoogle size={16} />
         </a>
-        <a
-          href="https://share.google/JPBW3nf2o7HYJbXcY"
-          target="_blank"
-          aria-label="Google Reviews"
-          className="rounded-md bg-white/10 p-2 text-white transition hover:bg-white/20 hover:text-[#c98b55]"
-        >
-          <FaQuora size={16} />
-        </a>
+        
       </div>
 
       {/* Right */}

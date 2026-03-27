@@ -12,7 +12,7 @@ import {
   Instagram,
   Linkedin,
 } from "lucide-react";
-import { FaGoogle, FaQuora } from "react-icons/fa";
+import { FaGoogle} from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
@@ -146,7 +146,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="mt-1 text-[#4195bd]" />
                 <a
-                  href="https://maps.google.com/maps?q=11402+Schaefer+Hwy+Detroit+MI+48227"
+                  href="https://maps.app.goo.gl/u8wJqF5pcWsRHHmv6"
                   className="hover:text-white transition"
                 >
                   <span>
@@ -225,14 +225,7 @@ export default function Footer() {
               >
                 <FaGoogle size={18} />
               </a>
-              <a
-                href="https://www.quora.com/profile/Desertin-Alaska"
-                target="_blank"
-                aria-label="Quora"
-                className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
-              >
-                <FaQuora size={18} />
-              </a>
+              
             </div>
           </div>
         </div>

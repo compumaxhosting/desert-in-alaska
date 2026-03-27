@@ -139,7 +139,78 @@ export default function HVACContent() {
           />
         </div>
       </section>
+      <section className="max-w-6xl mx-auto px-4 py-14">
+        <h3 className="text-xl sm:text-2xl font-semibold mb-6 text-[#2b1a12]">
+          Why Metro Detroit Businesses Choose Our HVAC Solutions
+        </h3>
 
+        <div className="overflow-x-auto">
+          <table className="w-full border border-[#ccc] text-left">
+            <thead>
+              <tr className="bg-[#2b1a12] text-white">
+                <th className="p-4 border border-[#ccc] font-semibold">
+                  Benefit
+                </th>
+                <th className="p-4 border border-[#ccc] font-semibold">
+                  Why It Matters for You
+                </th>
+              </tr>
+            </thead>
+
+            <tbody className="bg-[#2b1a12] text-white">
+              <tr>
+                <td className="p-4 border border-[#ccc] font-semibold">
+                  Lower Operating Costs
+                </td>
+                <td className="p-4 border border-[#ccc]">
+                  Modern high-efficiency units can reduce monthly energy bills
+                  by 30–50%.
+                </td>
+              </tr>
+
+              <tr>
+                <td className="p-4 border border-[#ccc] font-semibold">
+                  Extended Equipment Life
+                </td>
+                <td className="p-4 border border-[#ccc]">
+                  Our Preventative Maintenance prevents the wear and tear that
+                  leads to premature system failure.
+                </td>
+              </tr>
+
+              <tr>
+                <td className="p-4 border border-[#ccc] font-semibold">
+                  Total Code Compliance
+                </td>
+                <td className="p-4 border border-[#ccc]">
+                  We ensure all gas piping and kitchen exhaust systems meet{" "}
+                  <strong>Michigan & NFPA safety standards.</strong>
+                </td>
+              </tr>
+
+              <tr>
+                <td className="p-4 border border-[#ccc] font-semibold">
+                  Zero Operational Downtime
+                </td>
+                <td className="p-4 border border-[#ccc]">
+                  Fast emergency repairs and quiet installations mean your
+                  business stays open and productive.
+                </td>
+              </tr>
+
+              <tr>
+                <td className="p-4 border border-[#ccc] font-semibold">
+                  Improved Air Quality
+                </td>
+                <td className="p-4 border border-[#ccc]">
+                  Professional ductwork and ventilation protect the health of
+                  your staff and customers.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
       {/* ADVANTAGE */}
       <section className="bg-white py-14">
         <div className="max-w-6xl mx-auto px-4">
@@ -238,7 +309,7 @@ export default function HVACContent() {
         </h3>
 
         <p className="mt-4">
-          Don't let an inefficient system eat into your profits. Partner with
+          Don&apos;t let an inefficient system eat into your profits. Partner with
           the experts who have been keeping Metro Detroit comfortable for over
           two decades.
         </p>

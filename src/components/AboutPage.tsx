@@ -16,9 +16,11 @@ export default function AboutPage() {
 
           {/* DESCRIPTION */}
           <p className="mt-6 text-md leading-relaxed text-[#F7F5F3CC] font-serif font-light">
-            Since 1997, Desert In Alaska Corp has been Metro Detroit&apos;s
-            trusted provider of fire suppression systems, commercial HVAC, and
-            mechanical services.
+            Desert In Alaska Corp provides expert Fire Suppression, HVAC, and
+            Mechanical services in Metro Detroit. From commercial kitchen
+            exhaust systems to industrial dry chemical protection, our licensed
+            team ensures code compliance and safety. Protect your facility with
+            our reliable, high-performance mechanical solutions today.
           </p>
         </div>
       </div>

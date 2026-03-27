@@ -63,30 +63,85 @@ export default function OurStory() {
             }
           `}
         >
-          <h2 className="mt-4 text-5xl leading-[1.01] text-[#432719] font-sans">
-            OUR STORY
+          <h2 className="mt-4 text-4xl leading-[1.01] text-[#432719] font-sans">
+            About Desert In Alaska Corp: Metro Detroit’s Mechanical Experts
           </h2>
 
           <p className="mt-6 text-sm max-w-xl text-[#6b5a4d] font-serif leading-relaxed">
-            Desert In Alaska Corp was founded in 1997 as a residential and
-            commercial HVAC service provider. Over the years, we recognized a
-            growing need for reliable fire safety solutions in Metro
-            Detroit&apos;s commercial sector.
+            Since 1997, Desert In Alaska Corp has been a cornerstone of
+            mechanical excellence in Metro Detroit, proudly serving businesses
+            across Wayne County, Macomb County, Oakland County, and Washtenaw
+            County. What began as a dedicated residential and commercial HVAC
+            provider has evolved into a comprehensive Life Safety and Mechanical
+            Services firm. We don&apos;t just install equipment; we engineer
+            safety and comfort for the businesses that power our community.
           </p>
-
+          <h3 className="mt-4 text-3xl leading-[1.01] text-[#432719] font-sans">
+            Our Evolution & Expertise
+          </h3>
           <p className="mt-6 text-sm max-w-xl text-[#6b5a4d] font-serif leading-relaxed">
-            Today, we have evolved into a comprehensive commercial mechanical
-            services company, with fire suppression and life safety systems as
-            our primary focus. We specialize in commercial kitchen fire
-            suppression, fire sprinkler modifications, exhaust hood
-            installation, and industrial dry chemical systems.
-          </p>
-          <p className="mt-6 text-sm max-w-xl text-[#6b5a4d] font-serif leading-relaxed">
-            Our team of licensed and certified professionals brings decades of
-            combined experience to every project, ensuring the highest standards
-            of safety and code compliance.
+            Over two decades of service, we recognized a critical gap in the
+            market for integrated fire safety and mechanical systems. Today, we
+            bridge that gap by offering specialized services that keep your
+            business compliant and your employees safe.
           </p>
         </div>
+      </div>
+      {/* MIDDLE CONTENT */}
+      <div className="mt-20 max-w-4xl mx-auto px-3">
+        <h3 className="text-3xl text-[#432719] font-sans text-center">
+          Core Service Specializations
+        </h3>
+
+        <ul className="mt-6 space-y-3 text-sm text-[#6b5a4d] font-serif leading-relaxed">
+          <li>
+            • Fire Suppression & Life Safety: Custom-engineered systems designed
+            to detect and extinguish fires before they devastate your property.
+          </li>
+          <li>
+            • Heating & Cooling (HVAC): High-efficiency commercial climate
+            control solutions tailored to the unique Michigan seasons.
+          </li>
+          <li>
+            • Commercial Kitchen Exhaust Systems: Turnkey ventilation and hood
+            installations that meet strict health and fire department codes.
+          </li>
+          <li>
+            • Gas Piping & Mechanical Services: Certified, precision-engineered
+            piping for industrial and commercial applications.
+          </li>
+          <li>
+            • Industrial Dry Chemical Systems: Robust protection for high-hazard
+            areas like paint booths and chemical storage.
+          </li>
+        </ul>
+
+        <h3 className="mt-10 text-3xl text-[#432719] font-sans text-center">
+          Why Partner With Us?
+        </h3>
+
+        <p className="mt-4 text-sm text-[#6b5a4d] font-serif leading-relaxed text-center">
+          Navigating local fire codes and mechanical requirements in Metro
+          Detroit requires a partner who knows the landscape.
+        </p>
+
+        <ul className="mt-6 space-y-3 text-sm text-[#6b5a4d] font-serif leading-relaxed">
+          <li>
+            • Decades of Experience: Proudly serving the region since 1997.
+          </li>
+          <li>
+            • Certified Professionals: Our team consists of licensed experts who
+            prioritize safety and precision.
+          </li>
+          <li>
+            • Code Compliance: We maintain a 100% focus on meeting NFPA and
+            local Michigan safety standards.
+          </li>
+          <li>
+            • Comprehensive Care: From initial design to 6-month inspections and
+            maintenance, we handle it all.
+          </li>
+        </ul>
       </div>
     </section>
   );
