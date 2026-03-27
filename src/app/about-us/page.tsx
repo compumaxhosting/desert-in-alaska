@@ -3,7 +3,6 @@ import AboutPage from "@/components/AboutPage";
 import Certifications from "@/components/Certifications";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Locations from "@/components/Locations";
 import OurJourney from "@/components/OurJourney";
 import OurStory from "@/components/OurStory";
 import OurValues from "@/components/OurValues";
@@ -19,7 +18,7 @@ const page = () => {
       <OurStory />
       <OurValues />
       <OurJourney />
-      <Locations />
+     
       <Certifications />
       <Footer />
     </>

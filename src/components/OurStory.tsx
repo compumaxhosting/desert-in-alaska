@@ -95,24 +95,63 @@ export default function OurStory() {
 
         <ul className="mt-6 space-y-3 text-sm text-[#6b5a4d] font-serif leading-relaxed">
           <li>
-            • Fire Suppression & Life Safety: Custom-engineered systems designed
-            to detect and extinguish fires before they devastate your property.
+            •{" "}
+            <a
+              href="/services/commercial-fire-suppression-detroit"
+              className="font-semibold hover:underline"
+            >
+              Fire Suppression & Life Safety:
+            </a>{" "}
+            Custom-engineered systems designed to detect and extinguish fires
+            before they devastate your property.
           </li>
+
           <li>
-            • Heating & Cooling (HVAC): High-efficiency commercial climate
-            control solutions tailored to the unique Michigan seasons.
+            •{" "}
+            <a
+              href="/services/commercial-hvac-detroit"
+              className="font-semibold hover:underline"
+            >
+              Heating & Cooling (HVAC):
+            </a>{" "}
+            High-efficiency commercial climate control solutions tailored to the
+            unique Michigan seasons.
           </li>
+
           <li>
-            • Commercial Kitchen Exhaust Systems: Turnkey ventilation and hood
-            installations that meet strict health and fire department codes.
+            •{" "}
+            <a
+              href="/services/kitchen-exhaust-systems-detroit"
+              className="font-semibold hover:underline"
+            >
+              Commercial Kitchen Exhaust Systems:
+            </a>{" "}
+            Turnkey ventilation and hood installations that meet strict health
+            and fire department codes.
           </li>
+
           <li>
-            • Gas Piping & Mechanical Services: Certified, precision-engineered
-            piping for industrial and commercial applications.
+            •{" "}
+            <a
+              href="/services/gas-piping-detroit"
+              className="font-semibold hover:underline"
+            >
+              Gas Piping & Mechanical Services:
+            </a>{" "}
+            Certified, precision-engineered piping for industrial and commercial
+            applications.
           </li>
+
           <li>
-            • Industrial Dry Chemical Systems: Robust protection for high-hazard
-            areas like paint booths and chemical storage.
+            •{" "}
+            <a
+              href="/services/industrial-dry-chemical-fire-suppression-detroit"
+              className="font-semibold hover:underline"
+            >
+              Industrial Dry Chemical Systems:
+            </a>{" "}
+            Robust protection for high-hazard areas like paint booths and
+            chemical storage.
           </li>
         </ul>
 
