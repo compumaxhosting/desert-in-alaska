@@ -11,28 +11,28 @@ const services = [
     icon: <Wind />,
     title: "Commercial HVAC Services",
     link: "/services/commercial-hvac-detroit",
-    image: "/hvac.jpg",
+    image: "/hvac.webp",
     text: "Commercial HVAC installation, repair, replacement, and preventative maintenance for Detroit restaurants, warehouses, and industrial facilities.",
   },
   {
     icon: <Utensils />,
     title: "Commercial Kitchen Exhaust Systems",
     link: "/services/kitchen-exhaust-systems-detroit",
-    image: "/kitchen.jpg",
+    image: "/kitchen.webp",
     text: "Kitchen exhaust hood installation, ductwork, and ventilation system servicing for Detroit restaurants and commercial kitchens.",
   },
   {
     icon: <Fuel />,
     title: "Gas Piping & Mechanical Services",
     link: "/services/gas-piping-detroit",
-    image: "/gas.jpg",
+    image: "/gas.webp",
     text: "Commercial gas piping installation, tenant improvements, and mechanical system modifications for Detroit commercial properties.",
   },
   {
     icon: <Factory />,
     title: "Industrial Dry Chemical Systems",
     link: "/services/industrial-dry-chemical-fire-suppression-detroit",
-    image: "/industrial.jpg",
+    image: "/industrial.webp",
     text: "Industrial dry chemical fire suppression systems for Detroit paint booths, collision centers, and manufacturing facilities.",
   },
 ];
@@ -60,7 +60,7 @@ function ServiceCard({ item }: { item: (typeof services)[number] }) {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-linear-to-t from-white via-white/70 to-transparent" />
+          <div className="absolute inset-0 bg-black/40" />
           <div className="absolute bottom-4 left-4 flex h-12 w-12 items-center justify-center rounded-lg bg-[#8b5428] text-white shadow-md">
             {item.icon}
           </div>
@@ -116,7 +116,7 @@ export default function Services() {
           `}
         >
           <Image
-            src="/fire.jpg"
+            src="/fire.webp"
             alt="Commercial fire suppression system installation in Detroit"
             width={1400}
             height={600}

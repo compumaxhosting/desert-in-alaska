@@ -24,7 +24,7 @@ export default function Footer() {
           {/* BRAND */}
           <div className="space-y-6">
             <Image
-              src="/logo.png"
+              src="/logo.webp"
               alt="Desert In Alaska Corp - Commercial Fire Suppression & HVAC Contractors Detroit"
               width={200}
               height={140}

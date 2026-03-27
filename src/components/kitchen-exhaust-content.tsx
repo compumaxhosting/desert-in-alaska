@@ -11,7 +11,7 @@ export default function KitchenExhaustContent() {
       {/* HERO */}
       <section className="relative h-[60vh] flex items-center justify-center text-center">
         <Image
-          src="/service-three.jpg"
+          src="/service-three.webp"
           alt="Commercial Kitchen Exhaust Systems Detroit MI"
           fill
           className="object-cover"
@@ -84,7 +84,7 @@ export default function KitchenExhaustContent() {
 
         <div className="relative h-80 rounded-xl overflow-hidden">
           <Image
-            src="/service-three.jpg"
+            src="/service-three.webp"
             alt="Kitchen Exhaust Hood Installation Detroit"
             fill
             className="object-cover"

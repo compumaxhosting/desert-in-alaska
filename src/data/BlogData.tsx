@@ -36,7 +36,7 @@ export const blogs: BlogPost[] = [
     description:
       "A properly installed kitchen exhaust hood removes heat, smoke, and grease while keeping restaurants safe and compliant with fire and health regulations.",
 
-    image: "/blog/blog1.jpg",
+    image: "/blog/blog1.webp",
 
     sections: [
       {
@@ -171,7 +171,7 @@ export const blogs: BlogPost[] = [
     description:
       "Protect your business with professional fire suppression installation, inspections, and life safety services for commercial and industrial facilities.",
 
-    image: "/blog/blog-2.png",
+    image: "/blog/blog-2.webp",
 
     sections: [
       {

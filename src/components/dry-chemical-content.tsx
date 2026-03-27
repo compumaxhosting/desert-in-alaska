@@ -11,7 +11,7 @@ export default function DryChemicalContent() {
       {/* HERO */}
       <section className="relative h-[60vh] flex items-center justify-center text-center">
         <Image
-          src="/service-five.jpg"
+          src="/service-five.webp"
           alt="Industrial Dry Chemical Fire Suppression Systems Detroit MI"
           fill
           className="object-cover"
@@ -83,7 +83,7 @@ export default function DryChemicalContent() {
 
         <div className="relative h-80 rounded-xl overflow-hidden">
           <Image
-            src="/service-five.jpg"
+            src="/service-five.webp"
             alt="Dry Chemical Fire Suppression Detroit"
             fill
             className="object-cover"

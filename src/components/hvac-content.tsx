@@ -11,7 +11,7 @@ export default function HVACContent() {
       {/* HERO */}
       <section className="relative h-[60vh] flex items-center justify-center text-center">
         <Image
-          src="/service-two.jpg"
+          src="/service-two.webp"
           alt="Commercial HVAC Installation and Repair Detroit MI"
           fill
           className="object-cover"
@@ -84,7 +84,7 @@ export default function HVACContent() {
 
         <div className="relative h-80 rounded-xl overflow-hidden">
           <Image
-            src="/service-two.jpg"
+            src="/service-two.webp"
             alt="Commercial HVAC System Detroit"
             fill
             className="object-cover"

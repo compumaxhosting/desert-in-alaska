@@ -5,7 +5,7 @@ import { useInView } from "@/hooks/useInView";
 
 const projects = [
   {
-    image: "/gallery1.jpg",
+    image: "/gallery1.webp",
     tag: "Fire Suppression",
     location: "Detroit, MI",
     title: "Downtown Restaurant Fire Suppression System",
@@ -13,7 +13,7 @@ const projects = [
       "Complete commercial kitchen fire suppression installation for a new downtown restaurant.",
   },
   {
-    image: "/gallery2.jpg",
+    image: "/gallery2.webp",
     tag: "Kitchen Exhaust",
     location: "Southfield, MI",
     title: "Multi-Tenant Kitchen Exhaust Installation",
@@ -21,7 +21,7 @@ const projects = [
       "Exhaust hood installation for multiple restaurant tenants in a new commercial plaza.",
   },
   {
-    image: "/gallery3.jpg",
+    image: "/gallery3.webp",
     tag: "Industrial Systems",
     location: "Warren, MI",
     title: "Automotive Paint Booth Fire System",
@@ -29,7 +29,7 @@ const projects = [
       "Dry chemical fire suppression system for collision center paint booths.",
   },
   {
-    image: "/gallery4.jpg",
+    image: "/gallery4.webp",
     tag: "HVAC",
     location: "Dearborn, MI",
     title: "Office Building HVAC Replacement",
@@ -37,7 +37,7 @@ const projects = [
       "Complete rooftop unit replacement for a commercial office building.",
   },
   {
-    image: "/gallery5.jpg",
+    image: "/gallery5.webp",
     tag: "Fire Suppression",
     location: "Royal Oak, MI",
     title: "Retail Plaza Fire Sprinkler Modification",
@@ -45,7 +45,7 @@ const projects = [
       "Tenant improvement sprinkler relocations and head replacements.",
   },
   {
-    image: "/hero.jpg",
+    image: "/hero.webp",
     tag: "Fire Suppression",
     location: "Detroit, MI",
     title: "Fast Food Kitchen Fire Safety",
@@ -53,7 +53,7 @@ const projects = [
       "Kitchen fire suppression and exhaust hood system for a quick-service restaurant.",
   },
   {
-    image: "/gallery1.jpg",
+    image: "/gallery1.webp",
     tag: "HVAC",
     location: "Sterling Heights, MI",
     title: "Industrial Facility HVAC Upgrade",
@@ -61,7 +61,7 @@ const projects = [
       "Commercial HVAC installation for manufacturing facility offices.",
   },
   {
-    image: "/gallery2.jpg",
+    image: "/gallery2.webp",
     tag: "Kitchen Exhaust",
     location: "Troy, MI",
     title: "Hotel Kitchen Ventilation System",
@@ -69,7 +69,7 @@ const projects = [
       "Complete kitchen exhaust system for hotel restaurant renovation.",
   },
   {
-    image: "/gallery3.jpg",
+    image: "/gallery3.webp",
     tag: "Industrial Systems",
     location: "Livonia, MI",
     title: "Body Shop Dry Chemical System",

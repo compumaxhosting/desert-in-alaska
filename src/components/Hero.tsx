@@ -40,7 +40,7 @@ export default function Hero() {
     <section className="relative min-h-[80vh] flex items-center overflow-hidden sm:max-h-screen">
       {/* Background image */}
       <Image
-        src="/hero.jpg"
+        src="/hero.webp"
         alt="Detroit commercial fire suppression and HVAC systems installation"
         fill
         priority

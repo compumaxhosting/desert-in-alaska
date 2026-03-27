@@ -89,7 +89,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "HVACBusiness",
               name: "Desert In Alaska",
-              image: "https://www.desertinalaska.com/og-image.jpg",
+              image: "https://www.desertinalaska.com/og-image.webp",
               "@id": "https://www.desertinalaska.com",
               url: "https://www.desertinalaska.com",
               telephone: "+1-313-931-3070",

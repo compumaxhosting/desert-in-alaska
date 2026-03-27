@@ -54,7 +54,7 @@ export default function Header() {
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image
-              src="/logo.png"
+              src="/logo.webp"
               alt="Desert in Alaska"
               width={160}
               height={50}

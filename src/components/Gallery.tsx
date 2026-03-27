@@ -6,37 +6,37 @@ import { useInView } from "@/hooks/useInView";
 
 const galleryItems = [
   {
-    src: "/gallery1.jpg",
+    src: "/gallery1.webp",
     title: "Commercial Fire Suppression & Life Safety System Installation",
     tag: "Fire Suppression",
     alt: "Commercial fire suppression system installation in Detroit restaurant",
   },
   {
-    src: "/gallery2.jpg",
+    src: "/gallery2.webp",
     title: "Commercial Kitchen Exhaust Hood Installation",
     tag: "Exhaust Systems",
     alt: "Commercial kitchen exhaust hood system installed in Metro Detroit",
   },
   {
-    src: "/service-four.jpg",
+    src: "/service-four.webp",
     title: "Commercial Gas Piping & Mechanical Services",
     tag: "Mechanical Services",
     alt: "Commercial gas piping installation in Detroit industrial facility",
   },
   {
-    src: "/gallery4.jpg",
+    src: "/gallery4.webp",
     title: "Commercial HVAC Installation & Upgrades",
     tag: "HVAC",
     alt: "Commercial HVAC system installation in Detroit warehouse",
   },
   {
-    src: "/gallery3.jpg",
+    src: "/gallery3.webp",
     title: "Industrial Dry Chemical Fire Suppression System",
     tag: "Dry Chemical",
     alt: "Industrial dry chemical fire suppression system in Detroit manufacturing plant",
   },
   {
-    src: "/gallery5.jpg",
+    src: "/gallery5.webp",
     title: "Fire Sprinkler System Modification & Upgrades",
     tag: "Fire Suppression",
     alt: "Commercial fire sprinkler modification project in Metro Detroit",

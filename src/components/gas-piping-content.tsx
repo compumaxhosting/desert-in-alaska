@@ -11,7 +11,7 @@ export default function GasPipingContent() {
       {/* HERO */}
       <section className="relative h-[60vh] flex items-center justify-center text-center">
         <Image
-          src="/service-four.jpg"
+          src="/service-four.webp"
           alt="Commercial Gas Piping Installation Detroit MI"
           fill
           className="object-cover"
@@ -85,7 +85,7 @@ export default function GasPipingContent() {
 
         <div className="relative h-80 rounded-xl overflow-hidden">
           <Image
-            src="/service-four.jpg"
+            src="/service-four.webp"
             alt="Gas Piping Contractors Detroit"
             fill
             className="object-cover"

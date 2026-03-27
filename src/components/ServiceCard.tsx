@@ -19,7 +19,7 @@ const services = [
     link: "/services/commercial-fire-suppression-detroit",
     description:
       "Comprehensive fire safety solutions for commercial and industrial facilities.",
-    image: "/service-one.jpg",
+    image: "/service-one.webp",
     points: [
       "Commercial kitchen fire suppression systems (full installation and service)",
       "Fire sprinkler system modifications and upgrades",
@@ -34,7 +34,7 @@ const services = [
     link: "/services/commercial-hvac-detroit",
     description:
       "Complete HVAC services for commercial buildings, restaurants, and industrial facilities.",
-    image: "/service-two.jpg",
+    image: "/service-two.webp",
     points: [
       "Commercial HVAC installation",
       "Heating and cooling system repair",
@@ -48,7 +48,7 @@ const services = [
     title: "Commercial Kitchen Exhaust Systems",
     link: "/services/kitchen-exhaust-systems-detroit",
     description: "Professional kitchen exhaust hood and ventilation solutions.",
-    image: "/service-three.jpg",
+    image: "/service-three.webp",
     points: [
       "Kitchen exhaust hood installation",
       "Ductwork and ventilation systems",
@@ -63,7 +63,7 @@ const services = [
     link: "/services/gas-piping-detroit",
     description:
       "Expert gas piping and mechanical system services for commercial properties.",
-    image: "/service-four.jpg",
+    image: "/service-four.webp",
     points: [
       "Commercial gas piping installation",
       "Tenant improvements",
@@ -78,7 +78,7 @@ const services = [
     link: "/services/industrial-dry-chemical-fire-suppression-detroit",
     description:
       "Specialized fire suppression systems for industrial environments.",
-    image: "/service-five.jpg",
+    image: "/service-five.webp",
     points: [
       "Collision shop fire suppression",
       "Industrial paint booth systems",

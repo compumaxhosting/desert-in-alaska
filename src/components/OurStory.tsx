@@ -25,7 +25,7 @@ export default function OurStory() {
         >
           <div className="overflow-hidden rounded-2xl shadow-xl h-92.5">
             <Image
-              src="/about.jpg"
+              src="/about.webp"
               alt="Commercial mechanical facility"
               width={900}
               height={700}

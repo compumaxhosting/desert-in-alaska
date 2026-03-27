@@ -25,7 +25,7 @@ export default function AboutUs() {
         >
           <div className="overflow-hidden rounded-2xl shadow-xl h-92.5">
             <Image
-              src="/about.jpg"
+              src="/about.webp"
               alt="Detroit commercial fire suppression and HVAC contractors"
               width={900}
               height={700}

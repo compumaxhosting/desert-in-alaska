@@ -11,7 +11,7 @@ export default function FireSuppressionContent() {
       {/* HERO */}
       <section className="relative h-[60vh] flex items-center justify-center text-center">
         <Image
-          src="/service-one.jpg"
+          src="/service-one.webp"
           alt="Commercial Fire Suppression Systems in Detroit MI"
           fill
           className="object-cover"
@@ -88,7 +88,7 @@ export default function FireSuppressionContent() {
         {/* RIGHT IMAGE */}
         <div className="relative h-80 rounded-xl overflow-hidden">
           <Image
-            src="/service-one.jpg"
+            src="/service-one.webp"
             alt="Fire Suppression Installation Detroit"
             fill
             className="object-cover"
