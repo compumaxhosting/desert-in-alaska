@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import { useInView } from "@/hooks/useInView";
 
@@ -64,7 +65,9 @@ export default function OurStory() {
           `}
         >
           <h2 className="mt-4 text-4xl leading-[1.01] text-[#432719] font-sans">
-            About Desert In Alaska Corp: Metro Detroit’s Mechanical Experts
+            About 
+            <Link href="/"> Desert In Alaska</Link> Corp: Metro Detroit’s
+            Mechanical Experts
           </h2>
 
           <p className="mt-6 text-sm max-w-xl text-[#6b5a4d] font-serif leading-relaxed">

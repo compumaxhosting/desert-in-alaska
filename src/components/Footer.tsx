@@ -32,10 +32,13 @@ export default function Footer() {
             />
 
             <p className="text-sm leading-relaxed text-[#e7d6c8] max-w-sm font-serif">
-              Desert In Alaska Corp is a trusted Detroit-based contractor
-              specializing in commercial fire suppression systems, HVAC, gas
-              piping, and mechanical services. Serving Metro Detroit businesses
-              since 1997 with licensed and certified expertise.
+              <Link href="/" >
+                Desert In Alaska
+              </Link>{" "}
+              Corp is a trusted Detroit-based contractor specializing in
+              commercial fire suppression systems, HVAC, gas piping, and
+              mechanical services. Serving Metro Detroit businesses since 1997
+              with licensed and certified expertise.
             </p>
 
             <div className="flex gap-6 pt-4 text-xs text-[#4195bd]">
@@ -225,7 +228,6 @@ export default function Footer() {
               >
                 <FaGoogle size={18} />
               </a>
-              
             </div>
           </div>
         </div>

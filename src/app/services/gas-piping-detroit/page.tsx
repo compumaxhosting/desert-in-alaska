@@ -14,7 +14,7 @@ const page = () => {
     <Footer />
     
     </> 
-  )
+  ) 
 }
 
 export default page

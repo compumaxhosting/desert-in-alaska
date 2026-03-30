@@ -140,9 +140,9 @@ export default function HVACContent() {
         </div>
       </section>
       <section className="max-w-6xl mx-auto px-4 py-14">
-        <h3 className="text-xl sm:text-2xl font-semibold mb-6 text-[#2b1a12]">
+        <h4 className="text-xl sm:text-2xl font-semibold mb-6 text-[#2b1a12]">
           Why Metro Detroit Businesses Choose Our HVAC Solutions
-        </h3>
+        </h4>
 
         <div className="overflow-x-auto">
           <table className="w-full border border-[#ccc] text-left">
@@ -214,9 +214,9 @@ export default function HVACContent() {
       {/* ADVANTAGE */}
       <section className="bg-white py-14">
         <div className="max-w-6xl mx-auto px-4">
-          <h3 className="text-2xl font-semibold text-[#2b1a12]">
+          <h5 className="text-2xl font-semibold text-[#2b1a12]">
             The Desert In Alaska Corp Advantage
-          </h3>
+          </h5>
 
           <p className="mt-4 text-[#5a4a42]">
             With over 25 years of experience serving the Metro Detroit area, we
@@ -224,9 +224,9 @@ export default function HVACContent() {
             required for commercial properties.
           </p>
 
-          <h4 className="mt-6 font-semibold text-[#2b1a12]">
+          <p className="mt-6 font-semibold text-[#2b1a12]">
             Expertise You Can Trust
-          </h4>
+          </p>
 
           <div className="grid sm:grid-cols-2 gap-6 mt-4">
             <div className="flex gap-3">
@@ -261,15 +261,15 @@ export default function HVACContent() {
 
       {/* FAQ */}
       <section className="max-w-6xl mx-auto px-4 py-14">
-        <h3 className="text-2xl font-semibold text-[#2b1a12]">
+        <h6 className="text-2xl font-semibold text-[#2b1a12]">
           Common HVAC Questions & Solutions
-        </h3>
+        </h6>
 
         <div className="mt-6 space-y-6 text-[#3f3029]">
           <div>
-            <h4 className="font-semibold">
+            <p className="font-semibold">
               How often should my commercial HVAC system be serviced?
-            </h4>
+            </p>
             <p>
               For most commercial properties in Metro Detroit, we recommend
               professional maintenance at least twice a year—once before the
@@ -279,9 +279,9 @@ export default function HVACContent() {
           </div>
 
           <div>
-            <h4 className="font-semibold">
+            <p className="font-semibold">
               Can a new HVAC system really lower my operating costs?
-            </h4>
+            </p>
             <p>
               Yes. Modern, high-efficiency commercial units can reduce energy
               consumption by up to 30-50% compared to older models, providing a
@@ -290,9 +290,9 @@ export default function HVACContent() {
           </div>
 
           <div>
-            <h4 className="font-semibold">
+            <p className="font-semibold">
               Do you provide 24/7 support for mechanical emergencies?
-            </h4>
+            </p>
             <p>
               We offer reliable scheduling and fast response times for our
               commercial partners to ensure your business stays operational,
@@ -304,14 +304,14 @@ export default function HVACContent() {
 
       {/* CTA */}
       <section className="text-center py-16 bg-[#3b2416] text-white">
-        <h3 className="text-2xl sm:text-3xl font-semibold">
+        <p className="text-2xl sm:text-3xl font-semibold">
           Optimize Your Business Environment Today
-        </h3>
+        </p>
 
         <p className="mt-4">
-          Don&apos;t let an inefficient system eat into your profits. Partner with
-          the experts who have been keeping Metro Detroit comfortable for over
-          two decades.
+          Don&apos;t let an inefficient system eat into your profits. Partner
+          with the experts who have been keeping Metro Detroit comfortable for
+          over two decades.
         </p>
 
         <p className="mt-2">
