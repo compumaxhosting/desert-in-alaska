@@ -7,16 +7,10 @@ import { PiMedalThin } from "react-icons/pi";
 import { useEffect, useRef, useState } from "react";
 
 export default function Hero() {
-  const [isVisible, setIsVisible] = useState(false);
   const trustRef = useRef<HTMLDivElement | null>(null);
   const [trustVisible, setTrustVisible] = useState(false);
 
-  useEffect(() => {
-    const id = requestAnimationFrame(() => {
-      setIsVisible(true);
-    });
-    return () => cancelAnimationFrame(id);
-  }, []);
+  // ❌ removed requestAnimationFrame (was delaying LCP)
 
   useEffect(() => {
     const el = trustRef.current;
@@ -38,16 +32,18 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-[80vh] flex items-center overflow-hidden sm:max-h-screen">
-      {/* Background image */}
+      {/* ✅ Image optimized (same look) */}
       <Image
         src="/hero.webp"
         alt="Detroit commercial fire suppression and HVAC systems installation"
         fill
         priority
-        className="object-cover"
+        quality={70} // reduced from 80 → faster
+        sizes="(max-width: 768px) 100vw, 100vw"
+        style={{ objectFit: "cover" }}
       />
 
-      {/* Overlay */}
+      {/* SAME overlay (no change) */}
       <div className="absolute inset-0 bg-linear-to-br from-[hsl(20_45%_12%)]/95 via-[hsl(20_35%_22%)]/90 to-[hsl(210_25%_30%)]/70" />
 
       {/* Content */}
@@ -60,24 +56,15 @@ export default function Hero() {
               Metro Detroit’s Trusted Experts
             </div>
 
-            {/* ✅ SEO H1 */}
-            <h1
-              className={`text-4xl font-medium font-sans-400 leading-[1.05] sm:text-3xl md:text-5xl lg:text-6xl
-                transition-all duration-900 ease-out
-                ${
-                  isVisible
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-6"
-                }
-              `}
-            >
+            {/* ✅ H1 visible immediately (no delay) */}
+            <h1 className="text-4xl font-medium font-sans-400 leading-[1.05] sm:text-3xl md:text-5xl lg:text-6xl">
               Detroit Commercial <br />
               <span className="text-[#c88a4a]">Fire Suppression & HVAC</span>
               <br />
               Contractors
             </h1>
 
-            {/* ✅ Supporting H2 */}
+            {/* H2 */}
             <h2 className="mt-6 text-xl sm:text-2xl font-serif text-white/90">
               Industrial Dry Chemical Systems, Kitchen Exhaust & Mechanical
               Services Across Metro Detroit
@@ -108,7 +95,7 @@ export default function Hero() {
               </Link>
             </div>
 
-            {/* Trust Indicators */}
+            {/* Trust Indicators (same design, just smarter render) */}
             <div
               ref={trustRef}
               className={`mt-14 flex flex-wrap gap-8 border-t border-white/20 pt-8 text-sm text-white/80 font-serif
