@@ -28,20 +28,19 @@ export default function Footer() {
               alt="Desert In Alaska Corp - Commercial Fire Suppression & HVAC Contractors Detroit"
               width={200}
               height={140}
-              className="w-56 md:w-64 lg:w-62 h-auto"
+              className="w-56 md:w-64 h-auto"
+              priority
             />
 
-            <p className="text-sm leading-relaxed text-[#e7d6c8] max-w-sm font-serif">
-              <Link href="/" >
-                Desert In Alaska
-              </Link>{" "}
-              Corp is a trusted Detroit-based contractor specializing in
-              commercial fire suppression systems, HVAC, gas piping, and
-              mechanical services. Serving Metro Detroit businesses since 1997
-              with licensed and certified expertise.
+            <p className="text-sm leading-relaxed text-[#e7d6c8] max-w-xs font-serif">
+              <Link href="/">Desert In Alaska</Link> Corp is a trusted
+              Detroit-based contractor specializing in commercial fire
+              suppression systems, HVAC, gas piping, and mechanical services.
+              Serving Metro Detroit businesses since 1997 with licensed and
+              certified expertise.
             </p>
 
-            <div className="flex gap-6 pt-4 text-xs text-[#4195bd]">
+            <div className="flex flex-col sm:flex-row gap-4 pt-4 text-xs text-[#4195bd]">
               <div className="flex items-center gap-2">
                 <ShieldCheck size={18} />
                 <span>Licensed & Fully Insured</span>
