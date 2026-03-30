@@ -57,7 +57,15 @@ export default function Gallery() {
 
           {/* ✅ SEO-Optimized H2 */}
           <h2 className="mt-4 text-4xl md:text-5xl leading-[1.01] text-[#3b2a1f]">
-            Commercial Fire Suppression & HVAC Projects in Metro Detroit
+            Commercial Fire Suppression & HVAC Projects in Metro{" "}
+            <a
+              href="https://www.wikidata.org/wiki/Q12439"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="no-underline text-inherit"
+            >
+              Detroit
+            </a>
           </h2>
 
           <p className="pt-4 text-sm text-[#8b5428] font-serif max-w-2xl mx-auto">
