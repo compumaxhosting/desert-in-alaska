@@ -25,7 +25,7 @@ const services = [
     icon: <Fuel />,
     title: "Gas Piping & Mechanical Services",
     link: "/services/gas-piping-detroit",
-    image: "/gas.webp",
+    image: "/service-four.webp",
     text: "Commercial gas piping installation, tenant improvements, and mechanical system modifications for Detroit commercial properties.",
   },
   {
@@ -85,7 +85,7 @@ export default function Services() {
         <div className="text-center mb-10">
           <h1 className="text-3xl sm:text-4xl font-semibold text-[#3b2a1f]">
             Commercial Fire Suppression, HVAC & Mechanical Services in Detroit
-          </h1>
+          </h1> 
 
           <p className="mt-4 text-[#6b5a4d] max-w-2xl mx-auto">
             Complete fire protection, HVAC, kitchen exhaust, gas piping, and

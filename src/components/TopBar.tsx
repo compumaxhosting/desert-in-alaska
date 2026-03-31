@@ -29,8 +29,11 @@ export default function TopBar() {
       {/* Middle (Social Icons) */}
       <div className="flex items-center gap-3 justify-center flex-1">
         {/* FACEBOOK */}
+        {/* FACEBOOK */}
         <a
           href="https://www.facebook.com/profile.php?id=61582170474611"
+          target="_blank"
+          rel="noopener noreferrer"
           aria-label="Facebook"
           className="rounded-md bg-white/10 p-2 text-white transition hover:bg-white/20 hover:text-[#c98b55]"
         >
@@ -40,6 +43,8 @@ export default function TopBar() {
         {/* INSTAGRAM */}
         <a
           href="https://www.instagram.com/desertinalaska/"
+          target="_blank"
+          rel="noopener noreferrer"
           aria-label="Instagram"
           className="rounded-md bg-white/10 p-2 text-white transition hover:bg-white/20 hover:text-[#c98b55]"
         >
@@ -49,6 +54,8 @@ export default function TopBar() {
         {/* X */}
         <a
           href="https://x.com/desertinalaska1"
+          target="_blank"
+          rel="noopener noreferrer"
           aria-label="X"
           className="rounded-md bg-white/10 p-2 text-white transition hover:bg-white/20 hover:text-[#c98b55]"
         >
@@ -58,22 +65,24 @@ export default function TopBar() {
         {/* LINKEDIN */}
         <a
           href="https://www.linkedin.com/in/desertinalaska/"
+          target="_blank"
+          rel="noopener noreferrer"
           aria-label="LinkedIn"
           className="rounded-md bg-white/10 p-2 text-white transition hover:bg-white/20 hover:text-white"
         >
           <Linkedin size={16} />
         </a>
 
-        {/* GOOGLE (NEW) */}
+        {/* GOOGLE */}
         <a
           href="https://share.google/JPBW3nf2o7HYJbXcY"
           target="_blank"
+          rel="noopener noreferrer"
           aria-label="Google Reviews"
           className="rounded-md bg-white/10 p-2 text-white transition hover:bg-white/20 hover:text-[#c98b55]"
         >
           <FaGoogle size={16} />
         </a>
-        
       </div>
 
       {/* Right */}
