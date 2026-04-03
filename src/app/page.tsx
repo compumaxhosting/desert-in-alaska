@@ -1,6 +1,7 @@
 import AboutUs from "@/components/AboutUs";
 import Contact from "@/components/Contact";
 import ContactBar from "@/components/ContactBar";
+import ContactBarTwo from "@/components/ContactBarTwo";
 import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import Header from "@/components/Header";
@@ -15,6 +16,7 @@ export default function Page() {
       <TopBar />
       <Header />
       <Hero />
+    <ContactBarTwo />
       <ContactBar />
       <Services />
       <AboutUs />

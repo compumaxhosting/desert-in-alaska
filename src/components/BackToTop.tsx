@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { ChevronUp } from "lucide-react";
-import { FaWhatsapp } from "react-icons/fa";
 
 export default function BackToTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -19,16 +18,7 @@ export default function BackToTop() {
   return (
     <>
       {/* WHATSAPP LEFT — always visible */}
-      <a
-        href="https://wa.me/13139953255"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="WhatsApp"
-        style={{ position: "fixed", bottom: 16, left: 16, zIndex: 9999 }}
-        className="rounded-full bg-[#25D366] p-3 text-white shadow-lg hover:bg-[#1ebe5d] transition"
-      >
-        <FaWhatsapp className="w-5 h-5 md:w-6 md:h-6" />
-      </a>
+     
 
       {/* BACK TO TOP RIGHT */}
       {isVisible && (

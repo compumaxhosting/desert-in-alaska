@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import BackToTop from "@/components/BackToTop";
 import {
   MapPin,
   Phone,
@@ -248,7 +247,7 @@ export default function Footer() {
         </div>
       </footer>
 
-      <BackToTop />
+     
     </>
   );
 }
