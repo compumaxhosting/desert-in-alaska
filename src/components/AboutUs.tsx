@@ -9,7 +9,7 @@ export default function AboutUs() {
   const { ref, isVisible } = useInView(0.3);
 
   return (
-    <section className="bg-[#faf8f5] py-14 md:py-16">
+    <section className="bg-[#faf8f5] py-2 md:py-2">
       <div ref={ref} className="h-1 w-full" />
 
       <div className="mx-auto max-w-7xl px-3 grid gap-20 lg:grid-cols-2 items-center">

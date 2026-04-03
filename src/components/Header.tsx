@@ -27,23 +27,23 @@ const navLinks = [
 // ✅ SERVICES DROPDOWN LINKS
 const serviceLinks = [
   {
-    name: "Commercial Fire Suppression Systems",
+    name: "Fire Suppression",
     href: "/services/commercial-fire-suppression-detroit",
   },
   {
-    name: "Commercial HVAC Installation & Repair",
+    name: " HVAC Installation & Repair",
     href: "/services/commercial-hvac-detroit",
   },
   {
-    name: "Kitchen Exhaust Hood Systems",
+    name: "Kitchen Exhaust",
     href: "/services/kitchen-exhaust-systems-detroit",
   },
   {
-    name: "Commercial Gas Piping Installation",
+    name: "Gas Piping ",
     href: "/services/gas-piping-detroit",
   },
   {
-    name: "Industrial Dry Chemical Systems",
+    name: " Dry Chemical Systems",
     href: "/services/industrial-dry-chemical-fire-suppression-detroit",
   },
 ];

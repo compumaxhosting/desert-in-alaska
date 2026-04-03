@@ -242,15 +242,8 @@ export default function Footer() {
 
         {/* BOTTOM BAR */}
         <div className="border-t border-white/10 font-serif">
-          <div className="mx-auto max-w-7xl px-6 py-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between text-sm text-[#d8c2b1]">
-            <p>
-              © 2026 Desert In Alaska Corp – Commercial Fire Suppression & HVAC
-              Contractors in Detroit, MI. All rights reserved.
-            </p>
-
-            <Link href="/" className="hover:text-white transition">
-              www.desertinalaska.com
-            </Link>
+          <div className="mx-auto max-w-7xl px-6 py-6 flex items-center justify-center text-sm text-[#d8c2b1] text-center">
+            <p>© 2026 Desert In Alaska Corp – All rights reserved.</p>
           </div>
         </div>
       </footer>

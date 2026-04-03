@@ -58,24 +58,16 @@ export default function Hero() {
 
             {/* ✅ H1 visible immediately (no delay) */}
             <h1 className="text-4xl font-medium font-sans-400 leading-[1.05] sm:text-3xl md:text-5xl lg:text-6xl">
-              Detroit Commercial <br />
-              <span className="text-[#c88a4a]">Fire Suppression & HVAC</span>
-              <br />
-              Contractors
+              Detroit’s Trusted
             </h1>
-
-            {/* H2 */}
-            <h2 className="mt-6 text-xl sm:text-2xl font-serif text-white/90">
-              Industrial Dry Chemical Systems, Kitchen Exhaust & Mechanical
-              Services Across Metro Detroit
-            </h2>
-
+            <p className="text-4xl font-medium font-sans-400 leading-[1.05] sm:text-2xl md:text-3xl lg:text-3xl text-[#c88a4a]">
+              Commercial Fire Protection & HVAC Specialists
+            </p>
             {/* Description */}
             <p className="mt-6 max-w-2xl text-base text-white/85 sm:text-lg font-serif">
-              Licensed, certified, and trusted since 1997. We provide
-              comprehensive fire suppression systems, commercial HVAC, kitchen
-              exhaust installation, and gas piping services for businesses
-              throughout Metro Detroit.
+              We provide comprehensive fire suppression systems, commercial HVAC
+              solutions, kitchen exhaust, and mechanical services across Metro
+              Detroit. 
             </p>
 
             {/* Buttons */}

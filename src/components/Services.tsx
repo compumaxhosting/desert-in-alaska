@@ -79,17 +79,25 @@ export default function Services() {
   const { ref, isVisible } = useInView(0.3);
 
   return (
-    <section className="bg-[#eeebe8] py-24">
+    <section className="bg-[#eeebe8] py-10">
       <div className="mx-auto max-w-7xl px-6">
         {/* ✅ H1 (BIG SEO BOOST) */}
-        <div className="text-center mb-10">
+        <div className="text-center mb-5">
           <h1 className="text-3xl sm:text-4xl font-semibold text-[#3b2a1f]">
-            Commercial Fire Suppression, HVAC & Mechanical Services in Detroit
-          </h1> 
+            Commercial Fire Suppression, HVAC &
+            <br /> Mechanical Services in Detroit, MI
+          </h1>
 
-          <p className="mt-4 text-[#6b5a4d] max-w-2xl mx-auto">
-            Complete fire protection, HVAC, kitchen exhaust, gas piping, and
-            industrial systems for Detroit businesses.
+          <p className="mt-4 text-[#6b5a4d] max-w-3xl mx-auto">
+            Expert fire protection, HVAC, kitchen exhaust, gas piping, and
+            industrial system solutions for Detroit businesses.
+          </p>
+          <p className="mt-4 text-[#6b5a4d] max-w-3xl mx-auto">
+            We specialize in designing, installing, and maintaining reliable
+            commercial systems that keep your operations safe, efficient, and
+            code-compliant. From preventative maintenance to emergency service,
+            our Detroit team delivers professional solutions tailored to your
+            business needs.
           </p>
         </div>
 
@@ -104,14 +112,14 @@ export default function Services() {
             What We Do
           </p>
 
-          <h2 className="mt-3 text-4xl md:text-5xl text-[#3b2a1f]">
+          <h2 className="mt-2 text-2xl md:text-3xl text-[#3b2a1f] font-semibold">
             Our Commercial Services
           </h2>
         </div>
 
         {/* FEATURED SERVICE */}
         <div
-          className={`mt-16 overflow-hidden rounded-2xl relative transition-all duration-700
+          className={`mt-7 overflow-hidden rounded-2xl relative transition-all duration-700
             ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
           `}
         >
