@@ -4,7 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { Menu, X, Facebook, Instagram, Linkedin } from "lucide-react";
+import {
+  Menu,
+  X,
+  Facebook,
+  Instagram,
+  Linkedin,
+  ChevronDown,
+} from "lucide-react";
 import { FaGoogle, FaQuora } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -17,13 +24,39 @@ const navLinks = [
   { name: "Contact", href: "/contact" },
 ];
 
+// ✅ SERVICES DROPDOWN LINKS
+const serviceLinks = [
+  {
+    name: "Commercial Fire Suppression Systems",
+    href: "/services/commercial-fire-suppression-detroit",
+  },
+  {
+    name: "Commercial HVAC Installation & Repair",
+    href: "/services/commercial-hvac-detroit",
+  },
+  {
+    name: "Kitchen Exhaust Hood Systems",
+    href: "/services/kitchen-exhaust-systems-detroit",
+  },
+  {
+    name: "Commercial Gas Piping Installation",
+    href: "/services/gas-piping-detroit",
+  },
+  {
+    name: "Industrial Dry Chemical Systems",
+    href: "/services/industrial-dry-chemical-fire-suppression-detroit",
+  },
+];
+
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false); // mobile
+  const [desktopServicesOpen, setDesktopServicesOpen] = useState(false); // desktop
   const pathname = usePathname();
 
   const isActive = (href: string) => pathname === href;
 
-  // 🔒 HARD SCROLL LOCK (WORKS ON ALL DEVICES)
+  // 🔒 HARD SCROLL LOCK
   useEffect(() => {
     if (open) {
       const scrollY = window.scrollY;
@@ -64,20 +97,58 @@ export default function Header() {
 
           {/* DESKTOP */}
           <nav className="hidden lg:flex items-center gap-2 font-serif">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className={`px-4 py-2 text-sm font-extrabold rounded-md
-                ${
-                  isActive(link.href)
-                    ? "bg-[#86492D]/10 text-[#4195bd]"
-                    : "text-[#4195bd] hover:bg-[#86492D]/10"
-                }`}
-              >
-                {link.name}
-              </Link>
-            ))}
+            {navLinks.map((link) =>
+              link.name === "Services" ? (
+                <div
+                  key={link.name}
+                  className="relative"
+                  onMouseEnter={() => setDesktopServicesOpen(true)}
+                  onMouseLeave={() => setDesktopServicesOpen(false)}
+                >
+                  <div
+                    className={`flex items-center gap-1 px-4 py-2 text-sm font-extrabold rounded-md
+  ${
+    isActive(link.href)
+      ? "bg-[#86492D]/10 text-[#4195bd]"
+      : "text-[#4195bd] hover:bg-[#86492D]/10"
+  }`}
+                  >
+                    <Link href="/services" className="flex items-center gap-1">
+                      Services
+                    </Link>
+                    <ChevronDown size={16} />
+                  </div>
+
+                  {/* DROPDOWN */}
+                  {desktopServicesOpen && (
+                    <div className="absolute left-0 top-full mt-2 w-72 bg-white shadow-lg rounded-md border">
+                      {serviceLinks.map((s) => (
+                        <Link
+                          key={s.name}
+                          href={s.href}
+                          className="block px-4 py-2 text-sm hover:bg-[#86492D]/10"
+                        >
+                          {s.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className={`px-4 py-2 text-sm font-extrabold rounded-md
+                  ${
+                    isActive(link.href)
+                      ? "bg-[#86492D]/10 text-[#4195bd]"
+                      : "text-[#4195bd] hover:bg-[#86492D]/10"
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              ),
+            )}
 
             <Link
               href="/contact"
@@ -105,16 +176,42 @@ export default function Header() {
       >
         <div className="px-6 py-6 h-full overflow-y-auto">
           <div className="flex flex-col gap-3">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                onClick={() => setOpen(false)}
-                className="rounded-md px-4 py-2 hover:bg-[#86492D]/10"
-              >
-                {link.name}
-              </Link>
-            ))}
+            {navLinks.map((link) =>
+              link.name === "Services" ? (
+                <div key={link.name}>
+                  <button
+                    onClick={() => setServicesOpen(!servicesOpen)}
+                    className="flex items-center justify-between w-full px-4 py-2 rounded-md hover:bg-[#86492D]/10"
+                  >
+                    Services <ChevronDown size={18} />
+                  </button>
+
+                  {servicesOpen && (
+                    <div className="ml-4 mt-2 flex flex-col gap-2">
+                      {serviceLinks.map((s) => (
+                        <Link
+                          key={s.name}
+                          href={s.href}
+                          onClick={() => setOpen(false)}
+                          className="text-sm px-3 py-1 hover:underline"
+                        >
+                          {s.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className="rounded-md px-4 py-2 hover:bg-[#86492D]/10"
+                >
+                  {link.name}
+                </Link>
+              ),
+            )}
 
             <Link
               href="/contact"
@@ -171,7 +268,6 @@ export default function Header() {
                   <Linkedin size={16} />
                 </a>
 
-                {/* GOOGLE REVIEWS ICON */}
                 <a
                   href="https://share.google/JPBW3nf2o7HYJbXcY"
                   target="_blank"
@@ -180,6 +276,7 @@ export default function Header() {
                 >
                   <FaGoogle size={16} />
                 </a>
+
                 <a
                   href="https://www.quora.com/profile/Desertin-Alaska"
                   target="_blank"
