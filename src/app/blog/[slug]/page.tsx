@@ -26,7 +26,7 @@ export default async function SingleBlog({ params }: Props) {
             ← Back to blog
           </Link>
 
-          <h1 className="mt-6 text-4xl text-[#3b2a1f] font-medium">
+          <h1 className="mt-3 pb-1 md:mt-6 text-3xl md:text-4xl lg:text-5xl text-[#3b2a1f] font-medium">
             {blog.title}
           </h1>
 
@@ -44,11 +44,11 @@ export default async function SingleBlog({ params }: Props) {
           <div className="mt-10 space-y-10">
             {blog.sections.map((section, i) => (
               <div key={i}>
-                <h2 className="text-2xl text-[#3b2a1f] font-medium">
+                <h2 className="text-2xl pb-1 md:text-3xl text-[#3b2a1f] font-medium">
                   {section.title}
                 </h2>
 
-                <div className="mt-3 text-[#444] leading-relaxed">
+                <div className="mt-2 text-[#444] leading-relaxed">
                   {section.paragraph}
                 </div>
               </div>
