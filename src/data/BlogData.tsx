@@ -12,14 +12,258 @@ export type BlogPost = {
   metaTitle: string;
   metaDescription: string;
   metaKeywords: string;
-  description: string;
-  image: string;
+  description: React.ReactNode;
+ image: string; 
+  alt: string;
   sections: BlogSection[];
 
   lastUpdated?: string; // ← ADD THIS LINE
 };
 
 export const blogs: BlogPost[] = [
+  {
+  slug: "gas-piping-detroit",
+  title: "Safe and Efficient Commercial Gas Piping Installation in Detroit, MI",
+  lastUpdated: "Apr 24, 2026",
+  metaTitle: "Commercial Gas Piping Installation Detroit MI",
+  metaDescription: "Safe and efficient commercial gas piping installation in Detroit, MI. Learn codes, costs, process, and expert tips for reliable systems.",
+  metaKeywords: "Gas piping contractors Detroit MI, Commercial gas line installation, Industrial gas piping services, Gas pipe installation cost Detroit, Licensed gas fitters Detroit, Natural gas piping systems, Gas safety compliance Michigan, Commercial HVAC gas piping, Gas line repair and installation",
+  description: (
+  <>
+    Safe and efficient{" "}
+    <Link href="/blog/gas-piping-detroit" className="text-amber-900">
+      commercial gas piping installation in Detroit, MI
+    </Link>{" "}
+    requires licensed professionals, strict adherence to safety codes, and proper system design. A well-installed gas piping system ensures consistent fuel supply, minimizes risk, and improves energy efficiency for commercial properties. <br />In a city like Detroit, where commercial buildings range from historic structures to modern facilities, gas piping installation must be customized for each property. From restaurants to manufacturing units, proper installation directly impacts safety, compliance, and operational efficiency.
+  </>
+),
+  alt:"Commercial gas piping installation in Detroit MI technician working on industrial gas lines",
+  image: "/blog/gas-piping-blog.webp",
+
+  sections: [
+    {
+      title: "What is Commercial Gas Piping Installation?",
+      paragraph: (
+        <>
+        
+          Commercial gas piping installation refers to the process of designing, installing, and testing gas line systems in commercial buildings to safely transport natural gas or propane to equipment.
+          <br />
+         Commercial gas piping installation is the setup of gas distribution systems in commercial buildings to ensure safe and efficient fuel delivery to appliances and equipment.
+        </>
+      ),
+    },
+    {
+      title: "Why is Safety Critical in Gas Piping Systems?",
+      paragraph: (
+        <>
+          Gas piping systems carry flammable materials, making safety a top priority. Poor installation can lead to leaks, fires, or explosions.
+          <br />
+          Safety in commercial gas piping is essential because even minor leaks can result in severe hazards. Proper installation, pressure testing, and compliance with safety codes reduce risks and ensure reliable operation. Licensed professionals follow strict protocols to protect both property and occupants.
+          <br />
+          <strong>Key Safety Measures</strong><br />
+          • Leak detection testing <br />
+          • Pressure regulation systems <br />
+          • Proper ventilation <br />
+          • Emergency shut-off valves <br />
+          • Code-compliant materials
+        </>
+      ),
+    },
+    {
+      title: "How Does Commercial Gas Piping Installation Work?",
+      paragraph: (
+        <>
+          <strong>Step-by-Step Process</strong><br />
+          1. Site inspection and planning <br />
+          2. System design and load calculation <br />
+          3. Material selection <br />
+          4. Pipe installation and welding <br />
+          5. Pressure testing <br />
+          6. Final inspection and approval <br />
+          <strong>Summary</strong><br />
+          A structured installation process ensures efficiency, safety, and long-term performance. Skipping steps can lead to costly repairs and compliance issues.
+        </>
+      ),
+    },
+    {
+      title: "What Codes Apply in Detroit, MI?",
+      paragraph: (
+        <>
+          Detroit follows Michigan state regulations along with national codes.
+          <br />
+          Commercial gas piping in Detroit must comply with the International Fuel Gas Code (IFGC) and Michigan Mechanical Code. These regulations ensure proper installation, ventilation, and safety standards. Licensed contractors must obtain permits and pass inspections before systems become operational.
+          <br />
+          <strong>Important Requirements</strong><br />
+          • Permits from local authorities <br />
+          • Licensed contractor involvement <br />
+          • Inspection approvals <br />
+          • Compliance with pressure limits
+        </>
+      ),
+    },
+    {
+  title: "Materials Used in Commercial Gas Piping",
+  paragraph: (
+    <>
+      <table className="min-w-full border border-gray-300 text-left">
+        <thead>
+          <tr>
+            <th className="border px-4 py-2">Material</th>
+            <th className="border px-4 py-2">Benefits</th>
+            <th className="border px-4 py-2">Common Use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="border px-4 py-2">Steel Pipes</td>
+            <td className="border px-4 py-2">Durable, high pressure</td>
+            <td className="border px-4 py-2">Industrial applications</td>
+          </tr>
+          <tr>
+            <td className="border px-4 py-2">Copper Pipes</td>
+            <td className="border px-4 py-2">Corrosion-resistant</td>
+            <td className="border px-4 py-2">Small commercial setups</td>
+          </tr>
+          <tr>
+            <td className="border px-4 py-2">CSST</td>
+            <td className="border px-4 py-2">Flexible, easy installation</td>
+            <td className="border px-4 py-2">Modern buildings</td>
+          </tr>
+          <tr>
+            <td className="border px-4 py-2">PVC (limited)</td>
+            <td className="border px-4 py-2">Lightweight</td>
+            <td className="border px-4 py-2">Venting systems</td>
+          </tr>
+        </tbody>
+      </table>
+    </>
+  ),
+},
+    {
+      title: "What Affects Installation Costs in Detroit?",
+      paragraph: (
+        <>
+          The cost of commercial gas piping installation in Detroit depends on building size, system complexity, material choice, labor, and permit requirements. Older buildings may require upgrades, increasing costs. On average, pricing varies significantly based on project scope and compliance needs.
+          <br />
+          <strong>Cost Factors</strong><br />
+          • Building size and layout <br />
+          • Type of gas system <br />
+          • Material selection <br />
+          • Labor and permits <br />
+          • Accessibility of installation area
+        </>
+      ),
+    },
+    {
+      title: "Benefits of Professional Gas Piping Installation",
+      paragraph: (
+        <>
+          <strong>Why Hire Experts?</strong><br />
+          • Ensures compliance with safety codes <br />
+          • Reduces risk of gas leaks <br />
+          • Improves energy efficiency <br />
+          • Extends system lifespan <br />
+          • Minimizes downtime <br />
+          <strong>Summary</strong><br />
+          Professional installation is not just about compliance. It’s about protecting your investment and ensuring uninterrupted operations.
+        </>
+      ),
+    },
+    {
+      title: "Common Challenges in Detroit Properties",
+      paragraph: (
+        <>
+          Detroit’s commercial buildings often present unique challenges:
+          <br />
+          • Aging infrastructure <br />
+          • Retrofitting old systems <br />
+          • Space constraints <br />
+          • Harsh winter conditions affecting pipes <br />
+          <strong>Solution</strong><br />
+          Experienced contractors assess these challenges and design systems tailored to local conditions.
+        </>
+      ),
+    },
+    {
+      title: "Mini Case Study",
+      paragraph: (
+        <>
+          A Detroit restaurant upgraded its gas piping system to support new kitchen equipment. The old system couldn’t handle the load.
+          <br />
+          <strong>Solution:</strong><br />
+          A licensed contractor redesigned the gas line layout, installed high-capacity piping, and ensured compliance with modern codes.
+          <br />
+          <strong>Result:</strong><br />
+          • 30% improvement in efficiency <br />
+          • Reduced maintenance issues <br />
+          • Full compliance with safety standards <br />
+          Businesses in Detroit rely heavily on efficient gas systems for heating, cooking, and industrial processes. Choosing a local contractor ensures familiarity with city codes and weather conditions.
+        </>
+      ),
+    },
+    {
+  title: "FAQ Section",
+  paragraph: (
+    <>
+      <div className="space-y-1 md:space-y-2">
+        <details>
+          <summary className="font-medium cursor-pointer">
+            1. How long does gas piping installation take?
+          </summary>
+          <p className="mt-2">
+            Most commercial installations take a few days to several weeks depending on complexity, building size, and inspection requirements.
+          </p>
+        </details>
+
+        <details>
+          <summary className="font-medium cursor-pointer">
+            2. Do I need a permit for gas piping in Detroit?
+          </summary>
+          <p className="mt-2">
+            Yes, permits are mandatory for commercial gas piping projects to ensure compliance with safety regulations.
+          </p>
+        </details>
+
+        <details>
+          <summary className="font-medium cursor-pointer">
+            3. What is the safest material for gas piping?
+          </summary>
+          <p className="mt-2">
+            Steel and CSST are commonly used due to durability and flexibility, depending on the application.
+          </p>
+        </details>
+
+        <details>
+          <summary className="font-medium cursor-pointer">
+            4. How often should gas lines be inspected?
+          </summary>
+          <p className="mt-2">
+            Annual inspections are recommended to ensure safety and detect leaks early.
+          </p>
+        </details>
+
+        <details>
+          <summary className="font-medium cursor-pointer">
+            5. Can old buildings support new gas systems?
+          </summary>
+          <p className="mt-2">
+            Yes, but they may require upgrades or retrofitting to meet modern safety standards.
+          </p>
+        </details>
+      </div>
+    </>
+  ),
+},
+    {
+      title: "Conclusion",
+      paragraph: (
+        <>
+          Safe and efficient commercial gas piping installation in Detroit, MI is essential for business operations, safety, and compliance. Whether you&apos;re upgrading an existing system or installing a new one, working with experienced professionals ensures long-term reliability and peace of mind.
+        </>
+      ),
+    },
+  ],
+},
   {
   slug: "common-hvac-problems-metro-detroit-businesses-fixes",
   title: "Common HVAC Problems in Metro Detroit Businesses & Fixes",
@@ -34,7 +278,7 @@ export const blogs: BlogPost[] = [
   description:
     "Common HVAC problems in Metro Detroit businesses include poor airflow, short cycling, rising energy bills, inconsistent temperatures, and refrigerant leaks. These issues can be fixed through regular maintenance, system upgrades, duct inspections, and professional HVAC servicing.",
 
-  image: "/blog/blog-3.jpg",
+  alt:"",image: "/blog/blog-3.jpg",
 
   sections: [
 
@@ -362,7 +606,7 @@ export const blogs: BlogPost[] = [
     description:
       "A properly installed kitchen exhaust hood removes heat, smoke, and grease while keeping restaurants safe and compliant with fire and health regulations.",
 
-    image: "/blog/blog1.webp",
+    alt:"",image: "/blog/blog1.webp",
 
     sections: [
       {
@@ -497,7 +741,7 @@ export const blogs: BlogPost[] = [
     description:
       "Protect your business with professional fire suppression installation, inspections, and life safety services for commercial and industrial facilities.",
 
-    image: "/blog/blog-2.webp",
+    alt:"",image: "/blog/blog-2.webp",
 
     sections: [
       {

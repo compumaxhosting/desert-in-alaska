@@ -33,7 +33,7 @@ export default async function SingleBlog({ params }: Props) {
           <div className="relative mt-8 h-100">
             <Image
               src={blog.image}
-              alt={blog.title}
+              alt={blog.alt}
               fill
               className="object-cover rounded-xl"
             />
