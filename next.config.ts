@@ -20,6 +20,26 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: true, // ✅ 301 redirect (SEO safe)
       },
+      {
+        source: "/c1.php",
+        destination: "/",
+        permanent: true, // ✅ 301 redirect (SEO safe)
+      },
+      {
+        source: "/c2.php",
+        destination: "/",
+        permanent: true, // ✅ 301 redirect (SEO safe)
+      },
+      {
+        source: "/completed.php",
+        destination: "/",
+        permanent: true, // ✅ 301 redirect (SEO safe)
+      },
+      {
+        source: "/c3.php",
+        destination: "/",
+        permanent: true, // ✅ 301 redirect (SEO safe)
+      },
     ];
   },
 };
