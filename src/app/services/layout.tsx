@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "fire safety experts",
   ],
   alternates: {
-    canonical: "/about-us",
+    canonical: "/services",
   },
 };
 

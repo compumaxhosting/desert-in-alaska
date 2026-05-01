@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useInView } from "@/hooks/useInView";
+import { useState } from "react";
 
 const projects = [
   {
@@ -80,6 +81,27 @@ const projects = [
 
 export default function Projects() {
   const { ref, isVisible } = useInView(0.15);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const openLightbox = (index: number) => {
+    setCurrentIndex(index);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+  };
+
+  const goToPrevious = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setCurrentIndex((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
+  };
+
+  const goToNext = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setCurrentIndex((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
+  };
 
   return (
     <section className="bg-[#faf8f5] py-16">
@@ -114,7 +136,10 @@ export default function Projects() {
               `}
             >
               {/* IMAGE */}
-              <div className="relative h-60 overflow-hidden">
+              <div
+                className="relative h-60 overflow-hidden cursor-pointer"
+                onClick={() => openLightbox(index)}
+              >
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -143,6 +168,102 @@ export default function Projects() {
             </article>
           ))}
         </div>
+
+        {/* LIGHTBOX MODAL */}
+        {lightboxOpen && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90"
+            onClick={closeLightbox}
+          >
+            {/* CLOSE BUTTON */}
+            <button
+              className="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-white/30"
+              onClick={closeLightbox}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            {/* PREVIOUS BUTTON */}
+            <button
+              className="absolute left-4 z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-white/30"
+              onClick={goToPrevious}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+
+            {/* NEXT BUTTON */}
+            <button
+              className="absolute right-4 z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-white/30"
+              onClick={goToNext}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+
+            {/* IMAGE */}
+            <div
+              className="relative w-full max-w-5xl"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="relative aspect-video w-full">
+                <Image
+                  src={projects[currentIndex].image}
+                  alt={projects[currentIndex].title}
+                  fill
+                  className="object-contain"
+                  sizes="90vw"
+                />
+              </div>
+              {/* PROJECT INFO */}
+              <div className="mt-4 text-center">
+                <p className="text-sm text-white/70">
+                  {projects[currentIndex].location}
+                </p>
+                <h3 className="text-xl font-medium text-white">
+                  {projects[currentIndex].title}
+                </h3>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
