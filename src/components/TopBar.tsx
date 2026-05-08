@@ -1,6 +1,4 @@
-
-
-import { Phone, Mail, Facebook, Instagram,  Linkedin } from "lucide-react";
+import { Phone, Mail, Facebook, Instagram, Linkedin } from "lucide-react";
 import { FaGoogle } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiTiktok } from "react-icons/si";
