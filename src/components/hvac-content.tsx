@@ -326,6 +326,26 @@ export default function HVACContent() {
           Request a Free Quote →
         </Link>
       </section>
+      <section className="max-w-6xl mx-auto px-4 py-12">
+        <p className="text-lg font-semibold mb-4">Explore Our Other Services</p>
+
+        <div className="flex flex-wrap gap-4">
+          <Link href="/services/commercial-hvac-detroit" className="underline">
+            Commercial HVAC Services
+          </Link>
+
+          <Link
+            href="/services/kitchen-exhaust-systems-detroit"
+            className="underline"
+          >
+            Kitchen Exhaust Systems
+          </Link>
+
+          <Link href="/services/gas-piping-detroit" className="underline">
+            Gas Piping & Mechanical Services
+          </Link>
+        </div>
+      </section>
     </main>
   );
 }

@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { FaGoogle} from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { SiTiktok } from "react-icons/si";
 
 export default function Footer() {
   return (
@@ -235,6 +236,15 @@ export default function Footer() {
               >
                 <FaGoogle size={18} />
               </a>
+              <a
+                href="https://www.tiktok.com/@desertinalaska0"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok"
+                className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
+              >
+                <SiTiktok size={16} />
+              </a>
             </div>
           </div>
         </div>
@@ -246,8 +256,6 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-
-     
     </>
   );
 }
