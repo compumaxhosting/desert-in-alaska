@@ -22,6 +22,988 @@ export type BlogPost = {
 
 export const blogs: BlogPost[] = [
   {
+    slug: "hvac-fire-suppression-detroit",
+    title: "Expert Commercial HVAC & Fire Suppression Services in Detroit, MI",
+    lastUpdated: "May 12, 2026",
+    metaTitle:
+      "Expert Commercial HVAC & Fire Suppression Services in Detroit, MI",
+    metaDescription:
+      "Expert Commercial HVAC & Fire Suppression Services in Detroit, MI for reliable installation, repair, and maintenance. Improve safety, efficiency, and compliance.",
+    metaKeywords:
+      "commercial HVAC Detroit MI, fire suppression services Detroit, HVAC maintenance Detroit, commercial HVAC installation, fire protection systems Michigan, HVAC repair Detroit, fire sprinkler systems Detroit, HVAC contractors Detroit",
+    description: (
+      <>
+        Expert CommercialIf you own or manage a commercial property in Detroit,
+        Michigan, reliable HVAC systems and fire suppression solutions are not
+        optional — they are essential. From the manufacturing plants of Midtown
+        to the office towers of Downtown Detroit and the warehouses lining I-94,
+        every building depends on climate control and fire safety to protect
+        people, assets, and operations.{" "}
+        <Link
+          href="/services/commercial-hvac-detroit"
+          className="text-amber-900"
+        >
+          Commercial HVAC and fire suppression services in Detroit, MI
+        </Link>{" "}
+        cover everything from installing high-capacity rooftop units and chiller
+        systems to designing, installing, and maintaining wet pipe sprinkler
+        systems and clean agent suppression for server rooms and data centers.
+        Choosing the right contractor means faster response times,
+        code-compliant installations, and lower total cost of ownership. <br />
+        This guide answers the most important questions Detroit business owners,
+        facility managers, and property developers ask — giving you everything
+        you need to make a confident, informed decision.
+      </>
+    ),
+    alt: "Expert Commercial HVAC & Fire Suppression Services in Detroit",
+    image:
+      "/blog/Expert Commercial HVAC & Fire Suppression Services in Detroit, MI.webp",
+
+    sections: [
+      {
+        title: "What Are Commercial HVAC & Fire Suppression Services?",
+        paragraph: (
+          <>
+            Commercial HVAC (Heating, Ventilation, and Air Conditioning)
+            services encompass the design, installation, maintenance, and repair
+            of climate control systems in non-residential buildings. Fire
+            suppression services include the design, installation, inspection,
+            and testing of systems — such as sprinklers, gaseous agents, and
+            foam systems — that automatically control or extinguish fires.
+            Together, they form the backbone of building safety and occupant
+            comfort.
+            <br />
+            Unlike residential systems, commercial HVAC units handle far greater
+            loads, operate continuously, and must meet stricter regulatory
+            standards set by ASHRAE, NFPA, and local Detroit and Michigan
+            building codes. Fire suppression systems are governed by NFPA 13,
+            NFPA 72, and the Michigan Mechanical Code — all enforced by local
+            fire marshals and the City of Detroit Buildings, Safety Engineering,
+            and Environmental Department (BSEED).
+          </>
+        ),
+      },
+      {
+        title:
+          "Why Detroit Businesses Need Specialized HVAC & Fire Safety Contractors",
+        paragraph: (
+          <>
+            Detroit&apos;s climate is demanding. With summer humidity reaching
+            80%+ and winter temperatures dropping well below freezing,
+            commercial HVAC systems in Detroit face intense seasonal stress.
+            That means a generic installation or a contractor unfamiliar with
+            Michigan&apos;s climate patterns will cost you more in energy waste
+            and emergency repairs over time.
+            <br />
+            Beyond climate, Detroit&apos;s commercial real estate landscape
+            includes a high concentration of aging industrial buildings, many of
+            which require custom HVAC retrofits and fire suppression upgrades to
+            meet current codes. The Detroit area is also home to sectors with
+            specialized needs:
+            <br />
+            <strong>Key Safety Measures</strong>
+            <br />
+            • Automotive manufacturing plants requiring precision temperature
+            and humidity control <br />
+            • Hospitals and medical facilities with infection-control HVAC
+            requirements
+            <br />
+            • Restaurants and commercial kitchens requiring Ansul-type wet
+            chemical hood suppression
+            <br />• Retail and office properties in Midtown, Corktown, and the
+            New Center area undergoing renovation
+          </>
+        ),
+      },
+
+      {
+        title: "Types of Commercial HVAC Systems Installed in Detroit",
+        paragraph: (
+          <>
+            Detroit commercial properties use a wide range of HVAC systems
+            depending on building size, energy requirements, and property type.
+            <br />
+            <strong>Rooftop Units (RTUs)</strong>
+            <br />
+            The most common commercial HVAC solution in Detroit&apos;s retail
+            and mid-size commercial buildings. RTUs provide packaged heating and
+            cooling and are ideal for flat-roof structures along major corridors
+            such as Gratiot Avenue, Michigan Avenue, and Grand River Avenue.
+            <br />
+            <strong>Chiller & Cooling Tower Systems</strong>
+            <br />
+            Large office towers, hospitals, and university facilities near Wayne
+            State University and the Detroit Medical Center commonly rely on
+            central chiller plants for efficient large-scale cooling. Proper
+            sizing and routine maintenance are essential for performance and
+            reliability.
+            <br />
+            <strong>Variable Refrigerant Flow (VRF) Systems</strong>
+            <br />
+            VRF systems are increasingly popular in Detroit&apos;s mixed-use
+            developments and historic building renovations where traditional
+            ductwork is difficult to install. They provide zone-by-zone
+            temperature control and excellent energy efficiency.
+            <br />
+            <strong>Split Systems & Heat Pumps</strong>
+            <br />
+            Smaller office spaces and commercial suites in Midtown and New
+            Center frequently use split systems and heat pumps. Modern
+            commercial heat pumps can operate efficiently during Michigan
+            winters when paired with supplemental heating systems.
+          </>
+        ),
+      },
+      {
+        title:
+          "Types of Fire Suppression Systems for Detroit Commercial Properties",
+        paragraph: (
+          <>
+            <div className="overflow-x-auto rounded-lg border border-slate-700">
+              <table className="min-w-full text-left text-sm text-white">
+                <thead className="bg-blue-300 text-black">
+                  <tr>
+                    <th className="px-4 py-3 font-semibold">System Type</th>
+                    <th className="px-4 py-3 font-semibold">Best For</th>
+                    <th className="px-4 py-3 font-semibold">Key Standard</th>
+                  </tr>
+                </thead>
+
+                <tbody className="bg-[#1f2937]">
+                  <tr className="border-t border-slate-600">
+                    <td className="px-4 py-3">Wet Pipe Sprinkler</td>
+                    <td className="px-4 py-3">Offices, retail, warehouses</td>
+                    <td className="px-4 py-3">NFPA 13</td>
+                  </tr>
+
+                  <tr className="border-t border-slate-600">
+                    <td className="px-4 py-3">Dry Pipe Sprinkler</td>
+                    <td className="px-4 py-3">
+                      Unheated warehouses, parking garages
+                    </td>
+                    <td className="px-4 py-3">NFPA 13</td>
+                  </tr>
+
+                  <tr className="border-t border-slate-600">
+                    <td className="px-4 py-3">FM-200 / Novec 1230</td>
+                    <td className="px-4 py-3">
+                      Server rooms, data centers, archives
+                    </td>
+                    <td className="px-4 py-3">NFPA 2001</td>
+                  </tr>
+
+                  <tr className="border-t border-slate-600">
+                    <td className="px-4 py-3">Ansul Wet Chemical</td>
+                    <td className="px-4 py-3">
+                      Commercial kitchens, restaurants
+                    </td>
+                    <td className="px-4 py-3">NFPA 17A</td>
+                  </tr>
+
+                  <tr className="border-t border-slate-600">
+                    <td className="px-4 py-3">Foam Suppression</td>
+                    <td className="px-4 py-3">
+                      Auto plants, fuel storage, hangars
+                    </td>
+                    <td className="px-4 py-3">NFPA 11</td>
+                  </tr>
+
+                  <tr className="border-t border-slate-600">
+                    <td className="px-4 py-3">CO2 Systems</td>
+                    <td className="px-4 py-3">
+                      Industrial machinery, paint booths
+                    </td>
+                    <td className="px-4 py-3">NFPA 12</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </>
+        ),
+      },
+      {
+        title: "What Affects Installation Costs in Detroit?",
+        paragraph: (
+          <>
+            <div className="border border-blue-300 bg-[#243240] p-5 mb-6">
+              <h3 className="text-xl font-semibold text-blue-300 mb-2">
+                Answer Engine Snippet
+              </h3>
+
+              <p className="text-white leading-relaxed">
+                Commercial gas piping installation costs in Detroit depend on
+                building size, gas load requirements, piping material, permit
+                fees, labor complexity, and code compliance upgrades. Older
+                Detroit commercial properties often require additional
+                retrofitting, pressure testing, or ventilation modifications
+                that can increase total project costs.
+              </p>
+            </div>
+
+            <p className="mb-4 text-white">
+              Here are the primary cost factors that influence commercial gas
+              piping installation pricing in Detroit:
+            </p>
+
+            <ol className="list-decimal pl-6 space-y-3 text-black">
+              <li>
+                Building size and layout directly affect piping length, labor
+                time, and installation complexity.
+              </li>
+
+              <li>
+                The type of commercial gas system being installed impacts
+                material, pressure regulation, and equipment requirements.
+              </li>
+
+              <li>
+                Material selection such as black steel, CSST, or specialty
+                piping changes both labor and long-term maintenance costs.
+              </li>
+
+              <li>
+                Detroit permit fees, inspections, and compliance with Michigan
+                codes add to total project expenses.
+              </li>
+
+              <li>
+                Older commercial buildings may require structural upgrades,
+                ventilation improvements, or replacement of outdated
+                infrastructure.
+              </li>
+
+              <li>
+                Accessibility of the installation area — including ceilings,
+                utility corridors, and mechanical rooms — can significantly
+                affect labor costs and project timelines.
+              </li>
+            </ol>
+          </>
+        ),
+      },
+      {
+        title:
+          "Cost Overview: Commercial HVAC & Fire Suppression in Detroit, MI",
+        paragraph: (
+          <>
+            <p className="mb-5 text-white leading-relaxed">
+              Costs vary widely based on building size, system complexity, and
+              current property conditions. The table below provides estimated
+              pricing ranges commonly seen for Detroit-area commercial projects.
+            </p>
+
+            <div className="overflow-x-auto rounded-lg border border-slate-700 mb-6">
+              <table className="min-w-full text-left text-sm text-white">
+                <thead className="bg-blue-300 text-black">
+                  <tr>
+                    <th className="px-4 py-3 font-semibold">Service</th>
+                    <th className="px-4 py-3 font-semibold">
+                      Typical Range (Detroit Area)
+                    </th>
+                    <th className="px-4 py-3 font-semibold">Notes</th>
+                  </tr>
+                </thead>
+
+                <tbody className="bg-[#1f2937]">
+                  <tr className="border-t border-slate-600">
+                    <td className="px-4 py-3">RTU Installation (5–25 ton)</td>
+                    <td className="px-4 py-3">$8,000 – $35,000</td>
+                    <td className="px-4 py-3">
+                      Includes labor & crane service
+                    </td>
+                  </tr>
+
+                  <tr className="border-t border-slate-600">
+                    <td className="px-4 py-3">Chiller System Install</td>
+                    <td className="px-4 py-3">$50,000 – $300,000+</td>
+                    <td className="px-4 py-3">Pricing varies by tonnage</td>
+                  </tr>
+
+                  <tr className="border-t border-slate-600">
+                    <td className="px-4 py-3">VRF System (per zone)</td>
+                    <td className="px-4 py-3">$3,000 – $6,000</td>
+                    <td className="px-4 py-3">
+                      Multi-zone discounts available
+                    </td>
+                  </tr>
+
+                  <tr className="border-t border-slate-600">
+                    <td className="px-4 py-3">
+                      Wet Pipe Sprinkler (new build)
+                    </td>
+                    <td className="px-4 py-3">$2 – $4 per sq ft</td>
+                    <td className="px-4 py-3">
+                      Full system design & installation
+                    </td>
+                  </tr>
+
+                  <tr className="border-t border-slate-600">
+                    <td className="px-4 py-3">FM-200 Clean Agent System</td>
+                    <td className="px-4 py-3">$15,000 – $50,000</td>
+                    <td className="px-4 py-3">Based on protected volume</td>
+                  </tr>
+
+                  <tr className="border-t border-slate-600">
+                    <td className="px-4 py-3">Ansul Kitchen Hood System</td>
+                    <td className="px-4 py-3">$3,000 – $8,000</td>
+                    <td className="px-4 py-3">Includes suppression agent</td>
+                  </tr>
+
+                  <tr className="border-t border-slate-600">
+                    <td className="px-4 py-3">Annual HVAC PM Contract</td>
+                    <td className="px-4 py-3">$2,000 – $10,000/yr</td>
+                    <td className="px-4 py-3">Based on number of units</td>
+                  </tr>
+
+                  <tr className="border-t border-slate-600">
+                    <td className="px-4 py-3">Annual Fire System Inspection</td>
+                    <td className="px-4 py-3">$300 – $1,500/yr</td>
+                    <td className="px-4 py-3">NFPA 25 compliance</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className="border-l-4 border-blue-300 pl-4 text-black leading-relaxed">
+              <strong className="text-blue-300">Pro Tip:</strong> Always obtain
+              at least three competitive bids. Detroit&apos;s large contractor
+              market across Wayne, Oakland, and Macomb counties keeps pricing
+              competitive, but lower bids may exclude permit fees,
+              post-installation service, or long-term compliance requirements.
+            </div>
+          </>
+        ),
+      },
+
+      {
+        title: "Mini Case Study: Detroit Warehouse Retrofit",
+        paragraph: (
+          <>
+            <strong>Real-World Example</strong>
+            <br />A 120,000 sq ft distribution warehouse near Detroit&apos;s
+            Jefferson Chalmers neighborhood underwent a full HVAC and fire
+            suppression retrofit in 2024. The existing single-zone rooftop
+            system was replaced with four high-efficiency RTUs (Carrier 48XP
+            series, 25-ton each) with BACnet-compatible controls for remote
+            monitoring. Simultaneously, the aging dry-pipe sprinkler system —
+            original to a 1970s build — was replaced with a modern ESFR (Early
+            Suppression Fast Response) wet-pipe system designed to NFPA 13
+            standards, satisfying the new tenant&apos;s insurance carrier
+            requirements. Total project cost: approximately $310,000. Projected
+            annual energy savings from the new HVAC controls: $28,000. ROI
+            timeline: under 5 years.
+          </>
+        ),
+      },
+      {
+        title: "Detroit-Specific Considerations",
+        paragraph: (
+          <>
+            <div className="rounded-lg border border-slate-700 bg-[#1f2937] p-5">
+              <p className="mb-5 text-white leading-relaxed">
+                Detroit&apos;s commercial building environment presents several
+                unique challenges and requirements that property owners and
+                contractors should understand before starting HVAC or fire
+                suppression projects.
+              </p>
+
+              <div className="space-y-5 text-white">
+                <div className="border-l-4 border-blue-300 pl-4">
+                  <h3 className="text-blue-300 font-semibold mb-1">
+                    BSEED Permitting
+                  </h3>
+
+                  <p className="leading-relaxed">
+                    The City of Detroit Buildings, Safety Engineering, and
+                    Environmental Department (BSEED) requires permits for nearly
+                    all commercial HVAC and fire suppression installations.
+                    Permit review timelines commonly range from 2 to 6 weeks
+                    depending on project size and complexity.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-blue-300 pl-4">
+                  <h3 className="text-blue-300 font-semibold mb-1">
+                    Historic Building Stock
+                  </h3>
+
+                  <p className="leading-relaxed">
+                    Detroit contains a large concentration of pre-1950
+                    commercial structures. Projects in areas such as Corktown,
+                    Eastern Market, and Woodbridge often require contractors
+                    experienced with asbestos coordination, historic
+                    preservation requirements, and masonry penetration work.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-blue-300 pl-4">
+                  <h3 className="text-blue-300 font-semibold mb-1">
+                    DTE Energy Incentives
+                  </h3>
+
+                  <p className="leading-relaxed">
+                    DTE Energy provides commercial rebates for qualifying
+                    high-efficiency HVAC upgrades through its Commercial Energy
+                    Efficiency Program. Incentives may offset approximately
+                    10–30% of equipment and upgrade costs.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-blue-300 pl-4">
+                  <h3 className="text-blue-300 font-semibold mb-1">
+                    Detroit Fire Marshal Compliance
+                  </h3>
+
+                  <p className="leading-relaxed">
+                    Commercial fire suppression systems must receive approval
+                    from the Detroit Fire Marshal&apos;s office before becoming
+                    fully operational. Contractors familiar with Detroit&apos;s
+                    inspection process can help reduce delays and avoid costly
+                    re-inspections.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-blue-300 pl-4">
+                  <h3 className="text-blue-300 font-semibold mb-1">
+                    Regional Service Areas
+                  </h3>
+
+                  <p className="leading-relaxed">
+                    Most major Detroit commercial HVAC and fire suppression
+                    contractors also serve surrounding communities including
+                    Dearborn, Sterling Heights, Warren, Livonia, Auburn Hills,
+                    and Pontiac.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </>
+        ),
+      },
+      {
+        title: "FAQ Section",
+        paragraph: (
+          <>
+            <div className="space-y-1 md:space-y-2">
+              <details>
+                <summary className="font-medium cursor-pointer">
+                  1. What certifications should a commercial HVAC contractor in
+                  Detroit have?
+                </summary>
+                <p className="mt-2">
+                  A qualified commercial HVAC contractor in Detroit should hold
+                  a Michigan Mechanical Contractor License (issued by LARA), EPA
+                  Section 608 certification for refrigerant handling, and
+                  ideally NATE (North American Technician Excellence)
+                  certification for technicians. For larger projects, look for
+                  ASHRAE-certified professionals who can perform energy modeling
+                  and load calculations.
+                </p>
+              </details>
+
+              <details>
+                <summary className="font-medium cursor-pointer">
+                  2. How often should commercial fire suppression systems be
+                  inspected in Michigan?
+                </summary>
+                <p className="mt-2">
+                  Under NFPA 25 and Michigan state law, wet-pipe sprinkler
+                  systems must receive a quarterly visual inspection, an annual
+                  internal inspection, and a full five-year obstruction
+                  investigation. Alarm and detection systems require annual
+                  testing per NFPA 72. Kitchen hood suppression systems (Ansul)
+                  must be inspected every six months. Failure to maintain
+                  inspection records can result in insurance coverage denial and
+                  code violations.
+                </p>
+              </details>
+
+              <details>
+                <summary className="font-medium cursor-pointer">
+                  3. Can the same contractor handle both HVAC and fire
+                  suppression in Detroit?
+                </summary>
+                <p className="mt-2">
+                  Yes — and in many cases, hiring a single integrated contractor
+                  for both HVAC and{" "}
+                  <Link
+                    href="/"
+                    className="text-blue-400 hover:text-blue-300 underline"
+                  >
+                    fire suppression
+                  </Link>{" "}
+                  services is advantageous. It simplifies project coordination,
+                  reduces liability overlap, and ensures HVAC and fire
+                  suppression systems are designed to work together (for
+                  example, HVAC smoke dampers must be integrated with the fire
+                  alarm system). Verify that the contractor holds separate
+                  licenses for both mechanical and fire protection work under
+                  Michigan LARA regulations.
+                </p>
+              </details>
+
+              <details>
+                <summary className="font-medium cursor-pointer">
+                  4.What is the difference between a fire alarm system and a
+                  fire suppression system?
+                </summary>
+                <p className="mt-2">
+                  A fire alarm system detects smoke, heat, or carbon monoxide
+                  and alerts occupants and the fire department — but does not
+                  extinguish the fire. A fire suppression system actively
+                  releases a suppression agent (water, gas, foam, or chemical)
+                  to control or extinguish a fire automatically. Most commercial
+                  buildings in Detroit require both systems, integrated so that
+                  the suppression system triggers upon alarm activation. This
+                  integration is governed by NFPA 72 and NFPA 13.
+                </p>
+              </details>
+
+              <details>
+                <summary className="font-medium cursor-pointer">
+                  5. How long does a commercial HVAC installation take in
+                  Detroit?
+                </summary>
+                <p className="mt-2">
+                  Timeline depends on system type and building complexity. A
+                  single RTU replacement typically takes 1–3 days including
+                  crane setup and commissioning. A full chiller plant
+                  replacement or VRF multi-zone system can take 4–12 weeks,
+                  especially when Detroit BSEED mechanical permits are required.
+                  Factor in 2–6 weeks for permit approval before any work
+                  begins. A good contractor will manage the permit process on
+                  your behalf and provide a detailed project schedule upfront.
+                </p>
+              </details>
+              <details>
+                <summary className="font-medium cursor-pointer">
+                  6. Are there energy efficiency incentives for commercial HVAC
+                  upgrades in Detroit?
+                </summary>
+                <p className="mt-2">
+                  Yes. DTE Energy&apos;s Commercial Energy Efficiency Program
+                  offers prescriptive rebates for qualifying high-efficiency
+                  HVAC equipment, including variable-speed drives, energy
+                  recovery ventilation, and high-efficiency rooftop units. The
+                  Michigan Saves program also offers commercial financing for
+                  energy efficiency upgrades. Additionally, federal Section 179D
+                  tax deductions may apply for energy-efficient commercial
+                  building systems. A qualified Detroit HVAC contractor can help
+                  you identify and apply for these incentives.
+                </p>
+              </details>
+            </div>
+          </>
+        ),
+      },
+      {
+        title: "Conclusion",
+        paragraph: (
+          <>
+            Commercial HVAC and fire suppression services in Detroit, MI are
+            mission-critical for every business, facility manager, and property
+            owner in the region. From Detroit&apos;s frigid winters to its humid
+            summers — and from the auto industry&apos;s precision requirements
+            to the strict safety codes governing high-rises Downtown — the right
+            contractor makes all the difference. Whether you need a new rooftop
+            unit installed on a Midtown office building, a clean agent system
+            for a server room in Auburn Hills, or a full sprinkler retrofit for
+            a historic warehouse in Corktown, look for a licensed, experienced,
+            locally-based contractor who knows Detroit&apos;s permitting
+            process, understands Michigan&apos;s climate, and can back their
+            work with 24/7 emergency support.
+          </>
+        ),
+      },
+      {
+        title: "Quick Summary Checklist",
+        paragraph: (
+          <>
+            <div className="rounded-lg border border-slate-700 bg-[#1f2937] p-5">
+              <ul className="space-y-4 text-white">
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-300 text-lg">✔</span>
+                  <span>
+                    Identify your building type and specific HVAC or fire
+                    suppression requirements before contacting contractors.
+                  </span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-300 text-lg">✔</span>
+                  <span>
+                    Verify Michigan LARA licenses and NICET certifications for
+                    every contractor under consideration.
+                  </span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-300 text-lg">✔</span>
+                  <span>
+                    Account for Detroit BSEED permit timelines — typically
+                    ranging from 2 to 6 weeks depending on project scope.
+                  </span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-300 text-lg">✔</span>
+                  <span>
+                    Compare at least three detailed bids with fully itemized
+                    scopes of work and equipment specifications.
+                  </span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-300 text-lg">✔</span>
+                  <span>
+                    Ask contractors about DTE Energy rebates and potential
+                    federal Section 179D tax deductions for energy-efficient
+                    upgrades.
+                  </span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-300 text-lg">✔</span>
+                  <span>
+                    Confirm availability of 24/7 emergency HVAC and fire system
+                    repair services before signing maintenance agreements.
+                  </span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-300 text-lg">✔</span>
+                  <span>
+                    Schedule annual HVAC preventive maintenance and required
+                    semi-annual or annual fire suppression inspections from day
+                    one.
+                  </span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-300 text-lg">✔</span>
+                  <span>
+                    Ensure HVAC smoke dampers and fire alarm systems are
+                    properly integrated according to NFPA 72 requirements.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    slug: "industrial-dry-chemical-fire-suppression-detroit",
+
+    title:
+      "Best Industrial Fire Suppression Systems in Detroit, MI (2026 Guide)",
+    lastUpdated: "May 08, 2026",
+    metaTitle: "Commercial Fire Suppression Systems Installation & Service",
+
+    metaDescription:
+      "Explore the best industrial fire suppression systems in Detroit, MI. Learn types, cost, installation process, and NFPA safety standards for 2026.",
+
+    metaKeywords:
+      "industrial fire suppression Detroit MI, dry chemical fire suppression systems, fire suppression cost Detroit, warehouse fire protection Michigan, commercial fire safety systems Detroit",
+
+    description:
+      "Explore the best industrial fire suppression systems in Detroit, MI. Learn types, cost, installation process, and NFPA safety standards for 2026.",
+
+    alt: "",
+    image: "/blog/Best Industrial Fire Suppression Systems in Detroit, MI.webp",
+
+    sections: [
+      {
+        title: "Introduction",
+        paragraph: (
+          <>
+            The best industrial fire suppression systems in Detroit, MI are
+            typically dry chemical systems, clean agent systems, and foam-based
+            suppression systems, depending on the facility type and fire risk
+            level.
+            <br />
+            <br />
+            On average, industrial fire suppression systems in Detroit cost
+            between $5,000 and $50,000+, depending on system size, hazard
+            classification, and installation complexity.
+            <br />
+            <br />
+            Dry chemical systems are widely used in manufacturing plants and
+            warehouses because they quickly suppress fires involving flammable
+            liquids and electrical equipment.
+            <br />
+            <br />
+            For specialized installations in Detroit, businesses often rely on
+            certified contractors such as{" "}
+            <Link href="/" className="text-blue-500 underline" target="_blank">
+              Industrial Fire Suppression Services Detroit
+            </Link>{" "}
+            for compliant and code-approved systems.
+          </>
+        ),
+      },
+
+      {
+        title: "What Are Industrial Fire Suppression Systems?",
+        paragraph: (
+          <>
+            Industrial fire suppression systems are engineered safety solutions
+            designed to automatically detect and extinguish fires in high-risk
+            environments such as factories, warehouses, and chemical plants.{" "}
+            <br />
+            <strong>Breakdown:</strong>
+            <br />
+            • Dry Chemical Systems
+            <br />
+            • Clean Agent Systems →
+            <br />
+            • Foam Systems →
+            <br />
+            • Water Mist Systems →
+            <br />
+            These systems activate automatically when heat or smoke is detected.
+          </>
+        ),
+      },
+
+      {
+        title:
+          "What Are the Best Industrial Fire Suppression Systems in Detroit, MI?",
+        paragraph: (
+          <>
+            <strong>Direct Answer:</strong>
+            <br />
+            The best systems depend on the industry type, but in Detroit, dry
+            chemical systems and clean agent systems are the most commonly used
+            due to their effectiveness in industrial environments.
+            <br />
+            <br />
+            <strong>Breakdown:</strong>
+            <br />
+            • Dry Chemical Systems → Best for warehouses, fuel storage, and
+            manufacturing
+            <br />
+            • Clean Agent Systems → Best for electrical rooms and sensitive
+            equipment
+            <br />
+            • Foam Systems → Best for chemical and oil-based fire risks
+            <br />
+            • Water Mist Systems → Best for cooling and suppression in large
+            facilities
+            <br />
+            <br />
+            <strong>Summary:</strong>
+            <br />
+            Dry chemical systems are the most widely installed in Detroit
+            industrial facilities due to fast response and low damage risk.
+          </>
+        ),
+      },
+
+      {
+        title: "Types of Industrial Fire Suppression Systems",
+        paragraph: (
+          <>
+            <strong>1. Dry Chemical Fire Suppression Systems</strong>
+            <br />
+            Used in high-risk industrial environments. They release powder
+            agents that stop chemical reactions in fire.
+            <br />
+            <br />
+            <strong>2. Clean Agent Systems (FM-200 / Novec 1230)</strong>
+            <br />
+            Used where electronics are sensitive. Leaves no residue.
+            <br />
+            <br />
+            <strong>3. Foam-Based Systems</strong>
+            <br />
+            Used in oil, gas, and chemical facilities.
+            <br />
+            <br />
+            <strong>4. Water Mist Systems</strong>
+            <br />
+            Uses fine droplets to cool fire and suppress oxygen.
+            <br />
+            <br />
+            <strong>What is an industrial fire suppression system?</strong>
+            <br />
+            An industrial fire suppression system is a safety system designed to
+            detect and automatically extinguish fires in factories, warehouses,
+            and industrial facilities using agents like dry chemical powder,
+            foam, gas, or water mist.
+          </>
+        ),
+      },
+
+      {
+        title: "Cost of Industrial Fire Suppression in Detroit, MI",
+        paragraph: (
+          <>
+            <strong>Average Cost Range</strong>
+            <br />
+            • Small facilities: $5,000 – $15,000
+            <br />
+            • Medium facilities: $15,000 – $30,000
+            <br />
+            • Large industrial plants: $30,000 – $50,000+
+            <br />
+            <br />
+            <strong>Cost Factors</strong>
+            <br />
+            • Facility size
+            <br />
+            • Type of suppression system
+            <br />
+            • NFPA compliance requirements
+            <br />
+            • Installation complexity
+            <br />
+            • Maintenance needs
+            <br />
+            <br />
+            <strong>Summary:</strong>
+            <br />
+            Dry chemical systems are generally more cost-effective compared to
+            clean agent systems.
+            <br />
+            <br />
+            <strong>Installation Process Explained</strong>
+            <br />
+            <br />
+            <strong>Step-by-Step Installation</strong>
+            <br />
+            1. Site inspection and fire risk assessment
+            <br />
+            2. System design based on NFPA codes
+            <br />
+            3. Equipment selection (tanks, nozzles, detectors)
+            <br />
+            4. Pipe and system installation
+            <br />
+            5. Electrical and detection integration
+            <br />
+            6. System testing and certification
+            <br />
+            <br />
+            <strong>Summary:</strong>
+            <br />
+            Installation typically takes 3 to 10 days depending on facility
+            size.
+          </>
+        ),
+      },
+
+      {
+        title: "Case Study: Detroit Manufacturing Facility",
+        paragraph: (
+          <>
+            A mid-sized Detroit warehouse installed a dry chemical suppression
+            system after repeated fire hazards in storage zones.
+            <br />
+            <br />
+            <strong>Results:</strong>
+            <br />
+            • Fire risk reduced by 90%
+            <br />
+            • Insurance premiums decreased
+            <br />
+            • Full compliance with NFPA 17 standards
+            <br />
+            <br />
+            The system was installed through a certified provider linked via{" "}
+            <Link
+              href="/services"
+              className="text-blue-500 underline"
+              target="_blank"
+            >
+              Fire Suppression Systems Detroit
+            </Link>
+            .
+            <br />
+            <br />
+            <strong>NFPA Compliance & Safety Standards</strong>
+            <br />
+            Industrial fire systems in Detroit must comply with:
+            <br />
+            • NFPA 17 (Dry Chemical Systems)
+            <br />
+            • NFPA 2001 (Clean Agent Systems)
+            <br />
+            • OSHA workplace safety standards
+            <br />
+            <br />
+            <strong>Compliance ensures:</strong>
+            <br />
+            • Legal safety approval
+            <br />
+            • Insurance coverage eligibility
+            <br />• Reduced liability risks
+          </>
+        ),
+      },
+
+      {
+        title: "FAQ",
+        paragraph: (
+          <>
+            <strong>
+              What is the best fire suppression system for factories in Detroit?
+            </strong>
+            <br />
+            Dry chemical systems are often best for factories because they
+            handle flammable liquids, electrical equipment, and fast-spreading
+            fires efficiently.
+            <br />
+            <br />
+            <strong>
+              How much does a fire suppression system cost in Michigan?
+            </strong>
+            <br />
+            Costs range from $5,000 to over $50,000 depending on facility size,
+            system type, and installation complexity.
+            <br />
+            <br />
+            <strong>How long does installation take?</strong>
+            <br />
+            Most installations take between 3–10 days depending on industrial
+            complexity and system type.
+            <br />
+            <br />
+            <strong>
+              Are fire suppression systems required in industrial buildings?
+            </strong>
+            <br />
+            Yes. Most industrial facilities in Michigan must comply with NFPA
+            and OSHA fire safety standards.
+            <br />
+            <br />
+            <strong>
+              What is the most common industrial fire system in Detroit?
+            </strong>
+            <br />
+            Dry chemical fire suppression systems are the most widely used due
+            to their reliability and affordability.
+          </>
+        ),
+      },
+
+      {
+        title: "Conclusion",
+        paragraph: (
+          <>
+            The best industrial fire suppression systems in Detroit, MI depend
+            on facility type, but dry chemical systems remain the most widely
+            used due to cost efficiency, reliability, and compliance benefits.
+            <br />
+            Proper installation and NFPA compliance are critical to ensuring
+            maximum safety and performance.
+          </>
+        ),
+      },
+    ],
+  },
+  {
     slug: "gas-piping-detroit",
     title:
       "Safe and Efficient Commercial Gas Piping Installation in Detroit, MI",
@@ -716,142 +1698,6 @@ export const blogs: BlogPost[] = [
     ],
   },
   {
-    slug: "kitchen-exhaust-hood-ventilation-system",
-    title: "Kitchen Exhaust Hood & Ventilation System for Restaurants",
-    lastUpdated: "Jan 17, 2026", // optional for SEO
-    metaTitle:
-      "Kitchen Exhaust Hood Installation & Ventilation System for Restaurants",
-
-    metaDescription:
-      "Professional kitchen exhaust hood and ventilation system installation for restaurants. Improve fire safety, remove smoke and grease, and stay compliant.",
-
-    metaKeywords:
-      "kitchen exhaust hood, restaurant ventilation system, commercial kitchen hood",
-
-    description:
-      "A properly installed kitchen exhaust hood removes heat, smoke, and grease while keeping restaurants safe and compliant with fire and health regulations.",
-
-    alt: "",
-    image: "/blog/blog1.webp",
-
-    sections: [
-      {
-        title: "Running a Safe & Compliant Restaurant Kitchen",
-        paragraph: (
-          <>
-            Running a successful restaurant isn’t just about great food. A safe,
-            clean, and compliant kitchen is equally important. One of the most
-            critical systems in any commercial kitchen is the kitchen exhaust
-            hood and ventilation system. A properly installed system removes
-            heat, smoke, grease, and odors while helping your restaurant meet
-            fire and health safety requirements.
-          </>
-        ),
-      },
-
-      {
-        title: "What Is a Kitchen Exhaust Hood System?",
-        paragraph: (
-          <>
-            A kitchen exhaust hood is installed above cooking equipment such as
-            stoves, grills, fryers, and ovens. Its main purpose is to remove
-            smoke and steam, control excess heat and moisture, capture grease
-            particles, and eliminate cooking odors. The system pulls
-            contaminated air through filters and ductwork Vand releases it
-            safely outside.
-          </>
-        ),
-      },
-
-      {
-        title: "Why Proper Ventilation Is Essential",
-        paragraph: (
-          <>
-            Proper ventilation improves fire safety and ensures code compliance.
-            Grease buildup is a major fire hazard, and a well-designed exhaust
-            system helps meet NFPA and local fire codes. It also improves air
-            quality, prevents smoke-filled kitchens, keeps temperatures cooler,
-            and helps restaurants pass health inspections without penalties.
-          </>
-        ),
-      },
-
-      {
-        title: "Types of Commercial Kitchen Exhaust Hoods",
-        paragraph: (
-          <>
-            Type I exhaust hoods are designed for heavy-duty cooking equipment
-            that produces grease and smoke, such as fryers, grills,
-            charbroilers, and woks. These are required for most restaurants.
-            Type II exhaust hoods are used for heat and steam with minimal
-            grease, such as dishwashers, ovens, and steamers.
-          </>
-        ),
-      },
-
-      {
-        title: "Key Components of a Ventilation System",
-        paragraph: (
-          <>
-            A complete restaurant ventilation system includes an exhaust hood
-            canopy, grease filters, ductwork, exhaust fan, make-up air unit, and
-            fire suppression system . All components must work together to
-            ensure safe and efficient operation.
-          </>
-        ),
-      },
-
-      {
-        title: "Signs Your Restaurant Needs Better Ventilation",
-        paragraph: (
-          <>
-            Common warning signs include excessive smoke, strong cooking odors
-            in dining areas, an overheated kitchen environment, frequent fire
-            alarms, or failed health inspections. If these issues occur, your
-            ventilation system may need professional servicing or an upgrade.
-          </>
-        ),
-      },
-
-      {
-        title: "Why Professional Installation Matters",
-        paragraph: (
-          <>
-            Poor installation can lead to inefficient airflow, increased fire
-            risk, higher energy bills, and code violations. Professional
-            installation ensures your system is designed correctly for your
-            kitchen layout, equipment, and local regulations.
-          </>
-        ),
-      },
-
-      {
-        title: "Kitchen Exhaust Hood Services – Detroit, MI",
-        paragraph: (
-          <>
-            We provide kitchen exhaust hood installation, commercial ventilation
-            design, exhaust fan and ductwork setup, make-up air systems,
-            maintenance, and consultation for restaurants and commercial
-            kitchens in Detroit and surrounding areas. Our team ensures safety
-            and compliance.
-          </>
-        ),
-      },
-
-      {
-        title: "Contact Us",
-        paragraph: (
-          <>
-            Address: 11402 Schaefer Hwy, Detroit, MI 48227. Phone: 313-931-3070.
-            Email: desertinalaska@outlook.com. Whether you’re opening a new
-            restaurant or upgrading your kitchen, the right ventilation system
-            keeps your business safe, efficient, and compliant.
-          </>
-        ),
-      },
-    ],
-  },
-  {
     slug: "fire-suppression-service-installation",
 
     title: "Fire Suppression Service & Installation for Commercial Facilities",
@@ -1003,310 +1849,136 @@ export const blogs: BlogPost[] = [
     ],
   },
   {
-    slug: "industrial-dry-chemical-fire-suppression-detroit",
-
-    title:
-      "Best Industrial Fire Suppression Systems in Detroit, MI (2026 Guide)",
-    lastUpdated: "May 08, 2026",
-    metaTitle: "Commercial Fire Suppression Systems Installation & Service",
+    slug: "kitchen-exhaust-hood-ventilation-system",
+    title: "Kitchen Exhaust Hood & Ventilation System for Restaurants",
+    lastUpdated: "Jan 17, 2026", // optional for SEO
+    metaTitle:
+      "Kitchen Exhaust Hood Installation & Ventilation System for Restaurants",
 
     metaDescription:
-      "Explore the best industrial fire suppression systems in Detroit, MI. Learn types, cost, installation process, and NFPA safety standards for 2026.",
+      "Professional kitchen exhaust hood and ventilation system installation for restaurants. Improve fire safety, remove smoke and grease, and stay compliant.",
 
     metaKeywords:
-      "industrial fire suppression Detroit MI, dry chemical fire suppression systems, fire suppression cost Detroit, warehouse fire protection Michigan, commercial fire safety systems Detroit",
+      "kitchen exhaust hood, restaurant ventilation system, commercial kitchen hood",
 
     description:
-      "Explore the best industrial fire suppression systems in Detroit, MI. Learn types, cost, installation process, and NFPA safety standards for 2026.",
+      "A properly installed kitchen exhaust hood removes heat, smoke, and grease while keeping restaurants safe and compliant with fire and health regulations.",
 
     alt: "",
-    image: "/blog/Best Industrial Fire Suppression Systems in Detroit, MI.webp",
+    image: "/blog/blog1.webp",
 
     sections: [
       {
-        title: "Introduction",
+        title: "Running a Safe & Compliant Restaurant Kitchen",
         paragraph: (
           <>
-            The best industrial fire suppression systems in Detroit, MI are
-            typically dry chemical systems, clean agent systems, and foam-based
-            suppression systems, depending on the facility type and fire risk
-            level.
-            <br />
-            <br />
-            On average, industrial fire suppression systems in Detroit cost
-            between $5,000 and $50,000+, depending on system size, hazard
-            classification, and installation complexity.
-            <br />
-            <br />
-            Dry chemical systems are widely used in manufacturing plants and
-            warehouses because they quickly suppress fires involving flammable
-            liquids and electrical equipment.
-            <br />
-            <br />
-            For specialized installations in Detroit, businesses often rely on
-            certified contractors such as{" "}
-            <Link href="/" className="text-blue-500 underline" target="_blank">
-              Industrial Fire Suppression Services Detroit
-            </Link>{" "}
-            for compliant and code-approved systems.
+            Running a successful restaurant isn’t just about great food. A safe,
+            clean, and compliant kitchen is equally important. One of the most
+            critical systems in any commercial kitchen is the kitchen exhaust
+            hood and ventilation system. A properly installed system removes
+            heat, smoke, grease, and odors while helping your restaurant meet
+            fire and health safety requirements.
           </>
         ),
       },
 
       {
-        title: "What Are Industrial Fire Suppression Systems?",
+        title: "What Is a Kitchen Exhaust Hood System?",
         paragraph: (
           <>
-            Industrial fire suppression systems are engineered safety solutions
-            designed to automatically detect and extinguish fires in high-risk
-            environments such as factories, warehouses, and chemical plants.{" "}
-            <br />
-            <strong>Breakdown:</strong>
-            <br />
-            • Dry Chemical Systems
-            <br />
-            • Clean Agent Systems →
-            <br />
-            • Foam Systems →
-            <br />
-            • Water Mist Systems →
-            <br />
-            These systems activate automatically when heat or smoke is detected.
+            A kitchen exhaust hood is installed above cooking equipment such as
+            stoves, grills, fryers, and ovens. Its main purpose is to remove
+            smoke and steam, control excess heat and moisture, capture grease
+            particles, and eliminate cooking odors. The system pulls
+            contaminated air through filters and ductwork Vand releases it
+            safely outside.
           </>
         ),
       },
 
       {
-        title:
-          "What Are the Best Industrial Fire Suppression Systems in Detroit, MI?",
+        title: "Why Proper Ventilation Is Essential",
         paragraph: (
           <>
-            <strong>Direct Answer:</strong>
-            <br />
-            The best systems depend on the industry type, but in Detroit, dry
-            chemical systems and clean agent systems are the most commonly used
-            due to their effectiveness in industrial environments.
-            <br />
-            <br />
-            <strong>Breakdown:</strong>
-            <br />
-            • Dry Chemical Systems → Best for warehouses, fuel storage, and
-            manufacturing
-            <br />
-            • Clean Agent Systems → Best for electrical rooms and sensitive
-            equipment
-            <br />
-            • Foam Systems → Best for chemical and oil-based fire risks
-            <br />
-            • Water Mist Systems → Best for cooling and suppression in large
-            facilities
-            <br />
-            <br />
-            <strong>Summary:</strong>
-            <br />
-            Dry chemical systems are the most widely installed in Detroit
-            industrial facilities due to fast response and low damage risk.
+            Proper ventilation improves fire safety and ensures code compliance.
+            Grease buildup is a major fire hazard, and a well-designed exhaust
+            system helps meet NFPA and local fire codes. It also improves air
+            quality, prevents smoke-filled kitchens, keeps temperatures cooler,
+            and helps restaurants pass health inspections without penalties.
           </>
         ),
       },
 
       {
-        title: "Types of Industrial Fire Suppression Systems",
+        title: "Types of Commercial Kitchen Exhaust Hoods",
         paragraph: (
           <>
-            <strong>1. Dry Chemical Fire Suppression Systems</strong>
-            <br />
-            Used in high-risk industrial environments. They release powder
-            agents that stop chemical reactions in fire.
-            <br />
-            <br />
-            <strong>2. Clean Agent Systems (FM-200 / Novec 1230)</strong>
-            <br />
-            Used where electronics are sensitive. Leaves no residue.
-            <br />
-            <br />
-            <strong>3. Foam-Based Systems</strong>
-            <br />
-            Used in oil, gas, and chemical facilities.
-            <br />
-            <br />
-            <strong>4. Water Mist Systems</strong>
-            <br />
-            Uses fine droplets to cool fire and suppress oxygen.
-            <br />
-            <br />
-            <strong>What is an industrial fire suppression system?</strong>
-            <br />
-            An industrial fire suppression system is a safety system designed to
-            detect and automatically extinguish fires in factories, warehouses,
-            and industrial facilities using agents like dry chemical powder,
-            foam, gas, or water mist.
+            Type I exhaust hoods are designed for heavy-duty cooking equipment
+            that produces grease and smoke, such as fryers, grills,
+            charbroilers, and woks. These are required for most restaurants.
+            Type II exhaust hoods are used for heat and steam with minimal
+            grease, such as dishwashers, ovens, and steamers.
           </>
         ),
       },
 
       {
-        title: "Cost of Industrial Fire Suppression in Detroit, MI",
+        title: "Key Components of a Ventilation System",
         paragraph: (
           <>
-            <strong>Average Cost Range</strong>
-            <br />
-            • Small facilities: $5,000 – $15,000
-            <br />
-            • Medium facilities: $15,000 – $30,000
-            <br />
-            • Large industrial plants: $30,000 – $50,000+
-            <br />
-            <br />
-            <strong>Cost Factors</strong>
-            <br />
-            • Facility size
-            <br />
-            • Type of suppression system
-            <br />
-            • NFPA compliance requirements
-            <br />
-            • Installation complexity
-            <br />
-            • Maintenance needs
-            <br />
-            <br />
-            <strong>Summary:</strong>
-            <br />
-            Dry chemical systems are generally more cost-effective compared to
-            clean agent systems.
-            <br />
-            <br />
-            <strong>Installation Process Explained</strong>
-            <br />
-            <br />
-            <strong>Step-by-Step Installation</strong>
-            <br />
-            1. Site inspection and fire risk assessment
-            <br />
-            2. System design based on NFPA codes
-            <br />
-            3. Equipment selection (tanks, nozzles, detectors)
-            <br />
-            4. Pipe and system installation
-            <br />
-            5. Electrical and detection integration
-            <br />
-            6. System testing and certification
-            <br />
-            <br />
-            <strong>Summary:</strong>
-            <br />
-            Installation typically takes 3 to 10 days depending on facility
-            size.
+            A complete restaurant ventilation system includes an exhaust hood
+            canopy, grease filters, ductwork, exhaust fan, make-up air unit, and
+            fire suppression system . All components must work together to
+            ensure safe and efficient operation.
           </>
         ),
       },
 
       {
-        title: "Case Study: Detroit Manufacturing Facility",
+        title: "Signs Your Restaurant Needs Better Ventilation",
         paragraph: (
           <>
-            A mid-sized Detroit warehouse installed a dry chemical suppression
-            system after repeated fire hazards in storage zones.
-            <br />
-            <br />
-            <strong>Results:</strong>
-            <br />
-            • Fire risk reduced by 90%
-            <br />
-            • Insurance premiums decreased
-            <br />
-            • Full compliance with NFPA 17 standards
-            <br />
-            <br />
-            The system was installed through a certified provider linked via{" "}
-            <Link
-              href="/services"
-              className="text-blue-500 underline"
-              target="_blank"
-            >
-              Fire Suppression Systems Detroit
-            </Link>
-            .
-            <br />
-            <br />
-            <strong>NFPA Compliance & Safety Standards</strong>
-            <br />
-            Industrial fire systems in Detroit must comply with:
-            <br />
-            • NFPA 17 (Dry Chemical Systems)
-            <br />
-            • NFPA 2001 (Clean Agent Systems)
-            <br />
-            • OSHA workplace safety standards
-            <br />
-            <br />
-            <strong>Compliance ensures:</strong>
-            <br />
-            • Legal safety approval
-            <br />
-            • Insurance coverage eligibility
-            <br />• Reduced liability risks
+            Common warning signs include excessive smoke, strong cooking odors
+            in dining areas, an overheated kitchen environment, frequent fire
+            alarms, or failed health inspections. If these issues occur, your
+            ventilation system may need professional servicing or an upgrade.
           </>
         ),
       },
 
       {
-        title: "FAQ",
+        title: "Why Professional Installation Matters",
         paragraph: (
           <>
-            <strong>
-              What is the best fire suppression system for factories in Detroit?
-            </strong>
-            <br />
-            Dry chemical systems are often best for factories because they
-            handle flammable liquids, electrical equipment, and fast-spreading
-            fires efficiently.
-            <br />
-            <br />
-            <strong>
-              How much does a fire suppression system cost in Michigan?
-            </strong>
-            <br />
-            Costs range from $5,000 to over $50,000 depending on facility size,
-            system type, and installation complexity.
-            <br />
-            <br />
-            <strong>How long does installation take?</strong>
-            <br />
-            Most installations take between 3–10 days depending on industrial
-            complexity and system type.
-            <br />
-            <br />
-            <strong>
-              Are fire suppression systems required in industrial buildings?
-            </strong>
-            <br />
-            Yes. Most industrial facilities in Michigan must comply with NFPA
-            and OSHA fire safety standards.
-            <br />
-            <br />
-            <strong>
-              What is the most common industrial fire system in Detroit?
-            </strong>
-            <br />
-            Dry chemical fire suppression systems are the most widely used due
-            to their reliability and affordability.
+            Poor installation can lead to inefficient airflow, increased fire
+            risk, higher energy bills, and code violations. Professional
+            installation ensures your system is designed correctly for your
+            kitchen layout, equipment, and local regulations.
           </>
         ),
       },
 
       {
-        title: "Conclusion",
+        title: "Kitchen Exhaust Hood Services – Detroit, MI",
         paragraph: (
           <>
-            The best industrial fire suppression systems in Detroit, MI depend
-            on facility type, but dry chemical systems remain the most widely
-            used due to cost efficiency, reliability, and compliance benefits.
-            <br />
-            Proper installation and NFPA compliance are critical to ensuring
-            maximum safety and performance.
+            We provide kitchen exhaust hood installation, commercial ventilation
+            design, exhaust fan and ductwork setup, make-up air systems,
+            maintenance, and consultation for restaurants and commercial
+            kitchens in Detroit and surrounding areas. Our team ensures safety
+            and compliance.
+          </>
+        ),
+      },
+
+      {
+        title: "Contact Us",
+        paragraph: (
+          <>
+            Address: 11402 Schaefer Hwy, Detroit, MI 48227. Phone: 313-931-3070.
+            Email: desertinalaska@outlook.com. Whether you’re opening a new
+            restaurant or upgrading your kitchen, the right ventilation system
+            keeps your business safe, efficient, and compliant.
           </>
         ),
       },
