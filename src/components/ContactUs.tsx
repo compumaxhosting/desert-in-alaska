@@ -2,6 +2,7 @@
 
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import RequestQuoteForm from "@/components/RequestQuoteForm";
+import BookAppointmentForm from "./BookAppointmentForm";
 
 export default function ContactUs() {
   return (
@@ -9,8 +10,7 @@ export default function ContactUs() {
       <div className="mx-auto max-w-7xl px-4">
         <div className="grid items-stretch gap-12 lg:grid-cols-2">
           {/* LEFT – REQUEST A QUOTE */}
-          <RequestQuoteForm />
-
+         <BookAppointmentForm />
           {/* RIGHT – CONTACT INFO */}
           <div className="flex flex-col justify-center">
             <h2 className="text-lg font-semibold text-[#432719]">
@@ -94,3 +94,4 @@ export default function ContactUs() {
     </section>
   );
 }
+ 
