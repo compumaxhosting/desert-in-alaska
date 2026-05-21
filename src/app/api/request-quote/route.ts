@@ -20,7 +20,13 @@ export async function POST(req: Request) {
     // 🚫 Block specific emails
     const blockedEmails = [
       "ashleybro@cachehelper.com",
-      "ashleybro@commandorbit.com", // ✅ added
+      "ashleybro@commandorbit.com",
+      "	iris@businesscoachvas.com",
+      "dahatu.na.27@gmail.com",
+      "daniel.wright@jmailservice.com",
+      "g.u.l.o.x.awi23@gmail.com",
+      "guki.zu.f150@gmail.com",
+      "samuel.everett@jmailservice.com",
     ];
 
     if (blockedEmails.includes(normalizedEmail)) {
@@ -30,7 +36,11 @@ export async function POST(req: Request) {
     // 🚫 Block domains (stronger protection)
     const blockedDomains = [
       "cachehelper.com",
-      "commandorbit.com", 
+      "commandorbit.com",
+      "businesscoachvas.com",
+      "businessbrokersleads.com",
+      "virtualteamexpert.com",
+      "integribridge.com", // ✅ added
     ]; // ✅ added
 
     const emailDomain = normalizedEmail.split("@")[1];

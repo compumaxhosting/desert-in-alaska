@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 import {
   Menu,
@@ -223,15 +224,20 @@ export default function Header() {
 
             {/* CONTACT */}
             <div className="mt-6 border-t pt-4">
-              <a href="tel:13139313070" className="block py-2">
-                📞 313-931-3070
+              <a
+                href="tel:13139313070"
+                className="flex items-center gap-2 py-2"
+              >
+                <FaPhoneAlt className="text-sm" />
+                <span>313-931-3070</span>
               </a>
 
               <a
                 href="mailto:desertinalaska@outlook.com"
-                className="block py-2"
+                className="flex items-center gap-2 py-2"
               >
-                ✉️ desertinalaska@outlook.com
+                <FaEnvelope className="text-sm" />
+                <span>desertinalaska@outlook.com</span>
               </a>
 
               {/* SOCIAL */}

@@ -83,10 +83,10 @@ export default function Services() {
       <div className="mx-auto max-w-7xl px-6">
         {/* ✅ H1 (BIG SEO BOOST) */}
         <div className="text-center mb-5">
-          <h1 className="text-3xl sm:text-4xl font-semibold text-[#3b2a1f]">
+          <p className="text-3xl sm:text-4xl font-semibold text-[#3b2a1f]">
             Commercial Fire Suppression, HVAC &
             <br /> Mechanical Services in Detroit, MI
-          </h1>
+          </p>
 
           <p className="mt-4 text-[#6b5a4d] max-w-3xl mx-auto">
             Expert fire protection, HVAC, kitchen exhaust, gas piping, and

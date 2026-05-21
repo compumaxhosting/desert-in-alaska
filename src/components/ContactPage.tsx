@@ -9,10 +9,11 @@ export default function ContactPage() {
           </p>
 
           {/* HEADING */}
-          <h1 className="text-5xl md:text-6xl font-normal leading-[1.1] text-white font-sans-400">
+          <p
+           className="text-5xl md:text-6xl font-normal leading-[1.1] text-white font-sans-400">
             GET IN TOUCH <br />
             <span className="text-[#9b5d2e]">WITH OUR TEAM</span>
-          </h1>
+          </p>
 
           {/* DESCRIPTION */}
           <p className="mt-6 text-md leading-relaxed text-[#F7F5F3CC] font-serif font-light">
