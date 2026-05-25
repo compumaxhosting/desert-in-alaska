@@ -1,14 +1,41 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+
+interface Captcha {
+  code: string;
+}
 
 export default function BookAppointmentForm() {
   const [loading, setLoading] = useState(false);
+  const [captcha, setCaptcha] = useState<Captcha>({
+    code: "",
+  });
+  const [captchaInput, setCaptchaInput] = useState("");
   const router = useRouter();
+
+  useEffect(() => {
+    generateCaptcha();
+  }, []);
+
+  function generateCaptcha() {
+    const code = Math.floor(Math.random() * 900000 + 100000).toString();
+
+    setCaptcha({ code });
+    setCaptchaInput("");
+  }
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+
+    // Validate captcha
+    if (captchaInput !== captcha.code) {
+      alert("Captcha is incorrect. Please try again.");
+      generateCaptcha();
+      return;
+    }
+
     setLoading(true);
 
     const formData = new FormData(e.currentTarget);
@@ -137,6 +164,45 @@ export default function BookAppointmentForm() {
               type="date"
               className="w-full rounded-md border border-[#e5ded8] px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-[#86522d]"
             />
+          </div>
+
+          {/* CAPTCHA */}
+          <div>
+            <label className="mb-1 block text-sm text-[#6b5a4d]">
+              Verify You&apos;re Human *
+            </label>
+
+            <div className="mb-3 rounded-md border border-[#e5ded8] bg-[#f9f7f4] p-4">
+              <p
+                className="select-none text-center text-2xl font-bold tracking-widest text-[#432719]"
+                style={{
+                  userSelect: "none",
+                  WebkitUserSelect: "none",
+                  letterSpacing: "8px",
+                }}
+              >
+                {captcha.code}
+              </p>
+            </div>
+
+            <div className="flex gap-2">
+              <input
+                type="text"
+                value={captchaInput}
+                onChange={(e) => setCaptchaInput(e.target.value)}
+                placeholder="Enter the numbers"
+                className="flex-1 rounded-md border border-[#e5ded8] px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-[#86522d]"
+                onCopy={(e) => e.preventDefault()}
+                onCut={(e) => e.preventDefault()}
+              />
+              <button
+                type="button"
+                onClick={generateCaptcha}
+                className="rounded-md border border-[#e5ded8] bg-white px-4 py-2 text-sm font-medium text-[#86522d] hover:bg-[#f9f7f4]"
+              >
+                Refresh
+              </button>
+            </div>
           </div>
 
           {/* MESSAGE */}
