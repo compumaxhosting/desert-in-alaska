@@ -1697,7 +1697,7 @@ export const blogs: BlogPost[] = [
     ],
   },
   {
-    slug: "gas-piping-detroit",
+    slug: "commercial-gas-piping-detroit",
     title:
       "Safe and Efficient Commercial Gas Piping Installation in Detroit, MI",
     lastUpdated: "Apr 24, 2026",

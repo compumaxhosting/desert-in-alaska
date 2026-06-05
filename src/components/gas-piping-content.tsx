@@ -47,7 +47,14 @@ export default function GasPipingContent() {
           Reliable energy is the backbone of any successful commercial
           operation, from high-capacity industrial kitchens to complex
           manufacturing facilities where gas piping systems must be safe,
-          efficient, and built to last. At Desert In Alaska Corp, we specialize
+          efficient, and built to last. At {" "}
+          <Link
+    href="/"
+    className="text-blue-600  hover:text-blue-800"
+  >
+     Desert In Alaska Corp
+  </Link>{" "}
+           , we specialize
           in professional commercial gas piping and mechanical services
           throughout the Greater Detroit area, bringing over 25 years of
           hands-on experience to local businesses across Wayne, Macomb, Oakland,

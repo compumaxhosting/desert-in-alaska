@@ -40,20 +40,33 @@ export default function HVACContent() {
 
       {/* INTRO */}
       <section className="max-w-6xl mx-auto px-4 py-14">
-        <p className="mt-4 text-[#5a4a42] leading-relaxed">
-          Desert In Alaska Corp provides expert commercial HVAC services in
-          Metro Detroit. We offer installation, repair, and maintenance for
-          restaurants and industrial facilities. Our licensed team ensures
-          energy efficiency and climate control, helping business owners reduce
-          costs while maintaining a comfortable, code-compliant environment.
-        </p>
+        <p className="mt-4 text-[#5a4a42] leading-relaxed">Desert In Alaska Corp provides expert {" "}
+  <Link
+    href="/"
+    className="text-blue-600  hover:text-blue-800"
+  >
+    commercial HVAC services in Metro Detroit
+  </Link>{" "}
+   We offer
+  installation, repair, and maintenance for restaurants and industrial
+  facilities. Our licensed team ensures energy efficiency and climate control,
+  helping business owners reduce costs while maintaining a comfortable,
+  code-compliant environment.
+</p>
         <h2 className="text-2xl font-semibold text-[#2b1a12]">
           Reliable Commercial HVAC Services in Metro Detroit
         </h2>
 
         <p className="mt-4 text-[#5a4a42] leading-relaxed">
           Maintaining a comfortable and efficient environment is vital for any
-          business. At Desert In Alaska Corp, we specialize in professional
+          business. Atc {" "}
+          <Link
+    href="/"
+    className="text-blue-600  hover:text-blue-800"
+  >
+     Desert In Alaska Corp
+  </Link>{" "}
+          , we specialize in professional
           commercial HVAC installation and repair tailored to the unique climate
           of Metro Detroit. Since 1997, our team has been the trusted choice for
           businesses looking to balance high-performance climate control with
