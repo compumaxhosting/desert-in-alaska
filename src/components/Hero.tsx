@@ -90,7 +90,7 @@ export default function Hero() {
             {/* Trust Indicators (same design, just smarter render) */}
             <div
               ref={trustRef}
-              className={`mt-14 flex flex-wrap gap-8 border-t border-white/20 pt-8 text-sm text-white/80 font-serif
+              className={`mt-14 flex flex-wrap gap-8 border-t border-white/20 pt-8 text-sm text-white font-serif
                 transition-all duration-700 ease-out
                 ${
                   trustVisible
