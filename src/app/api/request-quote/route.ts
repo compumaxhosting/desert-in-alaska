@@ -27,6 +27,7 @@ export async function POST(req: Request) {
       "g.u.l.o.x.awi23@gmail.com",
       "guki.zu.f150@gmail.com",
       "samuel.everett@jmailservice.com",
+      "samuel.everett@jmailservice.com",
     ];
 
     if (blockedEmails.includes(normalizedEmail)) {

@@ -6,6 +6,16 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/index.php",
+        destination: "/",
+        permanent: true, // ✅ 301 redirect (SEO safe)
+      },
+      {
+        source: "/index.html",
+        destination: "/",
+        permanent: true, // ✅ 301 redirect (SEO safe)
+      },
+      {
         source: "/commercial-hvac-services-detroit-mi.php",
         destination: "/",
         permanent: true, // ✅ 301 redirect (SEO safe)
