@@ -128,7 +128,7 @@ export default function ChatWidget() {
             {chat.map((msg, i) => (
               <div
                 key={i}
-                className={`max-w-[85%] rounded-lg p-3 text-sm break-words ${
+                className={`max-w-[85%] rounded-lg p-3 text-sm wrap-break-word ${
                   msg.role === "user"
                     ? "ml-auto bg-[#86492D] text-white"
                     : "bg-gray-100 text-black"
