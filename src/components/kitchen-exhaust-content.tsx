@@ -534,10 +534,10 @@ export default function KitchenExhaustContent() {
     <div className="space-y-4">
       <details className="border border-[#d6c4b8] rounded-lg p-4">
         <summary className="font-semibold text-[#2b1a12] cursor-pointer">
-          What is the purpose of a kitchen exhaust system?
+          Q: What is the purpose of a kitchen exhaust system?
         </summary>
         <p className="mt-3 text-[#3f3029]">
-          A kitchen exhaust system removes smoke, grease, heat, moisture, and
+          A: A kitchen exhaust system removes smoke, grease, heat, moisture, and
           cooking odors from commercial kitchens, improving air quality and
           reducing fire risks.
         </p>
@@ -545,10 +545,10 @@ export default function KitchenExhaustContent() {
 
       <details className="border border-[#d6c4b8] rounded-lg p-4">
         <summary className="font-semibold text-[#2b1a12] cursor-pointer">
-          Are kitchen exhaust systems required by code?
+          Q: Are kitchen exhaust systems required by code?
         </summary>
         <p className="mt-3 text-[#3f3029]">
-          Yes. Most commercial kitchens must have properly designed exhaust and
+          A: Yes. Most commercial kitchens must have properly designed exhaust and
           ventilation systems that comply with NFPA standards, fire codes, and
           local building regulations.
         </p>
@@ -556,10 +556,10 @@ export default function KitchenExhaustContent() {
 
       <details className="border border-[#d6c4b8] rounded-lg p-4">
         <summary className="font-semibold text-[#2b1a12] cursor-pointer">
-          What is the difference between Type I and Type II hoods?
+          Q: What is the difference between Type I and Type II hoods?
         </summary>
         <p className="mt-3 text-[#3f3029]">
-          Type I hoods are designed for grease-producing cooking equipment such
+          A: Type I hoods are designed for grease-producing cooking equipment such
           as fryers and grills. Type II hoods handle heat and steam from
           equipment that produces little or no grease.
         </p>
@@ -567,10 +567,10 @@ export default function KitchenExhaustContent() {
 
       <details className="border border-[#d6c4b8] rounded-lg p-4">
         <summary className="font-semibold text-[#2b1a12] cursor-pointer">
-          How often should kitchen exhaust systems be inspected?
+          Q: How often should kitchen exhaust systems be inspected?
         </summary>
         <p className="mt-3 text-[#3f3029]">
-          Inspection frequency depends on cooking volume and local regulations.
+          A: Inspection frequency depends on cooking volume and local regulations.
           Many commercial kitchens benefit from regular inspections and
           preventative maintenance programs to maintain compliance and
           performance.
@@ -579,10 +579,10 @@ export default function KitchenExhaustContent() {
 
       <details className="border border-[#d6c4b8] rounded-lg p-4">
         <summary className="font-semibold text-[#2b1a12] cursor-pointer">
-          Can an exhaust system help reduce fire hazards?
+          Q: Can an exhaust system help reduce fire hazards?
         </summary>
         <p className="mt-3 text-[#3f3029]">
-          Yes. Proper ventilation reduces grease buildup, improves air
+          A: Yes. Proper ventilation reduces grease buildup, improves air
           circulation, and works alongside kitchen fire suppression systems to
           improve overall fire safety.
         </p>
@@ -590,10 +590,10 @@ export default function KitchenExhaustContent() {
 
       <details className="border border-[#d6c4b8] rounded-lg p-4">
         <summary className="font-semibold text-[#2b1a12] cursor-pointer">
-          Do restaurants need make-up air systems?
+          Q: Do restaurants need make-up air systems?
         </summary>
         <p className="mt-3 text-[#3f3029]">
-          Yes. Most commercial kitchens require make-up air systems to replace
+          A: Yes. Most commercial kitchens require make-up air systems to replace
           exhausted air and maintain balanced airflow throughout the facility.
         </p>
       </details>

@@ -12,28 +12,40 @@ const services = [
     title: "Commercial HVAC Services",
     link: "/services/commercial-hvac-detroit",
     image: "/hvac.webp",
-    text: "Commercial HVAC installation, repair, replacement, and preventative maintenance for Detroit restaurants, warehouses, and industrial facilities.",
+    highlights: [
+      "Installation, repair, and maintenance",
+      "Energy-efficient commercial system solutions",
+    ],
   },
   {
     icon: <Utensils />,
     title: "Commercial Kitchen Exhaust Systems",
     link: "/services/kitchen-exhaust-systems-detroit",
     image: "/kitchen.webp",
-    text: "Kitchen exhaust hood installation, ductwork, and ventilation system servicing for Detroit restaurants and commercial kitchens.",
+    highlights: [
+      "Hood, ductwork, and ventilation installation",
+      "NFPA-compliant commercial kitchen systems",
+    ],
   },
   {
     icon: <Fuel />,
     title: "Gas Piping & Mechanical Services",
     link: "/services/gas-piping-detroit",
     image: "/service-four.webp",
-    text: "Commercial gas piping installation, tenant improvements, and mechanical system modifications for Detroit commercial properties.",
+    highlights: [
+      "Commercial gas piping installation and upgrades",
+      "Code-compliant mechanical solutions",
+    ],
   },
   {
     icon: <Factory />,
     title: "Industrial Dry Chemical Systems",
     link: "/services/industrial-dry-chemical-fire-suppression-detroit",
     image: "/industrial.webp",
-    text: "Industrial dry chemical fire suppression systems for Detroit paint booths, collision centers, and manufacturing facilities.",
+    highlights: [
+      "Dry chemical fire suppression system service",
+      "Protection for manufacturing and collision centers",
+    ],
   },
 ];
 
@@ -68,7 +80,20 @@ function ServiceCard({ item }: { item: (typeof services)[number] }) {
 
         <div className="p-8 pt-6">
           <h4 className="text-lg font-medium text-[#3b2a1f]">{item.title}</h4>
-          <p className="mt-3 text-sm text-[#876C61]">{item.text}</p>
+          <ul className="mt-4 space-y-3 text-sm text-[#876C61]">
+            {item.highlights.map((highlight) => (
+              <li key={highlight} className="flex items-start gap-3">
+                <span className="mt-1 inline-flex h-2 w-2 rounded-full bg-[#8b5428]" />
+                <span>{highlight}</span>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-6">
+            <span className="inline-flex rounded-full bg-[#8b5428] px-4 py-2 text-sm font-semibold text-white">
+              Learn More
+            </span>
+          </div>
         </div>
       </div>
     </Link>
@@ -81,36 +106,13 @@ export default function Services() {
   return (
     <section className="bg-[#eeebe8] py-10">
       <div className="mx-auto max-w-7xl px-6">
-        {/* ✅ H1 (BIG SEO BOOST) */}
-        <div className="text-center mb-5">
-          <p className="text-3xl sm:text-4xl font-semibold text-[#3b2a1f]">
-            Commercial Fire Suppression, HVAC &
-            <br /> Mechanical Services in Detroit, MI
-          </p>
 
-          <p className="mt-4 text-[#6b5a4d] max-w-3xl mx-auto">
-            Expert fire protection, HVAC, kitchen exhaust, gas piping, and
-            industrial system solutions for Detroit businesses.
-          </p>
-          <p className="mt-4 text-[#6b5a4d] max-w-3xl mx-auto">
-            We specialize in designing, installing, and maintaining reliable
-            commercial systems that keep your operations safe, efficient, and
-            code-compliant. From preventative maintenance to emergency service,
-            our Detroit team delivers professional solutions tailored to your
-            business needs.
-          </p>
-        </div>
-
-        {/* HEADER */}
-        <div
+       <div
           ref={ref}
           className={`text-center transition-all duration-700 ease-out
             ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}
           `}
         >
-          <p className="text-xs uppercase tracking-widest text-[#8b5428]">
-            What We Do
-          </p>
 
           <h2 className="mt-2 text-2xl md:text-3xl text-[#3b2a1f] font-semibold">
             Our Commercial Services
@@ -131,11 +133,11 @@ export default function Services() {
             className="h-105 w-full object-cover"
           />
 
-          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
 
           <div className="absolute inset-0 flex items-center">
-            <div className="max-w-xl px-10 text-white">
-              <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-[#8b5428] px-4 py-2 text-sm">
+            <div className="max-w-xl px-10 py-8 text-white">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-[#8b5428] px-4 py-2 text-sm shadow-lg shadow-black/30">
                 <Flame size={16} />
                 Primary Focus
               </div>
@@ -144,16 +146,15 @@ export default function Services() {
                 Commercial Fire Suppression Systems in Detroit
               </h3>
 
-              <p className="mt-4 text-white/85">
+              <p className="mt-4 max-w-xl text-white/90">
                 Installation and servicing of commercial kitchen fire
                 suppression systems, industrial dry chemical systems, and
                 complete life safety solutions.
               </p>
 
-              {/* ✅ FIXED LINK */}
               <Link
                 href="/services/commercial-fire-suppression-detroit"
-                className="mt-6 inline-flex items-center gap-2 bg-[#8b5428] px-6 py-3 text-sm font-semibold hover:bg-[#73431f]"
+                className="mt-6 inline-flex items-center gap-2 rounded-md bg-[#8b5428] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-black/20 hover:bg-[#73431f]"
               >
                 Learn More →
               </Link>

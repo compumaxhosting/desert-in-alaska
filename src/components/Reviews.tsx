@@ -68,7 +68,7 @@ export default function Reviews() {
             Client Reviews
           </p>
 
-          <h2 className="mt-4 text-3xl md:text-3xl text-[#432719]">
+          <h2 className="mt-4 text-2xl md:text-3xl text-[#432719]">
             CUSTOMER <span className="text-[#86522d]">REVIEWS</span>
           </h2>
         </div>

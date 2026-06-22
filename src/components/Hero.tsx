@@ -5,6 +5,8 @@ import Link from "next/link";
 import { IoShieldOutline, IoTimeOutline } from "react-icons/io5";
 import { PiMedalThin } from "react-icons/pi";
 import { useEffect, useRef, useState } from "react";
+import { FiPhone } from "react-icons/fi";
+import HeroTrustBar from "./HeroTrustBar";
 
 export default function Hero() {
   const trustRef = useRef<HTMLDivElement | null>(null);
@@ -57,40 +59,43 @@ export default function Hero() {
             </div>
 
             {/* ✅ H1 visible immediately (no delay) */}
-            <h1 className="text-4xl font-medium font-sans-400 leading-[1.05] sm:text-3xl md:text-5xl lg:text-6xl">
-              Detroit’s Trusted
+            <h1 className="text-2xl font-medium font-sans-400 leading-[1.05] sm:text-3xl md:text-4xl lg:text-4xl">
+              Commercial Fire Protection & HVAC Experts in Detroit Since 1997
             </h1>
-            <p className="text-4xl font-medium font-sans-400 leading-[1.05] sm:text-2xl md:text-3xl lg:text-3xl text-[#c88a4a]">
-              Commercial Fire Protection & HVAC Specialists
+            <p className="text-md font-medium font-sans-400 leading-[1.05] sm:text-md md:text-xl lg:text-xl text-[#c88a4a] mt-4">
+              NFPA-compliant fire suppression, HVAC, and mechanical systems for
+              restaurants, industrial facilities, and commercial buildings.
             </p>
             {/* Description */}
-            <p className="mt-6 max-w-2xl text-base text-white/85 sm:text-lg font-serif">
+            <p className="mt-6 max-w-2xl text-xs text-white/85 sm:text-sm font-serif">
               We provide comprehensive fire suppression systems, commercial HVAC
               solutions, kitchen exhaust, and mechanical services across Metro
-              Detroit. 
+              Detroit.
             </p>
 
             {/* Buttons */}
             <div className="mt-10 flex flex-wrap gap-4">
-              <Link
-                href="/contact"
-                className="rounded-md font-serif bg-[#8b5428] px-8 py-4 text-sm font-semibold text-white hover:bg-[#73431f] transition"
+              <a
+                href="tel:3139313070"
+                className="rounded-md font-serif bg-[#8b5428] px-8 py-4 text-xs sm:text-xs md: text-sm font-semibold text-white hover:bg-[#73431f] transition inline-flex items-center gap-2"
               >
-                Request Service
-              </Link>
+                <FiPhone size={16} />
+                Emergency Service Available
+              </a>
 
               <Link
-                href="/services"
-                className="rounded-md font-serif border border-white/60 px-8 py-4 text-sm font-semibold text-white hover:bg-white hover:text-black transition"
+                href="/contact"
+                className="rounded-md font-serif border border-white/60 px-8 py-4 text-xs sm:text-xs md: text-sm font-semibold text-white hover:bg-white hover:text-black transition"
               >
-                Our Services
+                Schedule On-Site Inspection
               </Link>
             </div>
+            <HeroTrustBar />  
 
             {/* Trust Indicators (same design, just smarter render) */}
             <div
               ref={trustRef}
-              className={`mt-14 flex flex-wrap gap-8 border-t border-white/20 pt-8 text-sm text-white font-serif
+              className={`mt-6 flex flex-wrap gap-8 border-t border-white/20 pt-8 text-sm text-white font-serif
                 transition-all duration-700 ease-out
                 ${
                   trustVisible
@@ -111,7 +116,7 @@ export default function Hero() {
 
               <div className="flex items-center gap-2">
                 <IoTimeOutline className="text-lg" />
-                <span>Serving Detroit Since 1997</span>
+                <span>Emergency Service Available</span>
               </div>
             </div>
           </div>

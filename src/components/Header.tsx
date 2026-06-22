@@ -83,17 +83,23 @@ export default function Header() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-black/10 bg-white">
+    <header className="sticky top-0 z-50 w-full border-b border-black/10 bg-white py-2">
       <div className="mx-auto max-w-7xl px-4">
         <div className="flex h-20 items-center justify-between">
-          <Link href="/" className="flex items-center">
+          <Link
+            href="/"
+            className="flex flex-col items-left justify-center gap-1 py-1"
+          >
             <Image
               src="/logo.webp"
               alt="Desert in Alaska"
-              width={160}
-              height={50}
+              width={180}
+              height={70}
               priority
             />
+            <span className="text-[10px] sm:text-[10px] md:text-[12px] italic text-slate-800 leading font-bold pl-1">
+              Mechanical and fire Suppression contractor
+            </span>
           </Link>
 
           {/* DESKTOP */}
@@ -172,7 +178,7 @@ export default function Header() {
 
       {/* MOBILE MENU */}
       <div
-        className={`lg:hidden fixed inset-0 top-20 bg-white z-9999 transition
+        className={`lg:hidden fixed inset-0 top-22 bg-white z-9999 transition
         ${open ? "opacity-100 visible" : "opacity-0 invisible"}`}
       >
         <div className="px-6 py-6 h-full overflow-y-auto">

@@ -9,7 +9,7 @@ export default function AboutUs() {
   const { ref, isVisible } = useInView(0.3);
 
   return (
-    <section className="bg-[#faf8f5] py-2 md:py-2">
+    <section className="bg-[#faf8f5] py-2 md:py-2 lg:py-10">
       <div ref={ref} className="h-1 w-full" />
 
       <div className="mx-auto max-w-7xl px-3 grid gap-20 lg:grid-cols-2 items-center">
@@ -68,11 +68,11 @@ export default function AboutUs() {
           </p>
 
           {/* ✅ SEO H2 */}
-          <h2 className="mt-4 text-5xl leading-[1.01] text-[#432719] font-sans">
+          <h2 className="mt-4 text-2xl sm:text-3xl md:text-4xl leading-[1.01] text-[#432719] font-sans">
             Trusted Commercial Fire Suppression & HVAC Contractors in Detroit
           </h2>
 
-          <p className="mt-6 max-w-xl text-[#6b5a4d] font-serif leading-relaxed">
+          <p className="mt-6 max-w-xl text-[#6b5a4d] font-serif leading-relaxed text-sm sm:text-sm md:text-md">
             Desert In Alaska Corp has been a trusted name in Detroit’s
             commercial fire suppression, HVAC, and mechanical services industry
             since 1997. What began as a commercial HVAC company has grown into a
@@ -81,7 +81,7 @@ export default function AboutUs() {
             Detroit.
           </p>
 
-          <p className="mt-6 text-sm max-w-xl text-[#6b5a4d] font-serif leading-relaxed">
+          <p className="mt-6 max-w-xl text-[#6b5a4d] font-serif leading-relaxed text-sm sm:text-sm md:text-md">
             We specialize in commercial kitchen fire suppression systems,
             industrial dry chemical systems, gas piping, sprinkler
             modifications, and exhaust hood installations. Our licensed and
@@ -118,7 +118,7 @@ export default function AboutUs() {
           {/* CTA */}
           <Link
             href="/about-us"
-            className={`mt-12 inline-flex items-center gap-3 rounded-md bg-[#432719] px-8 py-4 text-sm font-semibold text-white hover:bg-[#2f1b12] font-serif
+            className={`mt-12 inline-flex items-center gap-3 rounded-md bg-[#432719] px-5 py-4 text-xs sm:text-sm font-semibold text-white hover:bg-[#2f1b12] font-serif
             transition-all duration-700 ease-out delay-300
             ${
               isVisible

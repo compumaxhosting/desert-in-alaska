@@ -281,10 +281,10 @@ export default function HVACContent() {
         <div className="mt-6 space-y-6 text-[#3f3029]">
           <div>
             <p className="font-semibold">
-              How often should my commercial HVAC system be serviced?
+              Q: How often should my commercial HVAC system be serviced?
             </p>
             <p>
-              For most commercial properties in Metro Detroit, we recommend
+              A: For most commercial properties in Metro Detroit, we recommend
               professional maintenance at least twice a year—once before the
               cooling season and once before the heating season—to ensure peak
               efficiency.
@@ -293,10 +293,10 @@ export default function HVACContent() {
 
           <div>
             <p className="font-semibold">
-              Can a new HVAC system really lower my operating costs?
+              Q: Can a new HVAC system really lower my operating costs?
             </p>
             <p>
-              Yes. Modern, high-efficiency commercial units can reduce energy
+              A: Yes. Modern, high-efficiency commercial units can reduce energy
               consumption by up to 30-50% compared to older models, providing a
               significant return on investment through lower utility bills.
             </p>
@@ -304,10 +304,10 @@ export default function HVACContent() {
 
           <div>
             <p className="font-semibold">
-              Do you provide 24/7 support for mechanical emergencies?
+              Q: Do you provide 24/7 support for mechanical emergencies?
             </p>
             <p>
-              We offer reliable scheduling and fast response times for our
+              A: Yes. We offer reliable scheduling and fast response times for our
               commercial partners to ensure your business stays operational,
               even during extreme weather events.
             </p>

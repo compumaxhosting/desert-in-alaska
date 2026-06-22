@@ -260,16 +260,16 @@ export default function FireSuppressionContent() {
               <div className="space-y-5">
                 {[
                   {
-                    q: "What businesses in Detroit require a fire suppression system?",
-                    a: "Any facility with a commercial kitchen (using deep fryers or ranges) or businesses handling hazardous materials are typically required by Michigan law and insurance providers to have a certified system.",
+                    q: "Q: What businesses in Detroit require a fire suppression system?",
+                    a: "A: Any facility with a commercial kitchen (using deep fryers or ranges) or businesses handling hazardous materials are typically required by Michigan law and insurance providers to have a certified system.",
                   },
                   {
-                    q: "How often do I need a fire suppression inspection?",
-                    a: "To remain compliant with NFPA 17A and 96 standards, commercial systems must be professionally inspected and serviced every six months.",
+                    q: "Q: How often do I need a fire suppression inspection?",
+                    a: "A: To remain compliant with NFPA 17A and 96 standards, commercial systems must be professionally inspected and serviced every six months.",
                   },
                   {
-                    q: "Can you modify an existing sprinkler or suppression system?",
-                    a: "Yes. We specialize in sprinkler modifications and system upgrades to ensure your protection evolves with your facility’s layout.",
+                    q: "Q: Can you modify an existing sprinkler or suppression system?",
+                    a: "A: Yes. We specialize in sprinkler modifications and system upgrades to ensure your protection evolves with your facility’s layout.",
                   },
                 ].map((item, i) => (
                   <div key={i}>

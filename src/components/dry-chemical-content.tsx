@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Factory } from "lucide-react";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 export default function DryChemicalContent() {
@@ -187,7 +186,8 @@ export default function DryChemicalContent() {
     <p className="text-[#3f3029] leading-relaxed mb-8">
       Desert In Alaska Corp delivers comprehensive industrial fire protection
       solutions tailored to the needs of manufacturing, processing, and
-      commercial facilities throughout Metro Detroit.
+      commercial facilities throughout Metro Detroit. <br />
+      The MONARCH fire suppression system (manufactured by PYRO-CHEM) is a pre-engineered, dry-chemical system designed to protect high-risk, industrial spaces like paint spray booths, automotive shops, and hazardous material storage. It is highly effective at extinguishing Class A, B, and C fires.
     </p>
 
     <div className="space-y-8">
@@ -509,7 +509,7 @@ export default function DryChemicalContent() {
     </div>
   </div>
 </section>
-<section className="bg-[#f8f5f2] py-14">
+<section className="bg-white py-14">
   <div className="max-w-6xl mx-auto px-4">
     <h3 className="text-2xl font-semibold text-[#2b1a12] mb-6">
       Industrial Fire Suppression System Process
@@ -564,87 +564,203 @@ export default function DryChemicalContent() {
     </div>
   </div>
 </section>
-<section className="bg-white py-14">
-  <div className="max-w-6xl mx-auto px-4">
-    <h3 className="text-2xl font-semibold text-[#2b1a12] mb-6">
-      Frequently Asked Questions
-    </h3>
+<section className="bg-[#f8f5f2] py-14 md:py-20">
+  <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+    {/* Heading */}
+    <div className="mb-10 text-center md:mb-14">
+      <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-[#3b2a1f]">
+        Frequently Asked Questions
+      </h2>
 
+      <p className="mx-auto mt-4 max-w-2xl text-sm sm:text-base text-[#6b5a4d]">
+        Answers to common questions about industrial dry chemical fire
+        suppression systems, inspections, maintenance, and compliance.
+      </p>
+    </div>
+
+    {/* FAQ List */}
     <div className="space-y-4">
-      <details className="border border-[#d6c4b8] rounded-lg p-4">
-        <summary className="font-semibold text-[#2b1a12] cursor-pointer">
-          What is a dry chemical fire suppression system?
+      <details className="group overflow-hidden rounded-2xl border border-[#e6ddd5] bg-white shadow-sm">
+        <summary className="flex cursor-pointer list-none items-center justify-between p-5 md:p-6">
+          <div className="flex items-start gap-3">
+            <span className="font-semibold text-[#8b5428]">Q:</span>
+            <span className="text-base sm:text-lg font-medium text-[#3b2a1f]">
+              What is a dry chemical fire suppression system?
+            </span>
+          </div>
+
+          <span className="text-[#8b5428] transition-transform duration-300 group-open:rotate-180">
+            ▼
+          </span>
         </summary>
-        <p className="mt-3 text-[#3f3029]">
-          A dry chemical fire suppression system is an automatic fire protection
-          system that uses specialized extinguishing agents to suppress fires
-          involving flammable liquids, gases, and electrical equipment.
-        </p>
+
+        <div className="border-t border-[#f1e7de] px-5 py-5 md:px-6">
+          <div className="flex items-start gap-3">
+            <span className="font-semibold text-[#8b5428]">A:</span>
+            <p className="text-sm sm:text-base leading-relaxed text-[#6b5a4d]">
+              A dry chemical fire suppression system is an automatic fire
+              protection system that uses specialized extinguishing agents to
+              suppress fires involving flammable liquids, gases, and electrical
+              equipment.
+            </p>
+          </div>
+        </div>
       </details>
 
-      <details className="border border-[#d6c4b8] rounded-lg p-4">
-        <summary className="font-semibold text-[#2b1a12] cursor-pointer">
-          Where are dry chemical fire suppression systems used?
+      <details className="group overflow-hidden rounded-2xl border border-[#e6ddd5] bg-white shadow-sm">
+        <summary className="flex cursor-pointer list-none items-center justify-between p-5 md:p-6">
+          <div className="flex items-start gap-3">
+            <span className="font-semibold text-[#8b5428]">Q:</span>
+            <span className="text-base sm:text-lg font-medium text-[#3b2a1f]">
+              Where are dry chemical fire suppression systems used?
+            </span>
+          </div>
+
+          <span className="text-[#8b5428] transition-transform duration-300 group-open:rotate-180">
+            ▼
+          </span>
         </summary>
-        <p className="mt-3 text-[#3f3029]">
-          These systems are commonly installed in manufacturing plants, fuel
-          storage facilities, chemical processing operations, warehouses,
-          automotive facilities, and industrial environments.
-        </p>
+
+        <div className="border-t border-[#f1e7de] px-5 py-5 md:px-6">
+          <div className="flex items-start gap-3">
+            <span className="font-semibold text-[#8b5428]">A:</span>
+            <p className="text-sm sm:text-base leading-relaxed text-[#6b5a4d]">
+              These systems are commonly installed in manufacturing plants,
+              fuel storage facilities, chemical processing operations,
+              warehouses, automotive facilities, and industrial environments.
+            </p>
+          </div>
+        </div>
       </details>
 
-      <details className="border border-[#d6c4b8] rounded-lg p-4">
-        <summary className="font-semibold text-[#2b1a12] cursor-pointer">
-          What types of fires can dry chemical systems extinguish?
+      <details className="group overflow-hidden rounded-2xl border border-[#e6ddd5] bg-white shadow-sm">
+        <summary className="flex cursor-pointer list-none items-center justify-between p-5 md:p-6">
+          <div className="flex items-start gap-3">
+            <span className="font-semibold text-[#8b5428]">Q:</span>
+            <span className="text-base sm:text-lg font-medium text-[#3b2a1f]">
+              What types of fires can dry chemical systems extinguish?
+            </span>
+          </div>
+
+          <span className="text-[#8b5428] transition-transform duration-300 group-open:rotate-180">
+            ▼
+          </span>
         </summary>
-        <p className="mt-3 text-[#3f3029]">
-          Dry chemical systems are highly effective against Class B fires
-          involving flammable liquids and Class C fires involving energized
-          electrical equipment.
-        </p>
+
+        <div className="border-t border-[#f1e7de] px-5 py-5 md:px-6">
+          <div className="flex items-start gap-3">
+            <span className="font-semibold text-[#8b5428]">A:</span>
+            <p className="text-sm sm:text-base leading-relaxed text-[#6b5a4d]">
+              Dry chemical systems are highly effective against Class B fires
+              involving flammable liquids and Class C fires involving energized
+              electrical equipment.
+            </p>
+          </div>
+        </div>
       </details>
 
-      <details className="border border-[#d6c4b8] rounded-lg p-4">
-        <summary className="font-semibold text-[#2b1a12] cursor-pointer">
-          Are dry chemical systems better than water-based systems?
+      <details className="group overflow-hidden rounded-2xl border border-[#e6ddd5] bg-white shadow-sm">
+        <summary className="flex cursor-pointer list-none items-center justify-between p-5 md:p-6">
+          <div className="flex items-start gap-3">
+            <span className="font-semibold text-[#8b5428]">Q:</span>
+            <span className="text-base sm:text-lg font-medium text-[#3b2a1f]">
+              Are dry chemical systems better than water-based systems?
+            </span>
+          </div>
+
+          <span className="text-[#8b5428] transition-transform duration-300 group-open:rotate-180">
+            ▼
+          </span>
         </summary>
-        <p className="mt-3 text-[#3f3029]">
-          For certain industrial hazards, dry chemical systems provide superior
-          protection because water may not effectively suppress flammable liquid
-          or electrical fires.
-        </p>
+
+        <div className="border-t border-[#f1e7de] px-5 py-5 md:px-6">
+          <div className="flex items-start gap-3">
+            <span className="font-semibold text-[#8b5428]">A:</span>
+            <p className="text-sm sm:text-base leading-relaxed text-[#6b5a4d]">
+              For certain industrial hazards, dry chemical systems provide
+              superior protection because water may not effectively suppress
+              flammable liquid or electrical fires.
+            </p>
+          </div>
+        </div>
       </details>
 
-      <details className="border border-[#d6c4b8] rounded-lg p-4">
-        <summary className="font-semibold text-[#2b1a12] cursor-pointer">
-          How often should industrial fire suppression systems be inspected?
+      <details className="group overflow-hidden rounded-2xl border border-[#e6ddd5] bg-white shadow-sm">
+        <summary className="flex cursor-pointer list-none items-center justify-between p-5 md:p-6">
+          <div className="flex items-start gap-3">
+            <span className="font-semibold text-[#8b5428]">Q:</span>
+            <span className="text-base sm:text-lg font-medium text-[#3b2a1f]">
+              How often should industrial fire suppression systems be inspected?
+            </span>
+          </div>
+
+          <span className="text-[#8b5428] transition-transform duration-300 group-open:rotate-180">
+            ▼
+          </span>
         </summary>
-        <p className="mt-3 text-[#3f3029]">
-          Inspection schedules depend on system type, local regulations, and
-          NFPA requirements. Most facilities benefit from regular inspections
-          and preventative maintenance programs.
-        </p>
+
+        <div className="border-t border-[#f1e7de] px-5 py-5 md:px-6">
+          <div className="flex items-start gap-3">
+            <span className="font-semibold text-[#8b5428]">A:</span>
+            <p className="text-sm sm:text-base leading-relaxed text-[#6b5a4d]">
+              Inspection schedules depend on system type, local regulations,
+              and NFPA requirements. Most facilities benefit from regular
+              inspections and preventative maintenance programs.
+            </p>
+          </div>
+        </div>
       </details>
 
-      <details className="border border-[#d6c4b8] rounded-lg p-4">
-        <summary className="font-semibold text-[#2b1a12] cursor-pointer">
-          Can dry chemical fire suppression systems operate automatically?
+      <details className="group overflow-hidden rounded-2xl border border-[#e6ddd5] bg-white shadow-sm">
+        <summary className="flex cursor-pointer list-none items-center justify-between p-5 md:p-6">
+          <div className="flex items-start gap-3">
+            <span className="font-semibold text-[#8b5428]">Q:</span>
+            <span className="text-base sm:text-lg font-medium text-[#3b2a1f]">
+              Can dry chemical fire suppression systems operate automatically?
+            </span>
+          </div>
+
+          <span className="text-[#8b5428] transition-transform duration-300 group-open:rotate-180">
+            ▼
+          </span>
         </summary>
-        <p className="mt-3 text-[#3f3029]">
-          Yes. Most systems include automatic detection and activation
-          capabilities while also allowing manual activation when necessary.
-        </p>
+
+        <div className="border-t border-[#f1e7de] px-5 py-5 md:px-6">
+          <div className="flex items-start gap-3">
+            <span className="font-semibold text-[#8b5428]">A:</span>
+            <p className="text-sm sm:text-base leading-relaxed text-[#6b5a4d]">
+              Yes. Most systems include automatic detection and activation
+              capabilities while also allowing manual activation when
+              necessary.
+            </p>
+          </div>
+        </div>
       </details>
 
-      <details className="border border-[#d6c4b8] rounded-lg p-4">
-        <summary className="font-semibold text-[#2b1a12] cursor-pointer">
-          Do industrial fire suppression systems require maintenance?
+      <details className="group overflow-hidden rounded-2xl border border-[#e6ddd5] bg-white shadow-sm">
+        <summary className="flex cursor-pointer list-none items-center justify-between p-5 md:p-6">
+          <div className="flex items-start gap-3">
+            <span className="font-semibold text-[#8b5428]">Q:</span>
+            <span className="text-base sm:text-lg font-medium text-[#3b2a1f]">
+              Do industrial fire suppression systems require maintenance?
+            </span>
+          </div>
+
+          <span className="text-[#8b5428] transition-transform duration-300 group-open:rotate-180">
+            ▼
+          </span>
         </summary>
-        <p className="mt-3 text-[#3f3029]">
-          Yes. Regular inspections, testing, and maintenance are necessary to
-          ensure reliability, compliance, and proper operation during an
-          emergency.
-        </p>
+
+        <div className="border-t border-[#f1e7de] px-5 py-5 md:px-6">
+          <div className="flex items-start gap-3">
+            <span className="font-semibold text-[#8b5428]">A:</span>
+            <p className="text-sm sm:text-base leading-relaxed text-[#6b5a4d]">
+              Yes. Regular inspections, testing, and maintenance are necessary
+              to ensure reliability, compliance, and proper operation during an
+              emergency.
+            </p>
+          </div>
+        </div>
       </details>
     </div>
   </div>

@@ -272,10 +272,10 @@ export default function GasPipingContent() {
         <div className="mt-6 space-y-6 text-[#3f3029]">
           <div>
             <p className="font-semibold">
-              How long does a commercial gas line installation take?
+              Q: How long does a commercial gas line installation take?
             </p>
             <p>
-              Project timelines vary based on the scale of the facility, but
+              A: Project timelines vary based on the scale of the facility, but
               most tenant improvements or equipment upgrades in Detroit are
               completed within 3 to 7 business days, including permitting and
               pressure testing.
@@ -284,10 +284,10 @@ export default function GasPipingContent() {
 
           <div>
             <p className="font-semibold">
-              Do I need a permit for gas piping modifications in Detroit?
+              Q: Do I need a permit for gas piping modifications in Detroit?
             </p>
             <p>
-              Yes. Any modification to a commercial gas system requires a permit
+              A: Yes. Any modification to a commercial gas system requires a permit
               from the City of Detroit’s Buildings, Safety Engineering, and
               Environmental Department (BSEED). We handle the entire permitting
               process for our clients.
@@ -296,10 +296,10 @@ export default function GasPipingContent() {
 
           <div>
             <p className="font-semibold">
-              What materials do you use for commercial gas lines?
+              Q: What materials do you use for commercial gas lines?
             </p>
             <p>
-              We typically use schedule 40 black steel pipe or CSST (Corrugated
+              A: We typically use schedule 40 black steel pipe or CSST (Corrugated
               Stainless Steel Tubing), depending on the specific application,
               local code requirements, and the volume of gas required for your
               equipment.

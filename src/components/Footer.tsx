@@ -23,14 +23,19 @@ export default function Footer() {
         <div className="mx-auto max-w-7xl px-4 py-20 grid gap-16 lg:grid-cols-4">
           {/* BRAND */}
           <div className="space-y-6">
-            <Image
-              src="/logo.webp"
-              alt="Desert In Alaska Corp - Commercial Fire Suppression & HVAC Contractors Detroit"
-              width={200}
-              height={140}
-              className="w-56 md:w-64 h-auto"
-              priority
-            />
+           <Link href="/">
+              <Image
+                src="/logo.webp"
+                alt="Desert In Alaska Corp - Commercial Fire Suppression & HVAC Contractors Detroit"
+                width={200}
+                height={140}
+                className="w-56 md:w-64 h-auto"
+                priority
+              />
+              <span className="text-sm italic text-slate-500 leading-tight font-bold ">
+              Mechanical and fire Suppression contractor
+            </span>
+            </Link>
 
             <p className="text-sm leading-relaxed text-[#e7d6c8] max-w-xs font-serif">
               <Link href="/">Desert In Alaska</Link> Corp is a trusted

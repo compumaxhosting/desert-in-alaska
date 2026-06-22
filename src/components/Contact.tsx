@@ -15,7 +15,7 @@ export default function Contact() {
           {/* LEFT CARD */}
           <div
             ref={leftRef}
-            className={`rounded-2xl bg-[#4b2a18] px-12 py-14 text-white transition-all duration-700 ease-out
+            className={`rounded-2xl bg-[#4b2a18] px-8 py-8 text-white transition-all duration-700 ease-out
               ${
                 leftVisible
                   ? "opacity-100 translate-x-0"
@@ -27,25 +27,32 @@ export default function Contact() {
               Get in Touch
             </p>
 
-            <h2 className="text-4xl font-light leading-tight">
-              READY TO START
+            <h2 className="text-2xl font-light leading-tight">
+             Need Emergency 
               <br />
-              <span className="text-[#9b5d2e]">YOUR PROJECT?</span>
+              <span className="text-[#9b5d2e]">Fire Protection or HVAC Service?</span>
             </h2>
 
-            <p className="mt-6 max-w-md text-[#e7d6c8] leading-relaxed font-serif">
-              Contact us today for a free consultation. Our team of experts is
-              ready to help with your fire suppression, HVAC, or commercial
-              mechanical needs.
+            <p className="mt-6 max-w-md text-[#e7d6c8] leading-relaxed font-serif text-sm sm:text-md md:text-lg">
+              Our team is available for urgent commercial service across Metro Detroit.
             </p>
 
-            <Link
-              href="/contact"
-              className="mt-10 inline-flex items-center gap-2 rounded-md bg-[#9b5d2e] px-6 py-3 text-sm font-semibold text-white hover:bg-[#864f26] transition font-serif"
-            >
-              Get a Free Quote
-              <ArrowRight size={16} />
-            </Link>
+            <div className="mt-10 flex flex-col gap-4">
+              <Link
+                href="/contact"
+                className="inline-flex w-fit items-center gap-2 rounded-md bg-[#9b5d2e] px-5 py-3 text-xs font-semibold text-white hover:bg-[#864f26] transition font-serif"
+              >
+                Request Emergency Service
+                <ArrowRight size={16} />
+              </Link>
+              <Link
+                href="tel:13139313070"
+                className="inline-flex w-fit items-center gap-2 rounded-md bg-[#9b5d2e] px-5 py-3 text-xs font-semibold text-white hover:bg-[#864f26] transition font-serif"
+              >
+                Call Now
+                <ArrowRight size={16} />
+              </Link>
+            </div>
           </div>
 
           {/* RIGHT INFO */}
