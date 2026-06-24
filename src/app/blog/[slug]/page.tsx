@@ -9,6 +9,13 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
+function createAnchorId(title: string) {
+  return title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
 export default async function SingleBlog({ params }: Props) {
   const { slug } = await params; // ✅ REQUIRED IN NEXT 16
 
@@ -20,7 +27,7 @@ export default async function SingleBlog({ params }: Props) {
     <>
       <Header />
 
-      <section className="bg-white min-h-screen py-8">
+      <section className="bg-white min-h-screen py-8" style={{ scrollBehavior: "smooth" }}>
         <div className="max-w-4xl mx-auto px-6">
           <Link href="/blog" className="text-sm text-[#8b5428]">
             ← Back to blog
@@ -41,10 +48,31 @@ export default async function SingleBlog({ params }: Props) {
 
           <p className="mt-6 text-lg text-[#6b5a4d]">{blog.description}</p>
 
+          {blog.sections.length > 0 && (
+            <nav aria-label="Table of contents" className="mt-10 rounded-2xl border border-[#e6ddd5] bg-[#faf8f5] p-6">
+              <h2 className="text-xl font-semibold text-[#3b2a1f] mb-4">Table of Contents</h2>
+              <ul className="space-y-3">
+                {blog.sections.map((section, index) => {
+                  const id = createAnchorId(section.title);
+                  return (
+                    <li key={id}>
+                      <a href={`#${id}`} className="text-[#1915de] hover:text-[#3b2a1f]">
+                        {index + 1}. {section.title}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            </nav>
+          )}
+
           <div className="mt-10 space-y-10">
             {blog.sections.map((section, i) => (
               <div key={i}>
-                <h2 className="text-2xl pb-1 md:text-3xl text-[#3b2a1f] font-medium">
+                <h2
+                  id={createAnchorId(section.title)}
+                  className="text-2xl pb-1 md:text-3xl text-[#3b2a1f] font-medium"
+                >
                   {section.title}
                 </h2>
 
