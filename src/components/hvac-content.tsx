@@ -21,7 +21,7 @@ export default function HVACContent() {
 
         <div className="relative z-10 max-w-3xl px-4 text-white">
           <h1 className="text-3xl sm:text-5xl font-bold">
-            Commercial HVAC Installation & Repair in Detroit, MI
+            Commercial HVAC Services Detroit MI
           </h1>
 
           <p className="mt-4 text-lg">
@@ -40,37 +40,35 @@ export default function HVACContent() {
 
       {/* INTRO */}
       <section className="max-w-6xl mx-auto px-4 py-14">
-        <p className="mt-4 text-[#5a4a42] leading-relaxed">Desert In Alaska Corp provides expert {" "}
-  <Link
-    href="/"
-    className="text-blue-600  hover:text-blue-800"
-  >
-    commercial HVAC services in Metro Detroit
-  </Link>{" "}
-   We offer
-  installation, repair, and maintenance for restaurants and industrial
-  facilities. Our licensed team ensures energy efficiency and climate control,
-  helping business owners reduce costs while maintaining a comfortable,
-  code-compliant environment.
-</p>
+        <p className="mt-4 text-[#5a4a42] leading-relaxed">
+          Desert In Alaska Corp provides expert{" "}
+          <Link href="/" className="text-blue-600  hover:text-blue-800">
+            commercial HVAC services in Metro Detroit
+          </Link>{" "}
+          MI for businesses, industrial facilities, restaurants, and commercial
+          properties. Our team installs, repairs, and maintains heating,
+          ventilation, and air conditioning systems designed for reliable
+          performance.
+        </p>
+        <p className="mt-4 text-[#5a4a42] leading-relaxed">
+          From HVAC repairs and replacements to preventative maintenance, we
+          help Detroit businesses maintain comfortable indoor environments and
+          efficient building operations.
+        </p>
         <h2 className="text-2xl font-semibold text-[#2b1a12]">
           Reliable Commercial HVAC Services in Metro Detroit
         </h2>
 
         <p className="mt-4 text-[#5a4a42] leading-relaxed">
           Maintaining a comfortable and efficient environment is vital for any
-          business. Atc {" "}
-          <Link
-    href="/"
-    className="text-blue-600  hover:text-blue-800"
-  >
-     Desert In Alaska Corp
-  </Link>{" "}
-          , we specialize in professional
-          commercial HVAC installation and repair tailored to the unique climate
-          of Metro Detroit. Since 1997, our team has been the trusted choice for
-          businesses looking to balance high-performance climate control with
-          long-term energy savings.
+          business. Atc{" "}
+          <Link href="/" className="text-blue-600  hover:text-blue-800">
+            Desert In Alaska Corp
+          </Link>{" "}
+          , we specialize in professional commercial HVAC installation and
+          repair tailored to the unique climate of Metro Detroit. Since 1997,
+          our team has been the trusted choice for businesses looking to balance
+          high-performance climate control with long-term energy savings.
         </p>
 
         <p className="mt-4 text-[#5a4a42] leading-relaxed">
@@ -82,65 +80,54 @@ export default function HVACContent() {
 
       {/* SERVICES */}
       <section className="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-2 gap-10">
-        <div>
-          <h3 className="text-xl font-semibold text-[#2b1a12] mb-4">
-            Turnkey HVAC & Mechanical Solutions for Your Business
-          </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {/* Left */}
+          <div>
+            <h3 className="text-xl font-semibold text-[#2b1a12] mb-4">
+              Commercial HVAC Services We Provide in Detroit
+            </h3>
 
-          <p className="text-[#5a4a42] mb-6">
-            A malfunctioning HVAC system can lead to costly downtime and
-            uncomfortable conditions for both staff and customers. We provide
-            comprehensive mechanical services that address your specific
-            operational needs.
-          </p>
+            <ul className="space-y-4">
+              {[
+                "Commercial HVAC installation",
+                "HVAC repair services",
+                "Preventive HVAC maintenance",
+                "Heating system services",
+                "Cooling system services",
+                "Air conditioning repair",
+                "Ventilation system installation",
+                "HVAC system upgrades",
+              ].map((item, i) => (
+                <li key={i} className="flex gap-3">
+                  <IoMdCheckmarkCircleOutline className="text-[#86522d] mt-1" />
+                  <span className="text-[#3f3029]">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-          <ul className="space-y-4">
-            <li className="flex gap-3">
-              <IoMdCheckmarkCircleOutline className="text-[#86522d] mt-1" />
-              <span className="text-[#3f3029]">
-                Commercial HVAC Installation & Replacement: We install
-                high-efficiency heating and cooling units designed to handle
-                Michigan’s extreme seasonal shifts, from humid summers to
-                freezing winters.
-              </span>
-            </li>
+          {/* Right */}
+          <div>
+            <h3 className="text-xl font-semibold text-[#2b1a12] mb-4">
+              Commercial HVAC Systems We Service
+            </h3>
 
-            <li className="flex gap-3">
-              <IoMdCheckmarkCircleOutline className="text-[#86522d] mt-1" />
-              <span className="text-[#3f3029]">
-                Preventative Maintenance Programs: Our scheduled tune-ups extend
-                the lifespan of your equipment, improve air quality, and prevent
-                expensive emergency repairs.
-              </span>
-            </li>
-
-            <li className="flex gap-3">
-              <IoMdCheckmarkCircleOutline className="text-[#86522d] mt-1" />
-              <span className="text-[#3f3029]">
-                Commercial Kitchen Exhaust Systems: We offer full-service
-                installation and ductwork for kitchen hoods, ensuring your
-                restaurant remains smoke-free and compliant with health codes.
-              </span>
-            </li>
-
-            <li className="flex gap-3">
-              <IoMdCheckmarkCircleOutline className="text-[#86522d] mt-1" />
-              <span className="text-[#3f3029]">
-                Emergency HVAC Repairs: When your system fails, our certified
-                technicians respond quickly to restore comfort and protect your
-                inventory or specialized equipment.
-              </span>
-            </li>
-
-            <li className="flex gap-3">
-              <IoMdCheckmarkCircleOutline className="text-[#86522d] mt-1" />
-              <span className="text-[#3f3029]">
-                Commercial Gas Piping: Precision installation and modifications
-                of gas lines for kitchens, industrial plants, and commercial
-                heating systems.
-              </span>
-            </li>
-          </ul>
+            <ul className="space-y-4">
+              {[
+                "Rooftop HVAC units",
+                "Commercial air conditioning systems",
+                "Heating systems",
+                "Ventilation equipment",
+                "Make-up air systems",
+                "Industrial HVAC equipment",
+              ].map((item, i) => (
+                <li key={i} className="flex gap-3">
+                  <IoMdCheckmarkCircleOutline className="text-[#86522d] mt-1" />
+                  <span className="text-[#3f3029]">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         <div className="relative h-80 rounded-xl overflow-hidden">
@@ -223,6 +210,16 @@ export default function HVACContent() {
             </tbody>
           </table>
         </div>
+        <p className="mt-4 text-[#5a4a42] leading-relaxed">
+          Detroit businesses depend on reliable HVAC systems throughout
+          Michigan’s changing seasons. Our technicians provide HVAC solutions
+          designed for offices, restaurants, warehouses, and industrial
+          buildings across Detroit and Metro Detroit.
+        </p>
+        <p className="mt-4 text-[#5a4a42] leading-relaxed">
+          We focus on efficient operation, reduced downtime, and dependable
+          climate control for commercial properties.
+        </p>
       </section>
       {/* ADVANTAGE */}
       <section className="bg-white py-14">
@@ -281,35 +278,40 @@ export default function HVACContent() {
         <div className="mt-6 space-y-6 text-[#3f3029]">
           <div>
             <p className="font-semibold">
-              Q: How often should my commercial HVAC system be serviced?
+              Q: What commercial HVAC services do you provide?
             </p>
             <p>
-              A: For most commercial properties in Metro Detroit, we recommend
-              professional maintenance at least twice a year—once before the
-              cooling season and once before the heating season—to ensure peak
-              efficiency.
+              A: We provide commercial HVAC installation, repairs, maintenance,
+              ventilation services, and system upgrades.
             </p>
           </div>
 
           <div>
             <p className="font-semibold">
-              Q: Can a new HVAC system really lower my operating costs?
+              Q: How often should commercial HVAC systems be maintained?
             </p>
             <p>
-              A: Yes. Modern, high-efficiency commercial units can reduce energy
-              consumption by up to 30-50% compared to older models, providing a
-              significant return on investment through lower utility bills.
+              A: Regular maintenance helps improve efficiency, prevent
+              breakdowns, and extend HVAC equipment life.
             </p>
           </div>
 
           <div>
             <p className="font-semibold">
-              Q: Do you provide 24/7 support for mechanical emergencies?
+              Q: Do you repair commercial HVAC systems in Detroit?
             </p>
             <p>
-              A: Yes. We offer reliable scheduling and fast response times for our
-              commercial partners to ensure your business stays operational,
-              even during extreme weather events.
+              A: Yes, we provide commercial HVAC repair and maintenance services
+              for Detroit businesses
+            </p>
+          </div>
+          <div>
+            <p className="font-semibold">
+              Q: Do you install new commercial HVAC systems?
+            </p>
+            <p>
+              A:Yes, our team installs HVAC systems for new construction,
+              replacements, and commercial upgrades.
             </p>
           </div>
         </div>

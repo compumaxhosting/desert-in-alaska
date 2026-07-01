@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Commercial Fire Suppression Detroit, MI | Desert in Alaska Corp",
+  title:
+    "Industrial Dry Chemical Fire Suppression Detroit MI | Installation & Service",
   description:
-    "Expert commercial fire suppression, HVAC, and kitchen exhaust services in Metro Detroit. Licensed, code-compliant, and trusted since 1997. Call for a consultation!",
+    "Industrial dry chemical fire suppression systems in Detroit MI. We design, install, inspect, and service dry chemical suppression systems for industrial facilities, paint booths, and high-risk areas.",
   alternates: {
     canonical: "/services/commercial-fire-suppression-detroit",
   },
   openGraph: {
-    title: "Commercial Fire Suppression Detroit, MI | Desert in Alaska Corp",
+    title:
+      "Industrial Dry Chemical Fire Suppression Detroit MI | Installation & Service",
     description:
       "Expert commercial fire suppression, HVAC, and kitchen exhaust services in Metro Detroit.",
     url: "https://www.desertinalaska.com/services/commercial-fire-suppression-detroit",

@@ -1,18 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Commercial Gas Piping Detroit | Licensed Mechanical Contractor Since 1997",
+  title: "Commercial Gas Piping Detroit MI | Installation & Repair",
   description:
-    "Expert commercial gas piping in Detroit & Metro Detroit. Licensed mechanical contractors providing safe installations, upgrades & inspections. Call for a quote!",
+    "Commercial gas piping services in Detroit MI. We install, repair, inspect, and upgrade gas piping systems for restaurants, businesses, and industrial facilities.",
   alternates: {
     canonical: "/services/gas-piping-detroit",
   },
   openGraph: {
-    title:
-      "Commercial Gas Piping Detroit | Licensed Mechanical Contractor Since 1997",
+    title: "Commercial Gas Piping Detroit MI | Installation & Repair",
     description:
-      "Expert commercial gas piping in Detroit & Metro Detroit. Licensed mechanical contractors providing safe installations, upgrades & inspections.",
+      "Commercial gas piping services in Detroit MI. We install, repair, inspect, and upgrade gas piping systems for restaurants, businesses, and industrial facilities.",
     url: "https://www.desertinalaska.com/services/gas-piping-detroit",
     type: "website",
   },

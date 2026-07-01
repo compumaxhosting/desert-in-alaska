@@ -98,7 +98,7 @@ export default function Header() {
               priority
             />
             <span className="text-[10px] sm:text-[10px] md:text-[12px] italic text-slate-800 leading font-bold pl-1">
-              Mechanical and fire Suppression contractor
+              Mechanical & Fire Suppression Contractor
             </span>
           </Link>
 

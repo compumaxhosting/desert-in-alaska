@@ -21,7 +21,7 @@ export default function FireSuppressionContent() {
 
         <div className="relative z-10 max-w-3xl px-4 text-white">
           <h1 className="text-3xl sm:text-5xl font-bold leading-tight">
-            Commercial Fire Suppression Systems in Detroit, MI
+            Industrial Dry Chemical Fire Suppression Systems Detroit MI
           </h1>
 
           <p className="mt-4 text-lg">
@@ -41,16 +41,17 @@ export default function FireSuppressionContent() {
 
       {/* INTRO */}
       <section className="max-w-6xl mx-auto px-4 py-14">
-        
         <p className="mt-4 text-[#5a4a42] leading-relaxed">
-          <Link href="/" >
-            Desert In Alaska
-          </Link>{" "}
-          Corp provides expert commercial fire suppression in Metro Detroit. We
-          offer licensed system design, installation, and 6-month inspections
-          for restaurants and industrial facilities. Our certified team ensures
-          100% code compliance, protecting your staff and property with
-          reliable, life-saving safety solutions.
+          Industrial facilities require specialized fire protection solutions
+          for high-risk environments. Desert In Alaska provides industrial dry
+          chemical fire suppression systems in Detroit MI designed to protect
+          manufacturing facilities, paint booths, machinery areas, and hazardous
+          locations.
+        </p>
+        <p className="mt-4 text-[#5a4a42] leading-relaxed">
+          Our team installs, services, and maintains dry chemical suppression
+          systems that help businesses reduce fire risks and maintain safety
+          compliance.
         </p>
         <h2 className="text-2xl sm:text-3xl font-semibold text-[#2b1a12]">
           Commercial Fire Suppression Services in Metro Detroit
@@ -68,6 +69,55 @@ export default function FireSuppressionContent() {
           suppression solutions designed for each location’s specific safety
           requirements
         </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {/* Left */}
+          <div>
+            <h4 className="font-semibold text-[#2b1a12] mb-3">
+              Key Services Include:
+            </h4>
+
+            <ul className="space-y-4">
+              {[
+                "Dry chemical suppression system installation",
+                "System inspection and testing",
+                "Fire suppression maintenance",
+                "Industrial hazard assessments",
+                "Detection and activation systems",
+                "System upgrades and modifications",
+                "Emergency fire suppression repairs",
+              ].map((item, i) => (
+                <li key={i} className="flex gap-3">
+                  <IoMdCheckmarkCircleOutline className="text-[#86522d] mt-1" />
+                  <span className="text-[#3f3029]">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Right */}
+          <div>
+            <h4 className="font-semibold text-[#2b1a12] mb-3">
+              Industries We Protect
+            </h4>
+
+            <ul className="space-y-4">
+              {[
+                "Manufacturing facilities",
+                "Automotive facilities",
+                "Paint spray booths",
+                "Industrial equipment areas",
+                "Warehouses",
+                "Flammable material storage areas",
+                "Commercial facilities",
+              ].map((item, i) => (
+                <li key={i} className="flex gap-3">
+                  <IoMdCheckmarkCircleOutline className="text-[#86522d] mt-1" />
+                  <span className="text-[#3f3029]">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </section>
 
       {/* SERVICES LIST */}
@@ -219,7 +269,17 @@ export default function FireSuppressionContent() {
             </tbody>
           </table>
         </div>
+        <h2 className="text-2xl sm:text-3xl font-semibold text-[#2b1a12]">
+          Dry Chemical Fire Protection for Detroit Businesses
+        </h2>
+        <p className="mt-4 text-[#5a4a42] leading-relaxed">
+          Detroit industrial facilities depend on reliable fire protection
+          systems to protect employees, equipment, and operations. Our
+          specialists provide customized suppression solutions based on each
+          facility`&apos;s hazards and safety requirements.
+        </p>
       </section>
+
       {/* WHY CHOOSE */}
       <section className="bg-white py-14">
         <div className="max-w-6xl mx-auto px-4">
@@ -260,16 +320,16 @@ export default function FireSuppressionContent() {
               <div className="space-y-5">
                 {[
                   {
-                    q: "Q: What businesses in Detroit require a fire suppression system?",
-                    a: "A: Any facility with a commercial kitchen (using deep fryers or ranges) or businesses handling hazardous materials are typically required by Michigan law and insurance providers to have a certified system.",
+                    q: "Q: What is a dry chemical fire suppression system?",
+                    a: "A: A dry chemical suppression system uses specialized extinguishing agents to quickly control fires, especially in industrial and high-risk environments.",
                   },
                   {
-                    q: "Q: How often do I need a fire suppression inspection?",
-                    a: "A: To remain compliant with NFPA 17A and 96 standards, commercial systems must be professionally inspected and serviced every six months.",
+                    q: "Q: Where are dry chemical systems used?",
+                    a: "A: They are commonly used in paint booths, manufacturing areas, machinery spaces, and locations with flammable materials.",
                   },
                   {
-                    q: "Q: Can you modify an existing sprinkler or suppression system?",
-                    a: "A: Yes. We specialize in sprinkler modifications and system upgrades to ensure your protection evolves with your facility’s layout.",
+                    q: "Q: Do dry chemical systems require maintenance?",
+                    a: "A: Regular inspection and maintenance help ensure the system operates correctly when needed.",
                   },
                 ].map((item, i) => (
                   <div key={i}>

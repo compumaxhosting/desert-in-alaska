@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Commercial HVAC Services Detroit | Desert In Alaska Corp",
+  title: "Commercial HVAC Detroit MI | Installation, Repair & Maintenance",
   description:
-    "Expert commercial HVAC installation, repair, and maintenance in Metro Detroit. Licensed mechanical contractors serving restaurants and industrial facilities since 1997.",
+    "Commercial HVAC services in Detroit MI. We install, repair, and maintain HVAC systems for offices, restaurants, warehouses, and industrial facilities",
   keywords: [
     "commercial HVAC Detroit",
     "HVAC installation Detroit MI",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "/services/commercial-hvac-detroit",
   },
   openGraph: {
-    title: "Commercial HVAC Services Detroit | Desert In Alaska Corp",
+    title: "Commercial HVAC Detroit MI | Installation, Repair & Maintenance",
     description:
-      "Expert HVAC installation and repair for commercial buildings in Metro Detroit. Licensed contractors since 1997.",
+      "Commercial HVAC services in Detroit MI. We install, repair, and maintain HVAC systems for offices, restaurants, warehouses, and industrial facilities",
     url: "https://www.desertinalaska.com/services/commercial-hvac-detroit",
     type: "website",
   },

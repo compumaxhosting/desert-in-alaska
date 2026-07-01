@@ -45,8 +45,14 @@ export default function WayneCountyContent() {
 
         <p className="mt-4 text-[#5a4a42] leading-relaxed">
           Looking for reliable fire suppression, HVAC, kitchen exhaust, gas
-          piping, or dry chemical fire suppression services in Wayne County,
-          Michigan? Our certified technicians provide installation, inspections,
+          piping, or{" "}
+          <Link
+            href="/"
+            className="text-[#e07b3b] font-semibold hover:underline"
+          >
+            dry chemical fire suppression services in Wayne County, Michigan
+          </Link>
+          ? Our certified technicians provide installation, inspections,
           maintenance, repairs, testing, and code-compliant solutions for
           commercial and industrial facilities. We help businesses improve
           safety, maintain compliance, reduce downtime, and protect valuable

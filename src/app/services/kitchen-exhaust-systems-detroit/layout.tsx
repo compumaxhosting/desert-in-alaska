@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Commercial Kitchen Exhaust Systems Detroit MI | Hood Installation & Ventilation",
+    "Commercial Kitchen Exhaust Systems Detroit MI | Hood Installation & Repair",
   description:
-    "Kitchen exhaust hood installation and ventilation systems in Detroit, MI. Commercial kitchen exhaust, ductwork & code-compliant systems. Call 313-931-3070.",
+    "Get commercial kitchen exhaust systems in Detroit MI. We install, repair, and maintain restaurant hood systems, exhaust fans, ductwork, and ventilation solutions for businesses.",
   keywords: [
     "kitchen exhaust systems Detroit",
     "commercial kitchen hood installation Detroit",

@@ -20,7 +20,7 @@ export default function GasPipingContent() {
 
         <div className="relative z-10 max-w-3xl px-4 text-white">
           <h1 className="text-3xl sm:text-5xl font-bold">
-            Commercial Gas Piping Installation in Detroit, MI
+            Commercial Gas Piping Services Detroit MI
           </h1>
 
           <p className="mt-4 text-lg">
@@ -44,94 +44,69 @@ export default function GasPipingContent() {
         </h2>
 
         <p className="mt-4 text-[#5a4a42] leading-relaxed">
-          Reliable energy is the backbone of any successful commercial
-          operation, from high-capacity industrial kitchens to complex
-          manufacturing facilities where gas piping systems must be safe,
-          efficient, and built to last. At {" "}
-          <Link
-    href="/"
-    className="text-blue-600  hover:text-blue-800"
-  >
-     Desert In Alaska Corp
-  </Link>{" "}
-           , we specialize
-          in professional commercial gas piping and mechanical services
-          throughout the Greater Detroit area, bringing over 25 years of
-          hands-on experience to local businesses across Wayne, Macomb, Oakland,
-          and Washtenaw counties. Our team ensures every system is
-          precision-engineered to meet the highest safety standards, providing
-          the dependable infrastructure necessary to power your equipment and
-          sustain your facility&apos;s growth.
+          Desert In Alaska provides commercial gas piping services in Detroit MI
+          for restaurants, industrial facilities, and commercial buildings. Our
+          team installs, repairs, and upgrades gas piping systems designed for
+          safe and reliable operation.
+        </p>
+        <p className="mt-4 text-[#5a4a42] leading-relaxed">
+          Proper gas piping is essential for commercial kitchens, HVAC
+          equipment, and industrial applications. We help businesses maintain
+          safe gas delivery systems with professional installation and service.
         </p>
       </section>
 
       {/* SERVICES */}
       <section className="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-2 gap-10">
-        <div>
-          <h3 className="text-xl font-semibold text-[#2b1a12] mb-4">
-            Expert Gas Piping Solutions for Detroit Businesses
-          </h3>
-          <p className="mt-4 text-md">
-            Whether you are launching a new restaurant in Downtown Detroit or
-            upgrading an industrial plant in Dearborn, your gas infrastructure
-            requires a licensed professional. Improper installation isn&apos;t
-            just an efficiency issue; it’s a significant safety risk.
-          </p>
-          <p className="mt-4 text-md">
-            {" "}
-            Our team simplifies the complexities of mechanical system design,
-            ensuring your facility remains compliant with Michigan’s strict
-            mechanical codes while optimizing your energy distribution.
-          </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {/* Left */}
+          <div>
+            <h3 className="text-xl font-semibold text-[#2b1a12] mb-4">
+              Gas Piping Services We Provide in Detroit
+            </h3>
 
-          <p className="text-xl font-semibold text-[#2b1a12] mb-4">
-            Our Core Services Include:
-          </p>
-          <ul className="space-y-4">
-            {[
-              {
-                title: "Commercial Gas Line Installation",
-                desc: "Custom-designed systems for new builds and facility expansions.",
-                link: "#",
-              },
-              {
-                title: "System Upgrades & Modifications",
-                desc: "Scaling your existing gas infrastructure to support new, high-demand equipment.",
-                link: "#",
-              },
-              {
-                title: "Tenant Improvements",
-                desc: "Specialized gas piping for retail build-outs and commercial renovations.",
-                link: "#",
-              },
-              {
-                title: "Safety Inspections & Leak Detection",
-                desc: "Comprehensive testing to ensure your staff and property remain protected.",
-                link: "#",
-              },
-              {
-                title: "Code Compliance & Permitting",
-                desc: "Navigating local Detroit regulations to ensure your project passes inspection the first time.",
-                link: "#",
-              },
-            ].map((item, i) => (
-              <li key={i} className="flex gap-3">
-                <IoMdCheckmarkCircleOutline className="text-[#86522d] mt-1" />
+            <ul className="space-y-4">
+              {[
+                "Commercial gas piping installation",
+                "Gas line replacement",
+                "Gas piping repairs",
+                "Gas leak inspections",
+                "Gas pressure testing",
+                "Gas system upgrades",
+                "Equipment gas connections",
+                "Mechanical piping services",
+              ].map((item, i) => (
+                <li key={i} className="flex gap-3">
+                  <IoMdCheckmarkCircleOutline className="text-[#86522d] mt-1" />
+                  <span className="text-[#3f3029]">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-                <span className="text-[#3f3029]">
-                  <Link
-                    href={item.link}
-                    className="font-medium "
-                  >
-                    {item.title}
-                  </Link>
-                  : {item.desc}
-                </span>
-              </li>
-            ))}
-          </ul>
+          {/* Right */}
+          <div>
+            <h3 className="text-xl font-semibold text-[#2b1a12] mb-4">
+              Industries We Serve
+            </h3>
+
+            <ul className="space-y-4">
+              {[
+                "Restaurants",
+                "Commercial kitchens",
+                "Manufacturing facilities",
+                "Warehouses",
+                "Retail buildings",
+                "Industrial facilities",
+              ].map((item, i) => (
+                <li key={i} className="flex gap-3">
+                  <IoMdCheckmarkCircleOutline className="text-[#86522d] mt-1" />
+                  <span className="text-[#3f3029]">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-
         <div className="relative h-80 rounded-xl overflow-hidden">
           <Image
             src="/service-four.webp"
@@ -146,10 +121,7 @@ export default function GasPipingContent() {
 
       <section className="max-w-6xl mx-auto px-4 py-8">
         <p className="text-2xl font-semibold text-[#2b1a12]">
-          Why Detroit Contractors Trust{" "}
-          <Link href="/">
-            Desert In Alaska
-          </Link>{" "}
+          Why Detroit Contractors Trust <Link href="/">Desert In Alaska</Link>{" "}
           Corp
         </p>
         <p className="mt-4 text-md pb-3">
@@ -221,15 +193,14 @@ export default function GasPipingContent() {
       {/* INDUSTRIES */}
       <section className="max-w-6xl mx-auto px-4 py-5">
         <h4 className="text-2xl font-semibold text-[#2b1a12]">
-          Solving Your Commercial Mechanical Challenges
+          Reliable Gas Piping Solutions for Detroit Businesses
         </h4>
 
         <p className="mt-4 text-md">
-          Many business owners face the same pain points: rising energy costs,
-          outdated pipes, or equipment that isn&apos;t receiving the necessary
-          BTU load. Our mechanical experts analyze your specific requirements to
-          recommend the most cost-effective piping materials and layouts,
-          reducing long-term maintenance needs.
+          Detroit businesses rely on safe and efficient gas piping systems for
+          heating equipment, cooking equipment, and industrial operations. Our
+          technicians provide properly designed gas piping solutions that
+          support performance and safety requirements.
         </p>
         <h5 className="text-2xl font-semibold text-[#2b1a12]">
           Serving All of Metro Detroit
@@ -272,37 +243,41 @@ export default function GasPipingContent() {
         <div className="mt-6 space-y-6 text-[#3f3029]">
           <div>
             <p className="font-semibold">
-              Q: How long does a commercial gas line installation take?
+              Q: What types of gas piping systems do you install?
             </p>
             <p>
-              A: Project timelines vary based on the scale of the facility, but
-              most tenant improvements or equipment upgrades in Detroit are
-              completed within 3 to 7 business days, including permitting and
-              pressure testing.
+              A:We install and service commercial gas piping systems for
+              restaurants, HVAC equipment, and industrial applications.
             </p>
           </div>
 
           <div>
             <p className="font-semibold">
-              Q: Do I need a permit for gas piping modifications in Detroit?
+              Q: Do I need a permit for gas piping modifications in Detroit?Do
+              gas piping systems need inspections?
             </p>
             <p>
-              A: Yes. Any modification to a commercial gas system requires a permit
-              from the City of Detroit’s Buildings, Safety Engineering, and
-              Environmental Department (BSEED). We handle the entire permitting
-              process for our clients.
+              A: Regular inspections and testing help identify leaks, pressure
+              issues, and potential safety concerns.
             </p>
           </div>
 
           <div>
             <p className="font-semibold">
-              Q: What materials do you use for commercial gas lines?
+              Q: Can you repair existing gas piping?
             </p>
             <p>
-              A: We typically use schedule 40 black steel pipe or CSST (Corrugated
-              Stainless Steel Tubing), depending on the specific application,
-              local code requirements, and the volume of gas required for your
-              equipment.
+              A: Yes, we provide gas piping repairs, upgrades, and replacement
+              services.
+            </p>
+          </div>
+          <div>
+            <p className="font-semibold">
+              Q: Do you provide commercial gas piping in Detroit?
+            </p>
+            <p>
+              A: Yes, Desert In Alaska provides commercial gas piping solutions
+              throughout Detroit and Metro Detroit.
             </p>
           </div>
         </div>
