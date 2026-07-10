@@ -50,6 +50,18 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: true, // ✅ 301 redirect (SEO safe)
       },
+      {
+        source: "/blog/gas-piping-detroit",
+        destination: "/services/gas-piping-detroit",
+        permanent: true, // ✅ 301 redirect (SEO safe)
+      },
+      {
+        source:
+          "/services/services/industrial-dry-chemical-fire-suppression-detroit",
+        destination:
+          "/services/industrial-dry-chemical-fire-suppression-detroit",
+        permanent: true, // ✅ 301 redirect (SEO safe)
+      },
     ];
   },
 };

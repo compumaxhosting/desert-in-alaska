@@ -23,7 +23,7 @@ export default function Footer() {
         <div className="mx-auto max-w-7xl px-4 py-20 grid gap-16 lg:grid-cols-4">
           {/* BRAND */}
           <div className="space-y-6">
-           <Link href="/">
+            <Link href="/">
               <Image
                 src="/logo.webp"
                 alt="Desert In Alaska Corp - Commercial Fire Suppression & HVAC Contractors Detroit"
@@ -33,8 +33,8 @@ export default function Footer() {
                 priority
               />
               <span className="text-sm italic text-slate-500 leading-tight font-bold ">
-              Mechanical and fire Suppression contractor
-            </span>
+                Mechanical and fire Suppression contractor
+              </span>
             </Link>
 
             <p className="text-sm leading-relaxed text-[#e7d6c8] max-w-xs font-serif">
@@ -97,48 +97,48 @@ export default function Footer() {
 
             <ul className="space-y-3 text-sm text-[#e7d6c8] font-serif">
               <li>
-                <a
+                <Link
                   href="/services/commercial-fire-suppression-detroit"
                   className="hover:underline"
                 >
                   Commercial Fire Suppression Systems
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
+                <Link
                   href="/services/commercial-hvac-detroit"
                   className="hover:underline"
                 >
                   Commercial HVAC Installation & Repair
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
+                <Link
                   href="/services/kitchen-exhaust-systems-detroit"
                   className="hover:underline"
                 >
                   Kitchen Exhaust Hood Systems
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
+                <Link
                   href="/services/gas-piping-detroit"
                   className="hover:underline"
                 >
                   Commercial Gas Piping Installation
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
+                <Link
                   href="/services/industrial-dry-chemical-fire-suppression-detroit"
                   className="hover:underline"
                 >
                   Industrial Dry Chemical Systems
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -152,7 +152,7 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-[#e7d6c8] font-serif">
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="mt-1 text-[#4195bd]" />
-                <a
+                <Link
                   href="https://maps.app.goo.gl/u8wJqF5pcWsRHHmv6"
                   className="hover:text-white transition"
                 >
@@ -161,34 +161,31 @@ export default function Footer() {
                     <br />
                     Detroit, MI 48227
                   </span>
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
+                <Link
                   href="tel:13139313070"
                   className="flex items-center gap-3 hover:text-white transition"
                 >
                   <Phone size={18} className="text-[#4195bd]" />
                   <span>313-931-3070</span>
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
+                <Link
                   href="mailto:desertinalaska@outlook.com"
                   className="flex items-center gap-3 hover:text-white transition"
                 >
                   <Mail size={18} className="text-[#4195bd]" />
                   <span>desertinalaska@outlook.com</span>
-                </a>
+                </Link>
               </li>
 
               <li className="flex items-start gap-3">
-                <Clock
-                  size={18}
-                  className="text-[#4195bd] mt-1 shrink-0"
-                />
+                <Clock size={18} className="text-[#4195bd] mt-1 shrink-0" />
 
                 <div className="flex flex-col">
                   <span>Monday – Saturday</span>
@@ -199,64 +196,65 @@ export default function Footer() {
 
             {/* SOCIAL ICONS */}
             <div className="mt-6 flex items-center gap-4">
-              <a
+              <Link
                 href="https://www.facebook.com/profile.php?id=61582170474611"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Facebook"
+                aria-label="Visit our Facebook page"
                 className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
               >
-                <Facebook size={18} />
-              </a>
+                <Facebook size={18} aria-hidden="true" />
+              </Link>
 
-              <a
+              <Link
                 href="https://www.instagram.com/desertinalaska/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Instagram"
+                aria-label="Visit our Instagram profile"
                 className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
               >
-                <Instagram size={18} />
-              </a>
+                <Instagram size={18} aria-hidden="true" />
+              </Link>
 
-              <a
+              <Link
                 href="https://x.com/desertinalaska1"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="X"
+                aria-label="Visit our X (formerly Twitter) profile"
                 className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
               >
-                <FaXTwitter size={18} />
-              </a>
+                <FaXTwitter size={18} aria-hidden="true" />
+              </Link>
 
-              <a
+              <Link
                 href="https://www.linkedin.com/in/desertinalaska/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="LinkedIn"
+                aria-label="Visit our LinkedIn profile"
                 className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
               >
-                <Linkedin size={18} />
-              </a>
+                <Linkedin size={18} aria-hidden="true" />
+              </Link>
 
-              <a
+              <Link
                 href="https://share.google/JPBW3nf2o7HYJbXcY"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Google Reviews"
+                aria-label="Read our Google Reviews"
                 className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
               >
-                <FaGoogle size={18} />
-              </a>
-              <a
+                <FaGoogle size={18} aria-hidden="true" />
+              </Link>
+
+              <Link
                 href="https://www.tiktok.com/@desertinalaska0"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="TikTok"
+                aria-label="Visit our TikTok profile"
                 className="rounded-md bg-white/10 p-2 text-[#4195bd] transition hover:bg-white/20 hover:text-white"
               >
-                <SiTiktok size={16} />
-              </a>
+                <SiTiktok size={16} aria-hidden="true" />
+              </Link>
             </div>
           </div>
         </div>

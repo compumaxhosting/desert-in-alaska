@@ -11,7 +11,7 @@ export default function ContactUs() {
         <div className="grid items-stretch gap-12 lg:grid-cols-2">
           {/* LEFT – REQUEST A QUOTE */}
           <BookAppointmentForm />
-          
+
           {/* RIGHT – CONTACT INFO & REVIEW */}
           <div className="flex flex-col justify-center">
             <h2 className="text-lg font-semibold text-[#432719]">
@@ -24,15 +24,15 @@ export default function ContactUs() {
 
             {/* Layout Grid: Left for Links/Info, Right for Review Scanner */}
             <div className="mt-6 grid gap-6 md:grid-cols-[1fr_240px] items-start">
-              
               {/* Contact Info Items */}
               <div className="space-y-4">
                 <a
                   href="tel:3139313070"
+                  aria-label="Call us at 313-931-3070"
                   className="group flex items-start gap-4 rounded-xl bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
                 >
                   <div className="rounded-md bg-[#86522d] p-3 text-white transition group-hover:bg-[#6f4224]">
-                    <Phone size={18} />
+                    <Phone size={18} aria-hidden="true" />
                   </div>
                   <div>
                     <p className="text-xs text-[#8b7a6c]">Phone</p>
@@ -44,10 +44,11 @@ export default function ContactUs() {
 
                 <a
                   href="mailto:desertinalaska@outlook.com"
+                  aria-label="Send an email to desertinalaska@outlook.com"
                   className="group flex items-start gap-4 rounded-xl bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
                 >
                   <div className="rounded-md bg-[#86522d] p-3 text-white transition group-hover:bg-[#6f4224]">
-                    <Mail size={18} />
+                    <Mail size={18} aria-hidden="true" />
                   </div>
                   <div>
                     <p className="text-xs text-[#8b7a6c]">Email</p>
@@ -57,9 +58,12 @@ export default function ContactUs() {
                   </div>
                 </a>
 
-                <div className="flex items-start gap-4 rounded-xl bg-white p-4 shadow-sm">
+                <div
+                  aria-label="Business address: 11402 Schaefer Highway, Detroit, Michigan 48227"
+                  className="flex items-start gap-4 rounded-xl bg-white p-4 shadow-sm"
+                >
                   <div className="rounded-md bg-[#86522d] p-3 text-white">
-                    <MapPin size={18} />
+                    <MapPin size={18} aria-hidden="true" />
                   </div>
                   <div>
                     <p className="text-xs text-[#8b7a6c]">Address</p>
@@ -71,9 +75,12 @@ export default function ContactUs() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 rounded-xl bg-white p-4 shadow-sm">
+                <div
+                  aria-label="Business hours: Monday through Saturday, 8 AM to 6 PM"
+                  className="flex items-start gap-4 rounded-xl bg-white p-4 shadow-sm"
+                >
                   <div className="rounded-md bg-[#86522d] p-3 text-white">
-                    <Clock size={18} />
+                    <Clock size={18} aria-hidden="true" />
                   </div>
                   <div>
                     <p className="text-xs text-[#8b7a6c]">Business Hours</p>
@@ -96,7 +103,7 @@ export default function ContactUs() {
                 <div className="text-center text-xs font-bold uppercase tracking-[0.25em] text-[#847361]">
                   Review Us
                 </div>
-                
+
                 {/* QR Code Container */}
                 <div className="mx-auto my-4 relative aspect-square w-full max-w-[160px] overflow-hidden rounded-xl bg-white p-2">
                   <div className="relative h-full w-full">
@@ -117,12 +124,9 @@ export default function ContactUs() {
                   <p className="text-sm font-bold leading-tight">
                     to Leave a 5-Star
                   </p>
-                  <p className="text-sm font-bold leading-tight">
-                    Review
-                  </p>
+                  <p className="text-sm font-bold leading-tight">Review</p>
                 </div>
               </a>
-
             </div>
 
             {/* Map Section Below */}
@@ -133,7 +137,6 @@ export default function ContactUs() {
                 loading="lazy"
               />
             </div>
-
           </div>
         </div>
       </div>

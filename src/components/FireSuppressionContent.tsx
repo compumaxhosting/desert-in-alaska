@@ -43,10 +43,15 @@ export default function FireSuppressionContent() {
       <section className="max-w-6xl mx-auto px-4 py-14">
         <p className="mt-4 text-[#5a4a42] leading-relaxed">
           Industrial facilities require specialized fire protection solutions
-          for high-risk environments. Desert In Alaska provides industrial dry
-          chemical fire suppression systems in Detroit MI designed to protect
-          manufacturing facilities, paint booths, machinery areas, and hazardous
-          locations.
+          for high-risk environments. Desert In Alaska provides{" "}
+          <Link
+            href="/services/commercial-fire-suppression-detroit"
+            className="text-[#8b5428] hover:underline"
+          >
+            industrial dry chemical fire suppression systems in Detroit MI
+          </Link>{" "}
+          designed to protect manufacturing facilities, paint booths, machinery
+          areas, and hazardous locations.
         </p>
         <p className="mt-4 text-[#5a4a42] leading-relaxed">
           Our team installs, services, and maintains dry chemical suppression

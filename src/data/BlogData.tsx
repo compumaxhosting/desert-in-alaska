@@ -35,9 +35,16 @@ export const blogs: BlogPost[] = [
     description: (
       <>
         This guide provides Detroit businesses with a complete maintenance
-        checklist for industrial dry chemical fire suppression systems. Learn
-        daily, monthly, quarterly, semi-annual, and annual inspection tasks to
-        keep your system reliable, compliant, and ready for emergency response.
+        checklist for{" "}
+        <Link
+          href="/services/commercial-fire-suppression-detroit"
+          className="text-[#8b5428] hover:underline"
+        >
+          industrial dry chemical fire suppression systems
+        </Link>
+        . Learn daily, monthly, quarterly, semi-annual, and annual inspection
+        tasks to keep your system reliable, compliant, and ready for emergency
+        response.
       </>
     ),
     alt: "Industrial dry chemical fire suppression system maintenance in Detroit",
@@ -417,7 +424,7 @@ export const blogs: BlogPost[] = [
                 href="https://www.desertinalaska.com/"
                 className="text-[#8b5428] underline"
               >
-                https://www.desertinalaska.com/
+                desertinalaska
               </a>
             </p>
           </>
@@ -666,7 +673,7 @@ export const blogs: BlogPost[] = [
               consumption.
             </p>
 
-            <h3 className="mb-3 text-lg font-semibold text-white">
+            <h3 className="mb-3 text-lg font-semibold text-black">
               Common Winter HVAC Challenges
             </h3>
 
@@ -1173,17 +1180,23 @@ export const blogs: BlogPost[] = [
                 who understand the challenges of extreme climates.{" "}
                 <Link
                   href="/services"
-                  className="text-blue-600 hover:text-blue-800 underline"
+                  className="text-[#8b5428] hover:text-blue-800 underline"
                 >
                   Desert In Alaska HVAC Services
                 </Link>{" "}
-                provides residential and commercial HVAC services focused on
-                system efficiency, indoor comfort, preventive maintenance, and
-                long-term performance. Whether you need seasonal maintenance,
-                system upgrades, repairs, or energy-efficient HVAC solutions,
-                working with knowledgeable professionals can help keep your home
-                comfortable throughout Detroit&apos;s demanding weather
-                conditions.
+                provides{" "}
+                <Link
+                  href="/services/commercial-hvac-detroit"
+                  className="text-[#8b5428] hover:text-blue-800 underline"
+                >
+                  residential and commercial HVAC services
+                </Link>{" "}
+                focused on system efficiency, indoor comfort, preventive
+                maintenance, and long-term performance. Whether you need
+                seasonal maintenance, system upgrades, repairs, or
+                energy-efficient HVAC solutions, working with knowledgeable
+                professionals can help keep your home comfortable throughout
+                Detroit&apos;s demanding weather conditions.
               </p>
             </div>
 
@@ -1292,10 +1305,7 @@ export const blogs: BlogPost[] = [
         to the office towers of Downtown Detroit and the warehouses lining I-94,
         every building depends on climate control and fire safety to protect
         people, assets, and operations.{" "}
-        <Link
-          href="/services/commercial-hvac-detroit"
-          className="text-amber-900"
-        >
+        <Link href="/" className="text-[#8b5428]">
           Commercial HVAC and fire suppression services in Detroit, MI
         </Link>{" "}
         cover everything from installing high-capacity rooftop units and chiller
@@ -1853,18 +1863,20 @@ export const blogs: BlogPost[] = [
         title: "Conclusion",
         paragraph: (
           <>
-            Commercial HVAC and fire suppression services in Detroit, MI are
-            mission-critical for every business, facility manager, and property
-            owner in the region. From Detroit&apos;s frigid winters to its humid
-            summers — and from the auto industry&apos;s precision requirements
-            to the strict safety codes governing high-rises Downtown — the right
-            contractor makes all the difference. Whether you need a new rooftop
-            unit installed on a Midtown office building, a clean agent system
-            for a server room in Auburn Hills, or a full sprinkler retrofit for
-            a historic warehouse in Corktown, look for a licensed, experienced,
-            locally-based contractor who knows Detroit&apos;s permitting
-            process, understands Michigan&apos;s climate, and can back their
-            work with 24/7 emergency support.
+            <Link href="/" className="text-[#8b5428] hover:underline">
+              Commercial HVAC and fire suppression services in Detroit, MI
+            </Link>{" "}
+            are mission-critical for every business, facility manager, and
+            property owner in the region. From Detroit&apos;s frigid winters to
+            its humid summers — and from the auto industry&apos;s precision
+            requirements to the strict safety codes governing high-rises
+            Downtown — the right contractor makes all the difference. Whether
+            you need a new rooftop unit installed on a Midtown office building,
+            a clean agent system for a server room in Auburn Hills, or a full
+            sprinkler retrofit for a historic warehouse in Corktown, look for a
+            licensed, experienced, locally-based contractor who knows
+            Detroit&apos;s permitting process, understands Michigan&apos;s
+            climate, and can back their work with 24/7 emergency support.
           </>
         ),
       },
@@ -2544,11 +2556,17 @@ export const blogs: BlogPost[] = [
         title: "Conclusion",
         paragraph: (
           <>
-            Safe and efficient commercial gas piping installation in Detroit, MI
-            is essential for business operations, safety, and compliance.
-            Whether you&apos;re upgrading an existing system or installing a new
-            one, working with experienced professionals ensures long-term
-            reliability and peace of mind.
+            Safe and efficient commercial{" "}
+            <Link
+              href="/services/gas-piping-detroit"
+              className="text-[#8b5428] hover:text-blue-800 underline"
+            >
+              gas piping installation
+            </Link>{" "}
+            in Detroit, MI is essential for business operations, safety, and
+            compliance. Whether you&apos;re upgrading an existing system or
+            installing a new one, working with experienced professionals ensures
+            long-term reliability and peace of mind.
           </>
         ),
       },
@@ -3127,10 +3145,16 @@ export const blogs: BlogPost[] = [
           <>
             Running a successful restaurant isn’t just about great food. A safe,
             clean, and compliant kitchen is equally important. One of the most
-            critical systems in any commercial kitchen is the kitchen exhaust
-            hood and ventilation system. A properly installed system removes
-            heat, smoke, grease, and odors while helping your restaurant meet
-            fire and health safety requirements.
+            critical systems in any commercial kitchen is the{" "}
+            <Link
+              href="/services/kitchen-exhaust-systems-detroit"
+              className="text-[#8b5428] hover:text-blue-800 underline"
+            >
+              kitchen exhaust hood and ventilation system
+            </Link>
+            . A properly installed system removes heat, smoke, grease, and odors
+            while helping your restaurant meet fire and health safety
+            requirements.
           </>
         ),
       },
@@ -3217,9 +3241,14 @@ export const blogs: BlogPost[] = [
           <>
             We provide kitchen exhaust hood installation, commercial ventilation
             design, exhaust fan and ductwork setup, make-up air systems,
-            maintenance, and consultation for restaurants and commercial
-            kitchens in Detroit and surrounding areas. Our team ensures safety
-            and compliance.
+            maintenance, and consultation for{" "}
+            <Link
+              href="/services/kitchen-exhaust-systems-detroit"
+              className="text-[#8b5428] hover:text-blue-800 underline"
+            >
+              commercial kitchens in Detroit and surrounding areas
+            </Link>
+            . Our team ensures safety and compliance.
           </>
         ),
       },
