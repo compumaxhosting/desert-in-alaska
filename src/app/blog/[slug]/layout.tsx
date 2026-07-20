@@ -16,13 +16,27 @@ export async function generateMetadata({
     };
   }
 
+  const siteUrl = "https://www.desertinalaska.com";
+  const author = "Desert Plumbing & Heating Supply";
+
   return {
+    metadataBase: new URL(siteUrl),
+
     title: blog.metaTitle,
+
     description: blog.metaDescription,
 
     keywords: blog.metaKeywords.split(",").map((keyword) => keyword.trim()),
 
-    authors: [{ name: "Desert In Alaska Corp" }],
+    authors: [
+      {
+        name: author,
+      },
+    ],
+
+    alternates: {
+      canonical: `${siteUrl}/blog/${blog.slug}`,
+    },
 
     robots: {
       index: true,
@@ -36,18 +50,14 @@ export async function generateMetadata({
       },
     },
 
-    metadataBase: new URL("https://www.desertinalaska.com"),
-
-    alternates: {
-      canonical: `/blog/${blog.slug}`,
-    },
+    referrer: "strict-origin-when-cross-origin",
 
     openGraph: {
       type: "article",
-      url: `https://www.desertinalaska.com/blog/${blog.slug}`,
+      url: `${siteUrl}/blog/${blog.slug}`,
       title: blog.metaTitle,
       description: blog.metaDescription,
-      siteName: "Desert In Alaska Corp",
+      siteName: author,
 
       images: [
         {
@@ -63,8 +73,16 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: blog.metaTitle,
       description: blog.metaDescription,
-      images: [blog.image],
-      creator: "@yourhandle",
+      images: [`${siteUrl}${blog.image}`],
+      creator: "@desertinalaska1",
+    },
+
+    applicationName: author,
+
+    appleWebApp: {
+      capable: true,
+      title: author,
+      statusBarStyle: "black",
     },
 
     themeColor: "#ffffff",

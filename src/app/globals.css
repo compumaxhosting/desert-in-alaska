@@ -21,3 +21,7 @@
 html, body {
   overflow-x: hidden;
 }
+
+details summary {
+  font-weight: 500; 
+}
