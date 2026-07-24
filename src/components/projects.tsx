@@ -6,7 +6,23 @@ import { useState } from "react";
 
 const projects = [
   {
-    image: "/gallery1.webp",
+  image: "/img-top-1.webp",
+  tag: "Commercial HVAC",
+  location: "Detroit, MI",
+  title: "Commercial Ventilation Installation",
+  description:
+    "Custom commercial ductwork and exhaust ventilation installation for reliable airflow.",
+},
+{
+  image: "/img-top-2.webp",
+  tag: "Rooftop HVAC",
+  location: "Detroit, MI",
+  title: "Rooftop HVAC System Installation",
+  description:
+    "High-efficiency rooftop HVAC units installed for dependable commercial climate control.",
+},
+  {
+    image: "/restaurant.webp",
     tag: "Fire Suppression",
     location: "Detroit, MI",
     title: "Downtown Restaurant Fire Suppression System",
@@ -14,7 +30,7 @@ const projects = [
       "Complete commercial kitchen fire suppression installation for a new downtown restaurant.",
   },
   {
-    image: "/gallery2.webp",
+    image: "/kitchen-exhaust.webp",
     tag: "Kitchen Exhaust",
     location: "Southfield, MI",
     title: "Multi-Tenant Kitchen Exhaust Installation",
@@ -54,7 +70,7 @@ const projects = [
       "Kitchen fire suppression and exhaust hood system for a quick-service restaurant.",
   },
   {
-    image: "/gallery1.webp",
+    image: "/hvac-img.webp",
     tag: "HVAC",
     location: "Sterling Heights, MI",
     title: "Industrial Facility HVAC Upgrade",
@@ -70,7 +86,7 @@ const projects = [
       "Complete kitchen exhaust system for hotel restaurant renovation.",
   },
   {
-    image: "/gallery3.webp",
+    image: "/industry.webp",
     tag: "Industrial Systems",
     location: "Livonia, MI",
     title: "Body Shop Dry Chemical System",
