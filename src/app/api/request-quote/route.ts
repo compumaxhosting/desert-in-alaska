@@ -42,6 +42,8 @@ export async function POST(req: Request) {
       "businessbrokersleads.com",
       "virtualteamexpert.com",
       "integribridge.com",
+      "rankure.io",
+      "dandyaisoftware.com",
       "clickaura.digital", // ✅ added
     ]; // ✅ added
 
