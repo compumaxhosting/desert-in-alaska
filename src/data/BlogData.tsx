@@ -283,36 +283,63 @@ export const blogs: BlogPost[] = [
         title: "Frequently Asked Questions",
         paragraph: (
           <>
-            <p>
-              <strong>What is commercial HVAC?</strong> Commercial HVAC includes
-              heating, cooling, ventilation, and indoor air quality systems
-              designed for commercial buildings such as offices, warehouses,
-              retail stores, schools, hospitals, and industrial facilities.
-            </p>
-            <p>
-              <strong>How often should commercial HVAC systems be serviced?</strong>{" "}
-              Most businesses should schedule preventive maintenance at least
-              twice a year, with quarterly inspections recommended for
-              facilities operating year-round or in demanding environments.
-            </p>
-            <p>
-              <strong>How do I know if my commercial HVAC system needs replacement?</strong>{" "}
-              Frequent repairs, rising energy bills, uneven temperatures,
-              equipment older than 15–20 years, and declining performance often
-              indicate replacement may be more cost-effective than continued
-              repairs.
-            </p>
-            <p>
-              <strong>How much does commercial HVAC repair cost?</strong>{" "}
-              Repair costs depend on equipment type, replacement parts, labor,
-              accessibility, and the severity of the issue.
-            </p>
-            <p>
-              <strong>Are energy-efficient HVAC systems worth it?</strong>{" "}
-              Yes. High-efficiency systems typically reduce energy consumption,
-              improve comfort, qualify for available incentives, and lower
-              operating costs over the equipment&apos;s lifespan.
-            </p>
+            <div className="space-y-1 md:space-y-2">
+              <details>
+                <summary className="font-medium cursor-pointer">
+                  What is commercial HVAC?
+                </summary>
+                <p className="mt-2 text-[#444]">
+                  Commercial HVAC includes heating, cooling, ventilation, and
+                  indoor air quality systems designed for commercial buildings such
+                  as offices, warehouses, retail stores, schools, hospitals, and
+                  industrial facilities.
+                </p>
+              </details>
+
+              <details>
+                <summary className="font-medium cursor-pointer">
+                  How often should commercial HVAC systems be serviced?
+                </summary>
+                <p className="mt-2 text-[#444]">
+                  Most businesses should schedule preventive maintenance at least
+                  twice a year, with quarterly inspections recommended for
+                  facilities operating year-round or in demanding environments.
+                </p>
+              </details>
+
+              <details>
+                <summary className="font-medium cursor-pointer">
+                  How do I know if my commercial HVAC system needs replacement?
+                </summary>
+                <p className="mt-2 text-[#444]">
+                  Frequent repairs, rising energy bills, uneven temperatures,
+                  equipment older than 15–20 years, and declining performance often
+                  indicate replacement may be more cost-effective than continued
+                  repairs.
+                </p>
+              </details>
+
+              <details>
+                <summary className="font-medium cursor-pointer">
+                  How much does commercial HVAC repair cost?
+                </summary>
+                <p className="mt-2 text-[#444]">
+                  Repair costs depend on equipment type, replacement parts, labor,
+                  accessibility, and the severity of the issue.
+                </p>
+              </details>
+
+              <details>
+                <summary className="font-medium cursor-pointer">
+                  Are energy-efficient HVAC systems worth it?
+                </summary>
+                <p className="mt-2 text-[#444]">
+                  Yes. High-efficiency systems typically reduce energy consumption,
+                  improve comfort, qualify for available incentives, and lower
+                  operating costs over the equipment&apos;s lifespan.
+                </p>
+              </details>
+            </div>
           </>
         ),
       },
