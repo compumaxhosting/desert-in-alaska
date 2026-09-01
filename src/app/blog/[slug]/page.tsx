@@ -79,6 +79,17 @@ export default async function SingleBlog({ params }: Props) {
                 <div className="mt-2 text-[#444] leading-relaxed">
                   {section.paragraph}
                 </div>
+
+                {section.image && (
+                  <div className="relative mt-6 h-80 w-full">
+                    <Image
+                      src={section.image}
+                      alt={section.title}
+                      fill
+                      className="object-cover rounded-xl"
+                    />
+                  </div>
+                )}
               </div>
             ))}
           </div>

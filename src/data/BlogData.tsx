@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 export type BlogSection = {
   title: string;
   paragraph: ReactNode;
+  image?: string;
 };
 
 export type BlogPost = {
@@ -332,6 +333,7 @@ export const blogs: BlogPost[] = [
       },
       {
         title: "5. Your Facility Has Changed Since the System Was Installed",
+        image: "/blog/fire-suppression-system-service-detroit-mi-2.webp",
         paragraph: (
           <>
             <p>
